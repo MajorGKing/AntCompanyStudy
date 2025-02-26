@@ -5,6 +5,12 @@ using static Define;
 
 namespace Data
 {
+    //엑셀 파싱에 제외할 어트리뷰트 정의
+    [AttributeUsage(AttributeTargets.Field)]
+    public class ExcludeFieldAttribute : Attribute
+    {
+    }
+
     #region CreatureData
     [Serializable]
     public class CreatureData
@@ -28,7 +34,7 @@ namespace Data
         public int EnvSkillId;
         public int SkillAId;
         public int SkillBId;
-       
+
     }
 
     [Serializable]
@@ -49,5 +55,78 @@ namespace Data
         }
     }
     #endregion
+
+    #region BlockEventData
+    [Serializable]
+    public class BlockEventAnsData
+    {
+        public int enemyID;
+        public int answerID;
+        public int success;
+        public int resultID;
+        public int isDead;
+        public int difWorkAbility;
+        public int difLikability;
+        public int difLuck;
+        public int difBlock;
+    }
+
+    [Serializable]
+    public class BlockEventData
+    {
+        public int enemyID;
+        [ExcludeField]
+        public List<BlockEventAnsData> ansData = new List<BlockEventAnsData>();
+    }
+
+    public class BlockEventAnsDataLoader : ILoader<int, BlockEventAnsData>
+    {
+        public List<BlockEventAnsData> blockEventAnsDataList = new List<BlockEventAnsData>();
+        private Dictionary<int, BlockEventAnsData> blockEventAnsDataDict;
+
+        public Dictionary<int, BlockEventAnsData> MakeDict()
+        {
+            if (blockEventAnsDataDict == null)
+                Validate();  // Ensure Validate is called before accessing the dictionary
+
+            return blockEventAnsDataDict;
+        }
+
+        public bool Validate()
+        {
+
+            return true;
+        }
+    }
+    #endregion
+
+    #region CharacterStatusInfo
+    [Serializable]
+    public class CharacterStatusInfoData
+    {
+        public int ID;
+        public int textID;
+    }
+
+    [Serializable]
+    public class CharacterStatusInfoDataLoader : ILoader<int, CharacterStatusInfoData>
+    {
+        public List<CharacterStatusInfoData> CharacterStatus = new List<CharacterStatusInfoData>();
+
+        public Dictionary<int, CharacterStatusInfoData> MakeDict()
+        {
+            Dictionary<int, CharacterStatusInfoData> dict = new Dictionary<int, CharacterStatusInfoData>();
+            foreach (CharacterStatusInfoData characterData in CharacterStatus)
+                dict.Add(characterData.ID, characterData);
+            return dict;
+        }
+
+        public bool Validate()
+        {
+            return true;
+        }
+    }
+    #endregion
+
 
 }

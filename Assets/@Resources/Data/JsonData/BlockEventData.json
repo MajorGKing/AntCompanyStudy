@@ -1,0 +1,114 @@
+{
+  "blockEventAnsDataList": [
+    {
+      "enemyID": 5020,
+      "answerID": 4500,
+      "success": 1,
+      "resultID": 4502,
+      "isDead": 0,
+      "difWorkAbility": -100,
+      "difLikability": -100,
+      "difLuck": 0,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5020,
+      "answerID": 4500,
+      "success": 0,
+      "resultID": 4501,
+      "isDead": 0,
+      "difWorkAbility": 100,
+      "difLikability": 100,
+      "difLuck": 1,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5030,
+      "answerID": 4500,
+      "success": 1,
+      "resultID": 4502,
+      "isDead": 0,
+      "difWorkAbility": -100,
+      "difLikability": -100,
+      "difLuck": 0,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5030,
+      "answerID": 4500,
+      "success": 0,
+      "resultID": 4501,
+      "isDead": 0,
+      "difWorkAbility": 100,
+      "difLikability": 100,
+      "difLuck": 1,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5040,
+      "answerID": 4500,
+      "success": 1,
+      "resultID": 4502,
+      "isDead": 0,
+      "difWorkAbility": -100,
+      "difLikability": -100,
+      "difLuck": 0,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5040,
+      "answerID": 4500,
+      "success": 0,
+      "resultID": 4501,
+      "isDead": 0,
+      "difWorkAbility": 100,
+      "difLikability": 100,
+      "difLuck": 1,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5050,
+      "answerID": 4500,
+      "success": 1,
+      "resultID": 4502,
+      "isDead": 0,
+      "difWorkAbility": -100,
+      "difLikability": -100,
+      "difLuck": 0,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5050,
+      "answerID": 4500,
+      "success": 0,
+      "resultID": 4501,
+      "isDead": 0,
+      "difWorkAbility": 100,
+      "difLikability": 100,
+      "difLuck": 1,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5060,
+      "answerID": 4500,
+      "success": 1,
+      "resultID": 4502,
+      "isDead": 0,
+      "difWorkAbility": -100,
+      "difLikability": -100,
+      "difLuck": 0,
+      "difBlock": -1
+    },
+    {
+      "enemyID": 5060,
+      "answerID": 4500,
+      "success": 0,
+      "resultID": 4501,
+      "isDead": 0,
+      "difWorkAbility": 100,
+      "difLikability": 100,
+      "difLuck": 1,
+      "difBlock": -1
+    }
+  ]
+}

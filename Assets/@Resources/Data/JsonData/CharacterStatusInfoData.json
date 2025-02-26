@@ -1,0 +1,32 @@
+{
+  "CharacterStatus": [
+    {
+      "ID": 0,
+      "textID": 9000
+    },
+    {
+      "ID": 1,
+      "textID": 9001
+    },
+    {
+      "ID": 2,
+      "textID": 9002
+    },
+    {
+      "ID": 3,
+      "textID": 9003
+    },
+    {
+      "ID": 4,
+      "textID": 9004
+    },
+    {
+      "ID": 5,
+      "textID": 9005
+    },
+    {
+      "ID": 6,
+      "textID": 9006
+    }
+  ]
+}

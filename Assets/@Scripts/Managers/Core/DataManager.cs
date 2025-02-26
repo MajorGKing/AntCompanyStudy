@@ -11,9 +11,13 @@ public interface ILoader<Key, Value>
 
 public class DataManager
 {
+    public Dictionary<int, BlockEventData> BlockEvents { get; private set; }
+    public Dictionary<int, CharacterStatusInfoData> CharacterStatusInfos { get; private set;}
+
     public void Init()
     {
-        
+        //BlockEvents = LoadJson<BlockEventAnsDataLoader, int, BlockEventData>("BlockEventData").MakeDict();
+        CharacterStatusInfos = LoadJson<CharacterStatusInfoDataLoader, int, CharacterStatusInfoData>("CharacterStatusInfoData").MakeDict();
     }
 
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

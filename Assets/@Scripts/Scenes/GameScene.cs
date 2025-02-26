@@ -18,7 +18,25 @@ public class GameScene : BaseScene
         SceneType = EScene.GameScene;
 
     }
-    
+
+    protected override void Start()
+    {
+        base.Start();
+
+		Managers.Resource.LoadAllAsync<Object>("Preload", (key, count, totalCount) =>
+		{
+			if (count == totalCount)
+			{
+				OnAssetLoaded();
+			}
+		});
+    }
+
+    private void OnAssetLoaded()
+	{
+		Managers.Data.Init();
+	}
+
     public override void Clear()
     {
     }

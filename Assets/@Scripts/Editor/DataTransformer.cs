@@ -10,7 +10,6 @@ using Data;
 using System.ComponentModel;
 using System.Reflection;
 
-
 public class DataTransformer : EditorWindow
 {
 #if UNITY_EDITOR
@@ -18,6 +17,9 @@ public class DataTransformer : EditorWindow
     [MenuItem("Tools/ParseExcel _F4")]  // 추가 단축키: Control + K
     public static void ParseExcelDataToJson()
     {
+        //ParseExcelDataToJson<MonsterDataLoader, MonsterData>("Monster");
+        ParseExcelDataToJson<BlockEventAnsDataLoader, BlockEventAnsData>("BlockEvent");
+        ParseExcelDataToJson<CharacterStatusInfoDataLoader, CharacterStatusInfoData>("CharacterStatusInfo");
         Debug.Log("Complete DataTransformer");
     }
 
