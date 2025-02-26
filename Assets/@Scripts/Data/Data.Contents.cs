@@ -86,10 +86,14 @@ namespace Data
 
         public Dictionary<int, BlockEventAnsData> MakeDict()
         {
-            if (blockEventAnsDataDict == null)
-                Validate();  // Ensure Validate is called before accessing the dictionary
-
-            return blockEventAnsDataDict;
+            int i = 0;
+            Dictionary<int, BlockEventAnsData> dict = new Dictionary<int, BlockEventAnsData>();
+            foreach (BlockEventAnsData BlockEventAnsData in blockEventAnsDataList)
+            {
+                dict.Add(i, BlockEventAnsData);
+                i++;
+            }
+            return dict;
         }
 
         public bool Validate()
@@ -127,6 +131,41 @@ namespace Data
         }
     }
     #endregion
+
+#region  CollectionType
+    public enum CollectionType
+{
+	Stat,
+	Wealth,
+	Level,
+	Project,
+	Battle
+}
+
+    [Serializable]
+public class CollectionData
+{
+	public int ID;
+	public int nameID;
+	public CollectionType type;
+	public string iconPath;
+	public int reqLevel;
+	public int leveldif;
+	public int reqMaxHp;
+	public int reqWorkAbility;
+	public int reqLikability;
+	public int reqLuck;
+	public int reqStress;
+	public int reqMoney;
+	public int reqBlock;
+	public int reqSalary;
+	public int projectID;
+	public int reqCount;
+	public int difMaxHp;
+	public int difWorkAbility;
+	public int difLikability;
+	public int difLuck;
+}
 
 
 }
