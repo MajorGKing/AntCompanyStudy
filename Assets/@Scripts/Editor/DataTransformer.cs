@@ -20,6 +20,7 @@ public class DataTransformer : EditorWindow
         //ParseExcelDataToJson<MonsterDataLoader, MonsterData>("Monster");
         ParseExcelDataToJson<BlockEventAnsDataLoader, BlockEventAnsData>("BlockEvent");
         ParseExcelDataToJson<CharacterStatusInfoDataLoader, CharacterStatusInfoData>("CharacterStatusInfo");
+        ParseExcelDataToJson<CollectionDataLoader, CollectionData>("Collection");
         Debug.Log("Complete DataTransformer");
     }
 

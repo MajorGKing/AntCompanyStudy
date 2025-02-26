@@ -13,35 +13,38 @@ public class DataManager
 {
     public Dictionary<int, BlockEventAnsData> BlockAnsEvents { get; private set; } = new Dictionary<int,BlockEventAnsData>();
     public Dictionary<int, CharacterStatusInfoData> CharacterStatusInfos { get; private set;} = new Dictionary<int,CharacterStatusInfoData>();
-    public Dictionary<int, BlockEventData> BlockEventDatas { get; private set;} = new Dictionary<int, BlockEventData> ();
+    public Dictionary<int, BlockEventData> BlockEvents { get; private set;} = new Dictionary<int, BlockEventData> ();
+    public Dictionary<int, CollectionData> Collections { get; private set;} = new Dictionary<int, CollectionData> ();
+
 
     public void Init()
     {
         BlockAnsEvents = LoadJson<BlockEventAnsDataLoader, int, BlockEventAnsData>("BlockEventData").MakeDict();
         CharacterStatusInfos = LoadJson<CharacterStatusInfoDataLoader, int, CharacterStatusInfoData>("CharacterStatusInfoData").MakeDict();
+        Collections = LoadJson<CollectionDataLoader, int, CollectionData>("CollectionData").MakeDict();
 
         // for blockeventdata
-        BlockEventDatas.Clear();
+        BlockEvents.Clear();
         foreach(var ans in BlockAnsEvents)
         {
-            if(BlockEventDatas.ContainsKey(ans.Value.enemyID) == false)
+            if(BlockEvents.ContainsKey(ans.Value.enemyID) == false)
             {
                 BlockEventData block = new BlockEventData();
                 block.enemyID = ans.Value.enemyID;
                 block.ansData = new List<BlockEventAnsData>();
                 block.ansData.Add(ans.Value);
 
-                BlockEventDatas.Add(block.enemyID, block);
+                BlockEvents.Add(block.enemyID, block);
             }
             else
             {
-                BlockEventData block = BlockEventDatas[ans.Value.enemyID];
+                BlockEventData block = BlockEvents[ans.Value.enemyID];
                 block.ansData.Add(ans.Value);
             }
         }
 
         //
-        foreach(var ans in BlockEventDatas)
+        foreach(var ans in BlockEvents)
         {
             Debug.Log(ans.Value.enemyID);
         }

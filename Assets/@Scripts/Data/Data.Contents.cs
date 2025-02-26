@@ -132,40 +132,58 @@ namespace Data
     }
     #endregion
 
-#region  CollectionType
+    #region  CollectionType
     public enum CollectionType
-{
-	Stat,
-	Wealth,
-	Level,
-	Project,
-	Battle
-}
+    {
+        Stat,
+        Wealth,
+        Level,
+        Project,
+        Battle
+    }
 
     [Serializable]
-public class CollectionData
-{
-	public int ID;
-	public int nameID;
-	public CollectionType type;
-	public string iconPath;
-	public int reqLevel;
-	public int leveldif;
-	public int reqMaxHp;
-	public int reqWorkAbility;
-	public int reqLikability;
-	public int reqLuck;
-	public int reqStress;
-	public int reqMoney;
-	public int reqBlock;
-	public int reqSalary;
-	public int projectID;
-	public int reqCount;
-	public int difMaxHp;
-	public int difWorkAbility;
-	public int difLikability;
-	public int difLuck;
-}
+    public class CollectionData
+    {
+        public int ID;
+        public int nameID;
+        public CollectionType reqType;
+        public string iconPath;
+        public int reqLevel;
+        public int leveldif;
+        public int reqMaxHp;
+        public int reqWorkAbility;
+        public int reqLikability;
+        public int reqLuck;
+        public int reqStress;
+        public int reqMoney;
+        public int reqBlock;
+        public int reqSalary;
+        public int projectID;
+        public int reqCount;
+        public int difMaxHp;
+        public int difWorkAbility;
+        public int difLikability;
+        public int difLuck;
+    }
 
+    [Serializable]
+    public class CollectionDataLoader : ILoader<int, CollectionData>
+    {
+        public List<CollectionData> CollectionDatas = new List<CollectionData>();
 
+        public Dictionary<int, CollectionData> MakeDict()
+        {
+            Dictionary<int, CollectionData> dict = new Dictionary<int, CollectionData>();
+            foreach (CollectionData collectionData in CollectionDatas)
+                dict.Add(collectionData.ID, collectionData);
+            return dict;
+        }
+
+        public bool Validate()
+        {
+            return true;
+        }
+    }
+    #endregion
 }
