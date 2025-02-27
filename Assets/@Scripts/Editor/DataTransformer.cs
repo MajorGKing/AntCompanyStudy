@@ -21,6 +21,7 @@ public class DataTransformer : EditorWindow
         ParseExcelDataToJson<BlockEventAnsDataLoader, BlockEventAnsData>("BlockEvent");
         ParseExcelDataToJson<CharacterStatusInfoDataLoader, CharacterStatusInfoData>("CharacterStatusInfo");
         ParseExcelDataToJson<CollectionDataLoader, CollectionData>("Collection");
+        ParseExcelDataToJson<DialogueEventExcelDataLoader, DialogueEventExcelData>("DialogueEvent");
         Debug.Log("Complete DataTransformer");
     }
 

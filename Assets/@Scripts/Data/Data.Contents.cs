@@ -186,4 +186,65 @@ namespace Data
         }
     }
     #endregion
+
+    #region DialogueEventData
+    public class DialogueEventExcelData
+    {
+        public int questionID;
+        public int answerID;
+        public int resultID;
+        public int difWorkAbility;
+        public int difLikability;
+        public int difLuck;
+        public int difStress;
+        public int difMoney;
+        public int difBlock;
+        public int enemyType;
+    }
+
+    [Serializable]
+    public class DialogueEventData
+    {
+        public int questionID;
+        public int enemyType; // �������?
+        public List<DialogueAnsData> answers = new List<DialogueAnsData>();
+    }
+
+    [Serializable]
+    public class DialogueAnsData
+    {
+        public int answerID;
+        public int resultID;
+        public int difWorkAbility;
+        public int difLikeability;
+        public int difLuck;
+        public int difStress;
+        public int difMoney;
+        public int difBlock;
+    }
+
+    public class DialogueEventExcelDataLoader : ILoader<int, DialogueEventExcelData>
+    {
+        public List<DialogueEventExcelData> dialogueEventDataList = new List<DialogueEventExcelData>();
+        private Dictionary<int, DialogueEventExcelData> dialogueEventDataDict;
+
+        public Dictionary<int, DialogueEventExcelData> MakeDict()
+        {
+            int i = 0;
+            Dictionary<int, DialogueEventExcelData> dict = new Dictionary<int, DialogueEventExcelData>();
+            foreach (DialogueEventExcelData dialogueEventData in dialogueEventDataList)
+            {
+                dict.Add(i, dialogueEventData);
+                i++;
+            }
+            return dict;
+        }
+
+        public bool Validate()
+        {
+            return true;
+        }
+    }
+
+    #endregion
 }
