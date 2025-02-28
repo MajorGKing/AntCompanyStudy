@@ -22,6 +22,15 @@ public class DataTransformer : EditorWindow
         ParseExcelDataToJson<CharacterStatusInfoDataLoader, CharacterStatusInfoData>("CharacterStatusInfo");
         ParseExcelDataToJson<CollectionDataLoader, CollectionData>("Collection");
         ParseExcelDataToJson<DialogueEventExcelDataLoader, DialogueEventExcelData>("DialogueEvent");
+        ParseExcelDataToJson<EndingDataLoader, EndingData>("Ending");
+        ParseExcelDataToJson<GoHomeDataLoader, GoHomeData>("GoHome");
+        ParseExcelDataToJson<PlayerExcelDataLoader, PlayerExcelData>("Player");
+        ParseExcelDataToJson<ProjectDataLoader, ProjectData>("Project");
+        ParseExcelDataToJson<RewardDataLoader, RewardData>("Reward");
+        ParseExcelDataToJson<SalaryNegotiationDataLoader, SalaryNegotiationData>("SalaryNegotiation");
+        ParseExcelDataToJson<ShopDataLoader, ShopData>("Shop");
+        ParseExcelDataToJson<StartDataLoader, StartData>("Start");
+        ParseExcelDataToJson<StatDataLoader, StatData>("Stat");
         Debug.Log("Complete DataTransformer");
     }
 

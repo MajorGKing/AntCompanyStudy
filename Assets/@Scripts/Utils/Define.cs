@@ -61,4 +61,13 @@ public class Define
 		//
 		Projectile = 20,
 	}
+
+    public enum StatType
+    {
+        MaxHp,
+        WorkAbility,
+        Likeability,
+        Luck,
+        Stress
+    }
 }

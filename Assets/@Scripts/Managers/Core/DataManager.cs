@@ -3,14 +3,21 @@ using Data;
 using Newtonsoft.Json;
 using UnityEngine;
 
-public interface ILoader<Key, Value>
+public interface IValidate
+{
+    bool Validate();
+}
+
+
+public interface ILoader<Key, Value> : IValidate
 {
     Dictionary<Key, Value> MakeDict();
-    bool Validate();
 }
 
 public class DataManager
 {
+    private HashSet<IValidate> _loaders = new HashSet<IValidate>();
+
     public Dictionary<int, BlockEventAnsData> BlockAnsEvents { get; private set; } = new Dictionary<int, BlockEventAnsData>();
     public Dictionary<int, CharacterStatusInfoData> CharacterStatusInfos { get; private set; } = new Dictionary<int, CharacterStatusInfoData>();
     public Dictionary<int, BlockEventData> BlockEvents { get; private set; } = new Dictionary<int, BlockEventData>();
@@ -18,6 +25,17 @@ public class DataManager
     public Dictionary<int, DialogueEventData> Dialogues { get; private set; } = new Dictionary<int, DialogueEventData>();
     public List<DialogueEventData> InferiorEvents { get; private set; }  = new List<DialogueEventData>();// 나보다 부하인 NPC가 진행하는 이벤트                                                                    
     public List<DialogueEventData> SuperiorEvents { get; private set; }  = new List<DialogueEventData>();// 나보다 상사인 NPC가 진행하는 이벤트
+    public Dictionary<int, EndingData> Endings { get; private set; } = new Dictionary<int, EndingData>();
+    public Dictionary<int, GoHomeData> GoHomes { get; private set; } = new Dictionary<int, GoHomeData>();
+    public Dictionary<int, PlayerExcelData> PlayerExcelDatas { get; private set; } = new Dictionary<int, PlayerExcelData>();
+    public Dictionary<int, PlayerData> Players { get; private set; } = new Dictionary<int, PlayerData>();
+    public Dictionary<int, ProjectData> Projects { get; private set; } = new Dictionary<int, ProjectData>();
+    public Dictionary<int, SalaryNegotiationData> SalaryNegotiationData { get; private set; } = new Dictionary<int, SalaryNegotiationData>();
+    public SalaryNegotiationData SalaryNegotiation;
+    public Dictionary<int, ShopData> Shops { get; private set; } = new Dictionary<int, ShopData>();
+    public Dictionary<int, StartData> StartData { get; private set; } = new Dictionary<int, StartData>();
+    public StartData Start;
+    public Dictionary<int, StatData> Stats { get; private set; } = new Dictionary<int, StatData>();
 
 
 
@@ -26,6 +44,14 @@ public class DataManager
         BlockAnsEvents = LoadJson<BlockEventAnsDataLoader, int, BlockEventAnsData>("BlockEventData").MakeDict();
         CharacterStatusInfos = LoadJson<CharacterStatusInfoDataLoader, int, CharacterStatusInfoData>("CharacterStatusInfoData").MakeDict();
         Collections = LoadJson<CollectionDataLoader, int, CollectionData>("CollectionData").MakeDict();
+        Endings = LoadJson<EndingDataLoader, int, EndingData>("EndingData").MakeDict();
+        GoHomes = LoadJson<GoHomeDataLoader, int, GoHomeData>("GoHomeData").MakeDict();
+        PlayerExcelDatas = LoadJson<PlayerExcelDataLoader, int, PlayerExcelData>("PlayerData").MakeDict();
+        Projects = LoadJson<ProjectDataLoader, int, ProjectData>("ProjectData").MakeDict();
+        Shops = LoadJson<ShopDataLoader, int, ShopData>("ShopData").MakeDict();
+        StartData = LoadJson<StartDataLoader, int, StartData>("StartData").MakeDict();
+        Stats = LoadJson<StatDataLoader, int, StatData>("StatData").MakeDict();
+
 
         Dictionary<int, DialogueEventExcelData> DialogueEventExcels = LoadJson<DialogueEventExcelDataLoader, int, DialogueEventExcelData>("DialogueEventData").MakeDict();
 
@@ -115,13 +141,33 @@ public class DataManager
         {
             Debug.Log(dig.Value.questionID);
         }
+
+        Validate();
     }
 
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>
     {
         Debug.Log(path);
         TextAsset textAsset = Managers.Resource.Load<TextAsset>($"{path}");
-        return JsonConvert.DeserializeObject<Loader>(textAsset.text);
+        
+        Loader loader = JsonConvert.DeserializeObject<Loader>(textAsset.text);
+        _loaders.Add(loader);
+        return loader;
+    }
+
+    private bool Validate()
+    {
+        bool success = true;
+
+        foreach (var loader in _loaders)
+        {
+            if (loader.Validate() == false)
+                success = false;
+        }
+
+        _loaders.Clear();
+
+        return success;
     }
 
 }

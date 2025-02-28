@@ -1,0 +1,6 @@
+﻿ID,type,nameID,price,increaseStat,difMaxHp,difAtk,difAllAtkPercent,difSalaryPercent,difRevenuePercent,cooltimePercent,successPercent
+1,maxHp,6001,100000,200,0,0,0,0,0,0,0
+2,workAbility,6011,100000,10,0,2,0,0.0005,0,0.002,0
+3,likeAbility,6021,100000,10,0,0,0,0,0.003,0,0
+4,stress,6031,50000,-30,0,0,0.01,0,0,0,0
+5,luck,6041,0,0,0,0,0,0,0,0,0.1

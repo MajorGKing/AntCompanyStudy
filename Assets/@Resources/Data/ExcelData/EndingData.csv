@@ -1,5 +1,4 @@
-﻿//엔딩 데이터,//엔딩 명,//일러스트,//필요 밸류,,
-ID,nameID,type,value,aniPath,illustPath
+﻿ID,nameID,type,value,aniPath,illustPath
 1,8001,level,1,Spine/Ending/ending1_save_SkeletonData,Sprites/Popup6/ending_1
 2,8011,level,2,Spine/Ending/ending2_save_SkeletonData,Sprites/Popup6/ending_2
 3,8021,level,3,Spine/Ending/ending3_save_SkeletonData,Sprites/Popup6/ending_3

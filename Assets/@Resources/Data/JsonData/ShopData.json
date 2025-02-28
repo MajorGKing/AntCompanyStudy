@@ -1,0 +1,64 @@
+{
+  "_shopDatas": [
+    {
+      "ID": 1,
+      "name": 6502,
+      "condition": 0,
+      "price": 1100,
+      "productID": "ant_block",
+      "rewardType": 0,
+      "rewardCount": 25,
+      "icon": "Spine/Store/icon_coin5_SkeletonData"
+    },
+    {
+      "ID": 2,
+      "name": 6503,
+      "condition": 0,
+      "price": 1100,
+      "productID": "ant_money",
+      "rewardType": 1,
+      "rewardCount": 10000000,
+      "icon": "Spine/Store/icon3_2_SkeletonData"
+    },
+    {
+      "ID": 3,
+      "name": 6504,
+      "condition": 0,
+      "price": 2200,
+      "productID": "ant_noads",
+      "rewardType": 3,
+      "rewardCount": 1,
+      "icon": "Spine/Store/icon_coin4_SkeletonData"
+    },
+    {
+      "ID": 4,
+      "name": 6505,
+      "condition": 1,
+      "price": 0,
+      "productID": null,
+      "rewardType": 0,
+      "rewardCount": 3,
+      "icon": "Spine/Store/icon_coin5_SkeletonData"
+    },
+    {
+      "ID": 5,
+      "name": 6506,
+      "condition": 1,
+      "price": 0,
+      "productID": null,
+      "rewardType": 1,
+      "rewardCount": 1000000,
+      "icon": "Spine/Store/icon3_2_SkeletonData"
+    },
+    {
+      "ID": 6,
+      "name": 6507,
+      "condition": 1,
+      "price": 0,
+      "productID": null,
+      "rewardType": 2,
+      "rewardCount": 3,
+      "icon": "Spine/Store/icon6_SkeletonData"
+    }
+  ]
+}

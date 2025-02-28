@@ -1,0 +1,49 @@
+{
+  "_rewardData": [
+    {
+      "ID": "0",
+      "nameID": "6500",
+      "iconPath": null
+    },
+    {
+      "ID": "1",
+      "nameID": "6001",
+      "iconPath": "Sprites/Main/Ability/icon_strength"
+    },
+    {
+      "ID": "2",
+      "nameID": "6011",
+      "iconPath": "Sprites/Main/Ability/icon_ability"
+    },
+    {
+      "ID": "3",
+      "nameID": "6021",
+      "iconPath": "Sprites/Main/Ability/icon_heart"
+    },
+    {
+      "ID": "4",
+      "nameID": "6031",
+      "iconPath": "Sprites/Main/Ability/icon_stress"
+    },
+    {
+      "ID": "5",
+      "nameID": "6041",
+      "iconPath": "Sprites/Main/Ability/icon_luck"
+    },
+    {
+      "ID": "6",
+      "nameID": "6051",
+      "iconPath": "Sprites/Main/Project/icon_coin1"
+    },
+    {
+      "ID": "7",
+      "nameID": "6061",
+      "iconPath": "Sprites/Main/Project/icon_coin2"
+    },
+    {
+      "ID": "8",
+      "nameID": "6501",
+      "iconPath": null
+    }
+  ]
+}
