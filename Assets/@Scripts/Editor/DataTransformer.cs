@@ -31,6 +31,7 @@ public class DataTransformer : EditorWindow
         ParseExcelDataToJson<ShopDataLoader, ShopData>("Shop");
         ParseExcelDataToJson<StartDataLoader, StartData>("Start");
         ParseExcelDataToJson<StatDataLoader, StatData>("Stat");
+        ParseExcelDataToJson<TextDataLoader, TextData>("Text");
         Debug.Log("Complete DataTransformer");
     }
 

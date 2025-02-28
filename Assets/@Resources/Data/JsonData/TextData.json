@@ -1,1516 +1,2159 @@
 {
-  "texts": [
+  "_textData": [
     {
-      "DataId": "RookieName",
-      "KOR": "김용길"
+      "ID": 1,
+      "kor": "NoName",
+      "eng": "NoName"
     },
     {
-      "DataId": "ChloeName",
-      "KOR": "클로이"
+      "ID": 10000,
+      "kor": "{userName}아. 안녕 반가워. 잘 부탁해.",
+      "eng": null
     },
     {
-      "DataId": "SamName",
-      "KOR": "쌤"
+      "ID": 10001,
+      "kor": "{userName}아. 너 프로그램은 잘 다루니?",
+      "eng": null
     },
     {
-      "DataId": "LukeName",
-      "KOR": "루크"
+      "ID": 10002,
+      "kor": "{userName}아. 괜찮으니까 편하게 대답해도 괜찮아.",
+      "eng": null
     },
     {
-      "DataId": "DukName",
-      "KOR": "덕"
+      "ID": 10003,
+      "kor": "{userName}이! 당장 여기와봐!",
+      "eng": null
     },
     {
-      "DataId": "TomName",
-      "KOR": "도적 톰"
+      "ID": 10004,
+      "kor": "{userName}아. 내가 바빠서 그런데. 이거 좀 해줄래?",
+      "eng": null
     },
     {
-      "DataId": "MarieName",
-      "KOR": "마리"
+      "ID": 10005,
+      "kor": "{userName}아. 오늘은 이만 퇴근해~",
+      "eng": null
     },
     {
-      "DataId": "AndreName",
-      "KOR": "안드레"
+      "ID": 10006,
+      "kor": "{userName}이. 학교에서 대체 뭘 배운거야?",
+      "eng": null
     },
     {
-      "DataId": "LaraName",
-      "KOR": "라라"
+      "ID": 10007,
+      "kor": "{userName}이. 시키지도 않은 일을 왜해? 그럴거면 니가 사장해!",
+      "eng": null
     },
     {
-      "DataId": "MichelleName",
-      "KOR": "미쉘"
+      "ID": 10008,
+      "kor": "{userName}이 업무 처리가 왜이래?",
+      "eng": null
     },
     {
-      "DataId": "YulieName",
-      "KOR": "율리"
+      "ID": 10009,
+      "kor": "{userName}이 힘든건 없어?",
+      "eng": null
     },
     {
-      "DataId": "StormName",
-      "KOR": "스톰"
+      "ID": 10010,
+      "kor": "{userName}이 바쁜일 없지? 나 좀 도와줘",
+      "eng": null
     },
     {
-      "DataId": "EllieName",
-      "KOR": "엘리"
+      "ID": 10011,
+      "kor": "{userName}이 이런것도 몰라서 물어? 대체 할줄 아는게 뭐야?",
+      "eng": null
     },
     {
-      "DataId": "LeonName",
-      "KOR": "레온"
+      "ID": 10012,
+      "kor": "{userName}이 또 야근이야? 맨날 야근이네? 일을 잘 못하나?",
+      "eng": null
     },
     {
-      "DataId": "WaltName",
-      "KOR": "월트&비비"
+      "ID": 10013,
+      "kor": "{userName}아~내가 시킨일 아직도 안됐나?",
+      "eng": null
     },
     {
-      "DataId": "XionName",
-      "KOR": "시온"
+      "ID": 10014,
+      "kor": "{userName}아. 나대지말고 그냥 내가 하라는 대로 해~ 니가 되겠어?",
+      "eng": null
     },
     {
-      "DataId": "AlexName",
-      "KOR": "알렉스"
+      "ID": 10015,
+      "kor": "{userName}이. 아직도 이걸 제대로 모르면 어쩌나?",
+      "eng": null
     },
     {
-      "DataId": "LaurenName",
-      "KOR": "로렌"
+      "ID": 10016,
+      "kor": "{userName}이 이러다 후임들 한테 밀리겠는데?",
+      "eng": null
     },
     {
-      "DataId": "OwenName",
-      "KOR": "오웬"
+      "ID": 10017,
+      "kor": "{userName}아. 니 동기는 저렇게 잘하는데 넌 뭐하냐?",
+      "eng": null
     },
     {
-      "DataId": "BellaName",
-      "KOR": "벨라"
+      "ID": 10018,
+      "kor": "{userName}이 이것밖에 못하나?",
+      "eng": null
     },
     {
-      "DataId": "BettyName",
-      "KOR": "베티"
+      "ID": 10019,
+      "kor": "{userName}아. 알아서 좀 하자. 이것도 못하냐?",
+      "eng": null
     },
     {
-      "DataId": "ValakName",
-      "KOR": "발락"
+      "ID": 10020,
+      "kor": "{userName}이~ 커피좀 사와라~ 나는 따뜻한 복숭아 아이스티",
+      "eng": null
     },
     {
-      "DataId": "VanessaName",
-      "KOR": "바네사"
+      "ID": 10021,
+      "kor": "{userName}아. 이야기 좀 할까?",
+      "eng": null
     },
     {
-      "DataId": "AranName",
-      "KOR": "아란"
+      "ID": 10022,
+      "kor": "{userName}이~ 저기 화초에 물이 마른 것 같지 않아?",
+      "eng": null
     },
     {
-      "DataId": "SylviaName",
-      "KOR": "실비아"
+      "ID": 10023,
+      "kor": "{userName}님. 맡겨 주신일 완료 했습니다. 검토 부탁 드립니다.",
+      "eng": null
     },
     {
-      "DataId": "HardyName",
-      "KOR": "하디"
+      "ID": 10024,
+      "kor": "{userName}님. 전에 맡겨주신 일 시간을 조금만 더 주시면 안될까요?",
+      "eng": null
     },
     {
-      "DataId": "LouisName",
-      "KOR": "루이"
+      "ID": 10025,
+      "kor": "{userName}님. 거래처에서 연락이 왔는데 어떻게 처리 할까요",
+      "eng": null
     },
     {
-      "DataId": "LucyName",
-      "KOR": "루시"
+      "ID": 10026,
+      "kor": "{userName}님. 저번 회의에 나온 안건 정리하였습니다.",
+      "eng": null
     },
     {
-      "DataId": "SierraName",
-      "KOR": "시에라"
+      "ID": 10027,
+      "kor": "{userName}님. 이번 입사 지원자 리스트 입니다.",
+      "eng": null
     },
     {
-      "DataId": "KunName",
-      "KOR": "쿤"
+      "ID": 10028,
+      "kor": "{userName}님. 오늘 회식 장소는 근처 삼겹살 집으로 정했습니다.",
+      "eng": null
     },
     {
-      "DataId": "RookieSubName",
-      "KOR": "겁쟁이모험가"
+      "ID": 10029,
+      "kor": "{userName}님. 이번 프로젝트 구성안 입니다.",
+      "eng": null
     },
     {
-      "DataId": "ChloeSubName",
-      "KOR": "유쾌한마녀"
+      "ID": 10030,
+      "kor": "{userName}님. 결재 부탁드립니다.",
+      "eng": null
     },
     {
-      "DataId": "SamSubName",
-      "KOR": "농부"
+      "ID": 10031,
+      "kor": "{userName}님. 자료 검토 부탁드려도 괜찮을까요",
+      "eng": null
     },
     {
-      "DataId": "LukeSubName",
-      "KOR": "사냥꾼"
+      "ID": 10032,
+      "kor": "{userName}님. 사장님이 부르십니다.",
+      "eng": null
     },
     {
-      "DataId": "DukSubName",
-      "KOR": "도축가"
+      "ID": 10033,
+      "kor": "{userName}님. 거래처에서 손님이 오셨는데요",
+      "eng": null
     },
     {
-      "DataId": "TomSubName",
-      "KOR": "도적"
+      "ID": 10034,
+      "kor": "{userName}님. 내일 워크숍 참가 하실건가요?",
+      "eng": null
     },
     {
-      "DataId": "MarieSubName",
-      "KOR": "견습마법사"
+      "ID": 10035,
+      "kor": "{userName}님. 저 힘든일이 있는데... 상담 부탁드립니다.",
+      "eng": null
     },
     {
-      "DataId": "AndreSubName",
-      "KOR": "뱀파이어"
+      "ID": 10036,
+      "kor": "{userName}님. 오늘 마치고 술 한잔 어떠신가요?",
+      "eng": null
     },
     {
-      "DataId": "LaraSubName",
-      "KOR": "견습사제"
+      "ID": 10037,
+      "kor": "{userName}님. 곧 회의 시간입니다. B-11회의실 입니다.",
+      "eng": null
     },
     {
-      "DataId": "MichelleSubName",
-      "KOR": "훈련교관"
+      "ID": 10038,
+      "kor": "{userName}님. 저.. 2주 뒤 연차 사용해도 괜찮을까요?",
+      "eng": null
     },
     {
-      "DataId": "YulieSubName",
-      "KOR": "음유시인"
+      "ID": 10039,
+      "kor": "{userName}님. 저 오늘 몸이아파 병가를 써야할거 같습니다…",
+      "eng": null
     },
     {
-      "DataId": "StormSubName",
-      "KOR": "방랑기사"
+      "ID": 10040,
+      "kor": "{userName}님. 죄송합니다. 다시는 이런 일 없도록 하겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "EllieSubName",
-      "KOR": "레인져"
+      "ID": 10041,
+      "kor": "{userName}님. 저 회사 관련하여 드릴 말씀이 있습니다.",
+      "eng": null
     },
     {
-      "DataId": "LeonSubName",
-      "KOR": "격투가"
+      "ID": 10042,
+      "kor": "{userName}님. 저 먼저 퇴근해도 괜찮을까요?",
+      "eng": null
     },
     {
-      "DataId": "WaltSubName",
-      "KOR": "문지기"
+      "ID": 10043,
+      "kor": "{userName}님. 저 야근하고 가야할 거 같아요..",
+      "eng": null
     },
     {
-      "DataId": "XionSubName",
-      "KOR": "네크로맨서"
+      "ID": 10044,
+      "kor": "{userName}님! 첫 월급으로 샀어요. 커피 드세요!",
+      "eng": null
     },
     {
-      "DataId": "AlexSubName",
-      "KOR": "성기사"
+      "ID": 11010,
+      "kor": "{userName}입니다! 잘 부탁드립니다!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSubName",
-      "KOR": "연금술사"
+      "ID": 11011,
+      "kor": "올해로 25살 {userName} 입니다! 잘 부탁드립니다!",
+      "eng": null
     },
     {
-      "DataId": "OwenSubName",
-      "KOR": "오웬"
+      "ID": 11020,
+      "kor": "네! 저 프로그램 엄청 잘 다룹니다!",
+      "eng": null
     },
     {
-      "DataId": "BellaSubName",
-      "KOR": "무희"
+      "ID": 11021,
+      "kor": "조금 다룰 수 있습니다!",
+      "eng": null
     },
     {
-      "DataId": "BettySubName",
-      "KOR": "인형술사"
+      "ID": 11030,
+      "kor": "그럼 저도 말 편하게 해도 괜찮을까요? 너무 친근하게 잘 대해주셔서",
+      "eng": null
     },
     {
-      "DataId": "ValakSubName",
-      "KOR": "드래고노이드"
+      "ID": 11031,
+      "kor": "네! 알겠습니다!",
+      "eng": null
     },
     {
-      "DataId": "VanessaSubName",
-      "KOR": "서큐버스"
+      "ID": 11040,
+      "kor": "넵. 무슨 일이신가요?",
+      "eng": null
     },
     {
-      "DataId": "AranSubName",
-      "KOR": "배틀메이지"
+      "ID": 11041,
+      "kor": "아... 저 지금 일거리 있어서 바쁜데요.",
+      "eng": null
     },
     {
-      "DataId": "SylviaSubName",
-      "KOR": "정령사"
+      "ID": 11050,
+      "kor": "네! 어떤 거 하면 될까요?",
+      "eng": null
     },
     {
-      "DataId": "HardySubName",
-      "KOR": "숲의수호자"
+      "ID": 11051,
+      "kor": "사장님께서 해달라고 하신 게 있어서 이것부터 하고 해드릴게요!",
+      "eng": null
     },
     {
-      "DataId": "LouisSubName",
-      "KOR": "창술사"
+      "ID": 11060,
+      "kor": "넵. 수고하셨습니다.",
+      "eng": null
     },
     {
-      "DataId": "LucySubName",
-      "KOR": "암살자"
+      "ID": 11061,
+      "kor": "일이 아직 조금 남아서.. 마저 하고 갈게요!",
+      "eng": null
     },
     {
-      "DataId": "SierraSubName",
-      "KOR": "데스나이트"
+      "ID": 11070,
+      "kor": "죄송합니다.. 알려주시면 열심히 배우겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "KunSubName",
-      "KOR": "광대"
+      "ID": 11071,
+      "kor": "개미님은 얼마나 좋아서 저한테 이렇게 막 대하세요?",
+      "eng": null
     },
     {
-      "DataId": "RookieDescription",
-      "KOR": "마족을 동경하여 마족이 되고싶은 인간"
+      "ID": 11080,
+      "kor": "죄송합니다. 앞으로 그러지 않겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "ChloeDescription",
-      "KOR": "전쟁으로 몸이 아픈 사람들을 치료하기 위해 합류"
+      "ID": 11081,
+      "kor": "그래도... 이 폼이 더 효율적일 것 같아서...",
+      "eng": null
     },
     {
-      "DataId": "SamDescription",
-      "KOR": "농작지에 살던 농부. 마계의 농작물을 얻기위해 합류"
+      "ID": 11090,
+      "kor": "죄송합니다. 다시 해오겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "LukeDescription",
-      "KOR": "전쟁으로 딸과 헤어진 인간계에 남은 사냥꾼. 마계에 딸이 있다는 소식을 듣고 합류"
+      "ID": 11091,
+      "kor": "네? 이정도면 완벽하지 않나요? 게다가 이렇게 시키신 건 개미님이신데",
+      "eng": null
     },
     {
-      "DataId": "DukDescription",
-      "KOR": "마을에서 도축사업을 하던 도축가. 마계의 고기를 얻기위해 합류"
+      "ID": 11100,
+      "kor": "아 그럼요~ 다들 워낙 잘해주셔서 회사 적응도 열심히 하고 있습니다!",
+      "eng": null
     },
     {
-      "DataId": "TomDescription",
-      "KOR": "전쟁으로 인해 인간계에 갇혀 도적질로 연명하는 꼬마마족. 마계로 돌아가기 위해 합류"
+      "ID": 11101,
+      "kor": "니가 제일 힘들어.",
+      "eng": null
     },
     {
-      "DataId": "MarieDescription",
-      "KOR": "스승을 찾아 헤매는 견습마법사. 마계에서 스승을 찾기위해 합류"
+      "ID": 11110,
+      "kor": "네. 혹시 어떤 부분을 도와드리면 되나요?",
+      "eng": null
     },
     {
-      "DataId": "AndreDescription",
-      "KOR": "마계의 몰락 귀족. 여성을 좋아하는 카사노바. 전세계 여성을 만나기 위해 합류."
+      "ID": 11111,
+      "kor": "또 일 그렇게 떠넘기려고 하시나요? 저 바빠요.",
+      "eng": null
     },
     {
-      "DataId": "LaraDescription",
-      "KOR": "전쟁으로 몸이 아픈 사람들을 치료하기 위해 합류"
+      "ID": 11120,
+      "kor": "죄송합니다. 공부하겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "MichelleDescription",
-      "KOR": "마계에 갇혀버린 자신의 생도들을 찾기위해 합류"
+      "ID": 11121,
+      "kor": "제대로 가르쳐 주는 것도 없으면서 못한다고 난리네 진짜..",
+      "eng": null
     },
     {
-      "DataId": "YulieDescription",
-      "KOR": "마계에 자신의 음악을 선사하기 위해 합류"
+      "ID": 11130,
+      "kor": "어라! 열심히 하다보니 벌써 저녁이네요.",
+      "eng": null
     },
     {
-      "DataId": "StormDescription",
-      "KOR": "인간에 대한 호기심이 가득한 마녀. 주인공을 마계로 안내한다."
+      "ID": 11131,
+      "kor": "그럼 너는 왜 여기 남아 계세요?",
+      "eng": null
     },
     {
-      "DataId": "EllieDescription",
-      "KOR": "전쟁중 지휘관에게 배신당했다. 지휘관에게 복수를 위해 합류"
+      "ID": 11140,
+      "kor": "넵. 지금 다했습니다!",
+      "eng": null
     },
     {
-      "DataId": "LeonDescription",
-      "KOR": "세계의 강자들과 대결하기 위해 떠돌아다닌다. 마계에서 자신의 대결 상대를 찾기위해 합류"
+      "ID": 11141,
+      "kor": "죄송합니다. 15분 뒤면 마무리 될 것 같습니다.",
+      "eng": null
     },
     {
-      "DataId": "WaltDescription",
-      "KOR": "인간계에 잔류되어 인간마을의 수문장 역할을 한다. 하지만 늘상 졸고 있어 박대를 당하여 마계로 돌아가고 싶어 합류"
+      "ID": 11150,
+      "kor": "죄송합니다. 좀 더 잘 해보려고 했던 게.. ",
+      "eng": null
     },
     {
-      "DataId": "XionDescription",
-      "KOR": "해골을 가지고 놀기 좋아하는 어린이 마족. "
+      "ID": 11151,
+      "kor": "제가 더 잘하지 않을까 싶은데요?",
+      "eng": null
     },
     {
-      "DataId": "AlexDescription",
-      "KOR": "마계와의 전쟁때 영웅으로 칭송 받던 인간. 전쟁이 끝난 후 신탁을 받고 합류."
+      "ID": 11160,
+      "kor": "죄송합니다. 다시 공부하겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "LaurenDescription",
-      "KOR": "\"마계를 연구하던 연금술사"
+      "ID": 11161,
+      "kor": "제가 어떻게 다 알고 있겠습니까.",
+      "eng": null
     },
     {
-      "DataId": "OwenDescription",
-      "KOR": "\"전쟁 시절 군을 통제하던 장교"
+      "ID": 11170,
+      "kor": "제가 더 열심히 해야죠..",
+      "eng": null
     },
     {
-      "DataId": "BellaDescription",
-      "KOR": "세계를 떠돌아 다니던 유랑단 단원 마계 공연을 위해 합류"
+      "ID": 11171,
+      "kor": "에이 개미님도 대단하게 뭘 할줄 아시는 건 아니잖아요",
+      "eng": null
     },
     {
-      "DataId": "BettyDescription",
-      "KOR": "전쟁중 엄마를 잃어버렸다.슬퍼하는 딸을 위해 베티의 아버지는 인형탈을 뒤집어 쓰고 있다. 엄마를 찾기 위해 합류."
+      "ID": 11180,
+      "kor": "….죄송합니다.",
+      "eng": null
     },
     {
-      "DataId": "ValakDescription",
-      "KOR": "인간계에 있던 용족 전사. 항상 화가 나있다. 자신의 잠을 방해했던 마왕과 싸우기 위해 합류"
+      "ID": 11181,
+      "kor": "동기랑 저랑 같은 사람 아니잖아요?",
+      "eng": null
     },
     {
-      "DataId": "VanessaDescription",
-      "KOR": "인간의 꿈을 먹고 사는 마족. 인간의 꿈속에 들어가 괴롭히는걸 좋아한다. 맛있는 인간의 꿈을 수집하기 위해 합류"
+      "ID": 11190,
+      "kor": "아닙니다. 더 할 수 있습니다!",
+      "eng": null
     },
     {
-      "DataId": "AranDescription",
-      "KOR": "거인족의 손에 자라 땅의 힘을 사용하는 수인. 마계에 있는 거인족의 고향을 찾아 합류"
+      "ID": 11191,
+      "kor": "이 정도면 충분하지 뭘 더 바라나?",
+      "eng": null
     },
     {
-      "DataId": "SylviaDescription",
-      "KOR": "정령의 숲에 살고 있는 정령들의 수호자. 마왕에게 잡혀있는 정령들을 구출하기 위해 합류"
+      "ID": 11200,
+      "kor": "죄송합니다. 노력하겠습니다. ",
+      "eng": null
     },
     {
-      "DataId": "HardyDescription",
-      "KOR": "정령의 숲을 지키던 가디언. 마기로 침식당한 숲을 구하기 위해 합류."
+      "ID": 11201,
+      "kor": "이거 아까 전에 큰개미님이 알려주신 일인데요 ...",
+      "eng": null
     },
     {
-      "DataId": "LouisDescription",
-      "KOR": "열대에 살고 있던 늑대 부족. 마기로 늑대들이 미쳐 날뒤고 있다. 늑대들을 원래대로 되돌리기 위해 합류."
+      "ID": 11210,
+      "kor": "넵. 다녀오겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "LucyDescription",
-      "KOR": "청부를 받아 마족을 암살하는 어쌔신. 이번 타깃은 마왕이다. 마왕을 암살하기 위해 합류."
+      "ID": 11211,
+      "kor": "풉..아이스티가 어떻게 따뜻하게 되나요?",
+      "eng": null
     },
     {
-      "DataId": "SierraDescription",
-      "KOR": "영혼을 좋아하는 마계 군단장. 마왕으로부터 자신의 소중한 영혼 일부를 잃어버렸다. 소중한 영혼을 찾기 위해 합류"
+      "ID": 11220,
+      "kor": "네! 무슨 일이세요?",
+      "eng": null
     },
     {
-      "DataId": "KunDescription",
-      "KOR": "자신의 묘기를 마계에 선사하기 위해 합류"
+      "ID": 11221,
+      "kor": "네? 네.. 회의실로 갈까요?",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillAName",
-      "KOR": "강하게 내려치기"
+      "ID": 11230,
+      "kor": "네 마침 화초에 물을 주려고 했습니다.",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillBName",
-      "KOR": "방패로 밀치기"
+      "ID": 11231,
+      "kor": "그건 제가 할 일이 아니에요.",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillAName",
-      "KOR": "파이어볼"
+      "ID": 11240,
+      "kor": "고생하셨습니다~ 확인하고 알려드릴게요.",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillBName",
-      "KOR": "라이트닝"
+      "ID": 11241,
+      "kor": "다음에는 속도 조금만 더 내주세요. ",
+      "eng": null
     },
     {
-      "DataId": "SamSkillAName",
-      "KOR": "연속 찌르기"
+      "ID": 11250,
+      "kor": "가능하긴 한데 자꾸 늦어지면 다른 부서가 곤란해요. 내일까지는 주시면 좋겠어요.",
+      "eng": null
     },
     {
-      "DataId": "SamSkillBName",
-      "KOR": "곡식의 축복"
+      "ID": 11251,
+      "kor": "오늘 꼭 넘겨야 하는 일이라 힘들 거 같아요.. 야근을 해서라도 맞춰주세요.",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillAName",
-      "KOR": "연사"
+      "ID": 11260,
+      "kor": "전화 이쪽으로 돌려주세요~고생했어요~",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillBName",
-      "KOR": "날렵한 몸놀림"
+      "ID": 11261,
+      "kor": "저 지금 회사에 없다고 해주세요. 네? 들었다구요? 아...",
+      "eng": null
     },
     {
-      "DataId": "DukSkillAName",
-      "KOR": "강하게 내려치기"
+      "ID": 11270,
+      "kor": "오! 좋아요. 다음에도 부탁할게요!",
+      "eng": null
     },
     {
-      "DataId": "DukSkillBName",
-      "KOR": "소고기의 힘"
+      "ID": 11271,
+      "kor": "그거 주제별로 다시 정리좀 해서 주시겠어요?",
+      "eng": null
     },
     {
-      "DataId": "TomSkillAName",
-      "KOR": "단도 뿌리기"
+      "ID": 11280,
+      "kor": "고생했어요~ 면접 보실 각 파트장 분들께 전달 부탁드려요. ",
+      "eng": null
     },
     {
-      "DataId": "TomSkillBName",
-      "KOR": "예리한 시선"
+      "ID": 11281,
+      "kor": "이번 리스트는 별로 마음에 안들어요. 전부 탈락 문자 돌려주세요.",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillAName",
-      "KOR": "마력탄"
+      "ID": 11290,
+      "kor": "그럼 거기로 갈까요? ",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillBName",
-      "KOR": "치유"
+      "ID": 11291,
+      "kor": "회식인데 삼겹살이 뭐예요? 평소에 못 먹는 비싼 거 고르고 그래야지.",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillAName",
-      "KOR": "피의 송곳"
+      "ID": 11300,
+      "kor": "검토하고 알려드릴게요. 할 일 있죠?",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillBName",
-      "KOR": "흡혈"
+      "ID": 11301,
+      "kor": "이 부분.. 내용 너무 적은데 보충해서 다시 주시겠어요?",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillAName",
-      "KOR": "치유"
+      "ID": 11310,
+      "kor": "점심 먹고 해둘게요. 거기 놓고 가주세요.",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillBName",
-      "KOR": "생명의 기운"
+      "ID": 11311,
+      "kor": "지금 해드릴게요! 이리 주세요!",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillAName",
-      "KOR": "도약"
+      "ID": 11320,
+      "kor": "제가 지금 바빠서 그런데 옆에 놓고 가주시겠어요?",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillBName",
-      "KOR": "휩쓸기"
+      "ID": 11321,
+      "kor": "빨리 하셨네요. 고생하셨어요. 조금 쉬고 계실래요?",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillAName",
-      "KOR": "치유의 노래"
+      "ID": 11330,
+      "kor": "알려주셔서 감사합니다~",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillBName",
-      "KOR": "전장의 서곡"
+      "ID": 11331,
+      "kor": "사장님 분위기 어떠셔?",
+      "eng": null
     },
     {
-      "DataId": "StormSkillAName",
-      "KOR": "마구찌르기"
+      "ID": 11340,
+      "kor": "휴게실로 안내 좀 부탁드려도 될까요? 금방 갈게요.",
+      "eng": null
     },
     {
-      "DataId": "StormSkillBName",
-      "KOR": "바람 가르기"
+      "ID": 11341,
+      "kor": "안내 드리고 마실것도 좀 부탁해요.",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillAName",
-      "KOR": "맹독화살"
+      "ID": 11350,
+      "kor": "아무래도 회사 분위기가 다 참여하는 분위기라 가야 할 거 같아요.",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillBName",
-      "KOR": "멀티샷"
+      "ID": 11351,
+      "kor": "저는 일이 있어서 참여 못할 거 같아요. 저 없어도 괜찮으시죠?",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillAName",
-      "KOR": "권법연타"
+      "ID": 11360,
+      "kor": "세상에! 무슨 일 있어요? ",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillBName",
-      "KOR": "포효"
+      "ID": 11361,
+      "kor": "아... 제가 지금 이 일이 정말 바빠서 이것만 해놓고 이야기 해도 괜찮을까요?",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillAName",
-      "KOR": "방패 돌진"
+      "ID": 11370,
+      "kor": "무슨 힘든 일 있었어요? 어디로 갈까요?",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillBName",
-      "KOR": "비비 돌진"
+      "ID": 11371,
+      "kor": "마치고 약속이 있는 날이라서 오늘은 힘들 거 같아요. 죄송해요~",
+      "eng": null
     },
     {
-      "DataId": "XionSkillAName",
-      "KOR": "해골 부대"
+      "ID": 11380,
+      "kor": "이거 회의 유인물인데 들고 가주시겠어요?",
+      "eng": null
     },
     {
-      "DataId": "XionSkillBName",
-      "KOR": "자폭 해골"
+      "ID": 11381,
+      "kor": "시간이 벌써 그렇게 되었나요? 회의 준비가 아직 다 안 되었는데..",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillAName",
-      "KOR": "저스티스 해머"
+      "ID": 11390,
+      "kor": "어디 멀리 놀러가요? 좋겠다~",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillBName",
-      "KOR": "신성화"
+      "ID": 11391,
+      "kor": "최근에 정말 바빴죠. 푹 쉬고 오세요.",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillAName",
-      "KOR": "맹독 확산"
+      "ID": 11400,
+      "kor": "몸이 안좋으면 휴식해야죠. 먼저 들어가세요!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillBName",
-      "KOR": "냉기 확산"
+      "ID": 11401,
+      "kor": "일개미씨 이번 년도 병가를 너무 많이 쓰신 것 같은데 개인 컨디션은 잘 챙겨주세요",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillAName",
-      "KOR": "화염검"
+      "ID": 11410,
+      "kor": "지난번에 알려드렸는데... 주의해주세요",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillBName",
-      "KOR": "다중 화염검"
+      "ID": 11411,
+      "kor": "한 번만 더 기회 드릴게요 회사일은 더 신경 써서 해주세요",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillAName",
-      "KOR": "조련의 채찍"
+      "ID": 11420,
+      "kor": "...무슨 일인가요? 회의실로 가시죠.",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillBName",
-      "KOR": "매혹의 춤"
+      "ID": 11421,
+      "kor": "잠시만요. 일 끝내고 회의실로 갑시다 ",
+      "eng": null
     },
     {
-      "DataId": "BettySkillAName",
-      "KOR": "인형의 난타"
+      "ID": 11430,
+      "kor": "그럼요. 일 끝내시면 퇴근하셔도 됩니다",
+      "eng": null
     },
     {
-      "DataId": "BettySkillBName",
-      "KOR": "인형의 브레스"
+      "ID": 11431,
+      "kor": "잠깐! 가기 전에 이것 좀 처리해 줄래요?",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillAName",
-      "KOR": "화염 가르기"
+      "ID": 11440,
+      "kor": "너무 무리하지 말고 적당히 하고 가요~",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillBName",
-      "KOR": "화염 브레스"
+      "ID": 11441,
+      "kor": "일 많이 남았어요? ",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillAName",
-      "KOR": "매혹"
+      "ID": 11450,
+      "kor": "정말요? 잘 먹을게요. 첫 월급으로 커피를 사주시다니... 보람차네요",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillBName",
-      "KOR": "악마의 날개"
+      "ID": 11451,
+      "kor": "마침 목이 말랐는데 고마워요!",
+      "eng": null
     },
     {
-      "DataId": "AranSkillAName",
-      "KOR": "대지 분쇄"
+      "ID": 12010,
+      "kor": "어.그래~나도 잘 부탁해~",
+      "eng": null
     },
     {
-      "DataId": "AranSkillBName",
-      "KOR": "거인의 손"
+      "ID": 12011,
+      "kor": "어~ 나이부터 이야기 하네? 당돌한데~ 잘 부탁해~",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillAName",
-      "KOR": "정령 소환"
+      "ID": 12020,
+      "kor": "자신감 넘치는데? 해봐.",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillBName",
-      "KOR": "대지의 축복"
+      "ID": 12021,
+      "kor": "그래? 그럼 연습 삼아 이거 해볼래?",
+      "eng": null
     },
     {
-      "DataId": "HardySkillAName",
-      "KOR": "지진"
+      "ID": 12030,
+      "kor": "잘 해주니까 아주 쉬워 보여? 어? 학교에서 배운 거 없어? 너 대졸 아냐? ",
+      "eng": null
     },
     {
-      "DataId": "HardySkillBName",
-      "KOR": "숲의 보호"
+      "ID": 12031,
+      "kor": "진짜 괜찮으니까 말 편하게 하고. 어려운 거 있으면 언제든 물어봐. 알겠지?",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillAName",
-      "KOR": "투창"
+      "ID": 12040,
+      "kor": "여기 보고서 수정 좀 해야 할 거 같거든? 이 부분.",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillBName",
-      "KOR": "늑대 소환"
+      "ID": 12041,
+      "kor": "어쭈. 여기가 니 집이야? 부모님께도 그러디? ",
+      "eng": null
     },
     {
-      "DataId": "LucySkillAName",
-      "KOR": "그림자 베기"
+      "ID": 12050,
+      "kor": "응. 여기를 이렇게 하면 돼. 잘 봐봐",
+      "eng": null
     },
     {
-      "DataId": "LucySkillBName",
-      "KOR": "그림자 늪"
+      "ID": 12051,
+      "kor": "그래 그러면 마무리하고 와~ 5분당 서류 하나씩 늘어난다?",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillAName",
-      "KOR": "영혼 수확"
+      "ID": 12060,
+      "kor": "그래~고생했어~",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillBName",
-      "KOR": "망자의 대검"
+      "ID": 12061,
+      "kor": "그래? 알겠어~ 조금만 더 힘내자",
+      "eng": null
     },
     {
-      "DataId": "KunSkillAName",
-      "KOR": "폭탄 뿌리기"
+      "ID": 12070,
+      "kor": "그래. 하나씩 배워서 잘 해보자~",
+      "eng": null
     },
     {
-      "DataId": "KunSkillBName",
-      "KOR": "스마일 폭탄"
+      "ID": 12071,
+      "kor": "하버드다 이 XX 야.",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillADescription",
-      "KOR": "강한 힘으로 적을 내려친다."
+      "ID": 12080,
+      "kor": "두고 보겠어. 어!?",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillBDescription",
-      "KOR": "적을 방패로 공격하고 기절시킨다."
+      "ID": 12081,
+      "kor": "{userName}이 너가 뭔데 회사 룰을 바꾸냐고. 회사가 장난이야?",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillADescription",
-      "KOR": "좁은 범위에 광역 피해를 입히는 불덩어리를 소환한다"
+      "ID": 12090,
+      "kor": "그래. 앞으로 잘해. 지켜본다.",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillBDescription",
-      "KOR": "단일 데미지를 주는 강력한 번개를 소환한다"
+      "ID": 12091,
+      "kor": "문제가 없긴 왜 없어? 다 문제잖아 임마!",
+      "eng": null
     },
     {
-      "DataId": "SamSkillADescription",
-      "KOR": "2회 연달아 공격하여 피해를 준다. 두번째 공격은 더 큰 피해를 준다"
+      "ID": 12100,
+      "kor": "그래? 그럼 다행이네~ 힘들면 이야기해~",
+      "eng": null
     },
     {
-      "DataId": "SamSkillBDescription",
-      "KOR": "파티에 포함된 영웅 체력 증가"
+      "ID": 12101,
+      "kor": "오늘 뭐 잘못 먹었냐? 야. 따라와.",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillADescription",
-      "KOR": "2회 연달아 화살을 날린다. 두번째 화살은 더 큰 피해를 준다"
+      "ID": 12110,
+      "kor": "역시 너밖에 없다야. 고마워~",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillBDescription",
-      "KOR": "파티에 포함된 모든 영웅 회피 증가"
+      "ID": 12111,
+      "kor": "뭐? 나는 노는 거 같냐? 어? 내 일이 쉬워 보여?",
+      "eng": null
     },
     {
-      "DataId": "DukSkillADescription",
-      "KOR": "전방의 적을 연속적으로 내려친다."
+      "ID": 12120,
+      "kor": "쯧. 이거 봐. 이렇게 하는 거야.",
+      "eng": null
     },
     {
-      "DataId": "DukSkillBDescription",
-      "KOR": "파티에 포함된 모든 영웅 공격력 증가"
+      "ID": 12121,
+      "kor": "돌았어? 아주 뚫린 입이라고 막 내뱉네?",
+      "eng": null
     },
     {
-      "DataId": "TomSkillADescription",
-      "KOR": "적 2명에게 단도를 던진다."
+      "ID": 12130,
+      "kor": "너무 무리하지 말고 적당히 하고 가~ 그래도 열심히 하는 모습 보기 좋네. ",
+      "eng": null
     },
     {
-      "DataId": "TomSkillBDescription",
-      "KOR": "파티에 포함된 모든 영웅 원거리 공격 증가"
+      "ID": 12131,
+      "kor": "너 같은 놈 있을까 봐 옆에서 지켜봐야지. 상사한테 너가 뭐야?",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillADescription",
-      "KOR": "강력한 에너지가 담긴 마력탄을 발사한다"
+      "ID": 12140,
+      "kor": "오~ 고생했어. 줘봐.",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillBDescription",
-      "KOR": "아군 1명을 치유한다."
+      "ID": 12141,
+      "kor": "시킨 지가 언젠데 아직도 하고 있어? 빨리해서 가져와!",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillADescription",
-      "KOR": "주변 적들에게 광역 피해를 주고 출혈을 일으킨다."
+      "ID": 12150,
+      "kor": "제발 시키는거나 잘 하자. 주제를 알아야지. ",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillBDescription",
-      "KOR": "주변 적들에게 피해를 주고 피해량에 비례해 생명력을 흡수한다. 출형 상태인 적에게는 더 큰 피해를 준다"
+      "ID": 12151,
+      "kor": "그러면 네가 사장실로 가서 보고해. 안 일어나?",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillADescription",
-      "KOR": "기본 공격 대신 아군 1명을 치유한다."
+      "ID": 12160,
+      "kor": "내가 어떻게 하나하나 가르치면서 내일을 하나? 알잘딱깔센 몰라?",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillBDescription",
-      "KOR": "생명의 기운을 발산하여 주변 아군을 치유한다."
+      "ID": 12161,
+      "kor": "어휴… 이런 걸 신입이라고…",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillADescription",
-      "KOR": "적을 향하여 도약하며 검을 휘둘러 광역 피해를 입힌다."
+      "ID": 12170,
+      "kor": "실수만 좀 줄여도 괜찮겠어. 알았지?",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillBDescription",
-      "KOR": "자신을 중심으로 검을 크게 휘둘러 주변 적들에게 광역 피해를 입힌다."
+      "ID": 12171,
+      "kor": "어쭈. 입사한지 얼마나 됐다고 아주 기어올라? ",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillADescription",
-      "KOR": "아군의 상처를 잊게 만드는 연주를 하여 연주를 듣는 모든 아군의 생명력을 회복시킨다."
+      "ID": 12180,
+      "kor": "짤리기 싫으면 좀 열심히 하지? ",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillBDescription",
-      "KOR": "사기를 올려주는 연주를 하여 아군의 공격력을 상승 시킨다."
+      "ID": 12181,
+      "kor": "어. 그렇긴 한데 회사는 돈을 줘야하잖아? 그렇게 당당하면 부모님께 용돈이나 타서 쓰지 그래? 회사 다니지 말고",
+      "eng": null
     },
     {
-      "DataId": "StormSkillADescription",
-      "KOR": "단일 대상에게 연속적으로 4번찔러 몸 곳곳에 상처를 남겨 출혈시킨다."
+      "ID": 12190,
+      "kor": "입만 살았지. 대답만 잘 하지 말고 일을 잘 하라고!",
+      "eng": null
     },
     {
-      "DataId": "StormSkillBDescription",
-      "KOR": "전방으로 검기를 날려 검기가 지나간 자리에 있는 모든 적에게 데미지를 준다."
+      "ID": 12191,
+      "kor": "그리 당당하면 니가 회사 차려서 사장 해라. 사장 해! ",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillADescription",
-      "KOR": "단일 적을 항하여 독이 묻은 화살을 날린다"
+      "ID": 12200,
+      "kor": "열심히 노력만 하지 말고 잘 하란 말이야",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillBDescription",
-      "KOR": "부채꼴 모양으로 5개의 화살을 발사한다."
+      "ID": 12201,
+      "kor": "뭐? 내가 언제 그렇게 알려줬어? 그리고 연장자가 충고해 주면 감사한 줄 해야지.. 나 때는 까라면 깠어",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillADescription",
-      "KOR": "적 1명을 수차례 가격하여 피해를 준다"
+      "ID": 12210,
+      "kor": "그래그래. 컵홀더 꽂아 오라는 말을 찰떡같이 알아듣네. 우리 {userName}이 회사 적응 다했네~",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillBDescription",
-      "KOR": "크게 포효하여 적들에게 광역 피해를 입히고 아군의 공격력을 상승시킨다"
+      "ID": 12211,
+      "kor": "지금 토를 달아? 시키는 거나 잘 해. 그러니까 일도 못하는 거 아냐?",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillADescription",
-      "KOR": "방패를 앞세워 돌진한다. 경로상에 있는 적들을 공중으로 띄운다"
+      "ID": 12220,
+      "kor": "네가 열심히 하는 거 아는데 입사 초반에는 퍼포먼스를 위해서 야근도 좀 하고 그래야 하거든. 일찍 오는 것보다 야.근. 하는 게 더 도움 된다고",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillBDescription",
-      "KOR": "비비가 전방으로 돌진하여 적들을 관통한다. 돌진을 마친 후 월트에게 돌아와 월트의 체력을 회복시킨다."
+      "ID": 12221,
+      "kor": "그래. A10번 방으로 와.",
+      "eng": null
     },
     {
-      "DataId": "XionSkillADescription",
-      "KOR": "공격을 돕는 해골을 소환한다."
+      "ID": 12230,
+      "kor": "그래 행동도 빠릿빠릿해서 사람이 괜찮단 말이야",
+      "eng": null
     },
     {
-      "DataId": "XionSkillBDescription",
-      "KOR": "소환된 해골 중 한마리를 적에게 돌진시켜 광역 피해를 입히고 중독 시킨다."
+      "ID": 12231,
+      "kor": "회사에 남일이 어디있어? 눈치가 없는 것 같아서 알려줄게 화초에 물 좀 주라는 말이야.",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillADescription",
-      "KOR": "전방의 땅을 강하게 내려쳐 광역 피해를 주고 기절시킨다."
+      "ID": 12240,
+      "kor": "감사합니다!",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillBDescription",
-      "KOR": "자신을 주위로 넓은 범위를 신성한 땅으로 만들어 아군을 지속적으로 치유한다"
+      "ID": 12241,
+      "kor": "네. 죄송합니다!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillADescription",
-      "KOR": "독이 든 병을 던져 지역을 오염시키고 지속적으로 데미지를 준다."
+      "ID": 12250,
+      "kor": "감사합니다. 죄송해요!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillBDescription",
-      "KOR": "온 세상을 얼려버릴것 같은 한기가 가득찬 병을 던져 광역 범위에 있는 적을 얼리고 피해를 준다."
+      "ID": 12251,
+      "kor": "네... ",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillADescription",
-      "KOR": "화염으로 이루어진 검을 휘둘러 전방 90도에 데미지를 주고 화상 상태로 만든다"
+      "ID": 12260,
+      "kor": "넵! 감사합니다~",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillBDescription",
-      "KOR": "화염으로 이루어진 검을 소환하여 광역 피해를 준다"
+      "ID": 12261,
+      "kor": "어..네..네...지금 바꿔드릴게요..",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillADescription",
-      "KOR": "자신을 중심으로 적들을 끌어 당기며 광역 피해를 준다"
+      "ID": 12270,
+      "kor": "네. 맡겨 주세요!",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillBDescription",
-      "KOR": "아군의 공격속도와 이동속도를 증가시킨다"
+      "ID": 12271,
+      "kor": "오늘 안에 해서 드릴게요!",
+      "eng": null
     },
     {
-      "DataId": "BettySkillADescription",
-      "KOR": "인형이 커다란 손을 6번 휘둘러 전방의 적들에게 광역 피해를 입힌다. "
+      "ID": 12280,
+      "kor": "네. 전달해 놓겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "BettySkillBDescription",
-      "KOR": "전방에 혹독한 한기를 뱉어 광역 피해를 주고 얼린다."
+      "ID": 12281,
+      "kor": "네...알겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillADescription",
-      "KOR": "양손을 휘둘러 전방에 피해를 준다."
+      "ID": 12290,
+      "kor": "일단 리뷰는 괜찮거든요~ 근데 다른 분들 입에 맞을지 모르겠어요.",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillBDescription",
-      "KOR": "\"일직선으로 브레스를 뱉어 피해를 주고"
+      "ID": 12291,
+      "kor": "뭐야?",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillADescription",
-      "KOR": "거부할 수 없는 강력한 매력으로 유혹한다. 유혹당한 적은 기절 상태에 빠진다."
+      "ID": 12300,
+      "kor": "네. 하면서 기다리고 있을게요.",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillBDescription",
-      "KOR": "Empty"
+      "ID": 12301,
+      "kor": "어떻게 추가하면 될까요? ",
+      "eng": null
     },
     {
-      "DataId": "AranSkillADescription",
-      "KOR": "강력한 힘으로 지면을 내려쳐 주변 적들을 공중으로 띄우고 기절시킨다."
+      "ID": 12310,
+      "kor": "여기 두고 갈게요!",
+      "eng": null
     },
     {
-      "DataId": "AranSkillBDescription",
-      "KOR": "광폭화 상태가 되어 수초간 공격력이 상승한다."
+      "ID": 12311,
+      "kor": "네! ",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillADescription",
-      "KOR": "정령을 소환하여 상처 입은 아군을 치유한다"
+      "ID": 12320,
+      "kor": "여기 두고 갈게요!",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillBDescription",
-      "KOR": "주변을 축복의 대지로 만들어 범위 안의 아군을 지속적으로 치유한다"
+      "ID": 12321,
+      "kor": "네~ 천천히 말씀해 주세요!",
+      "eng": null
     },
     {
-      "DataId": "HardySkillADescription",
-      "KOR": "땅에 줄기를 박아 넣어 광역 범위에 피해를 주고 적들을 기절 시킨다"
+      "ID": 12330,
+      "kor": "다녀오세요.",
+      "eng": null
     },
     {
-      "DataId": "HardySkillBDescription",
-      "KOR": "주변 아군을 숲의 기운이 담긴 보호막을 부여하여 피해로부터 보호한다"
+      "ID": 12331,
+      "kor": "네? 어.. 그냥 평소랑 비슷하신 거 같던데요?",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillADescription",
-      "KOR": "관통하는 창을 연속으로 5개 던진다. 창에 맞은 적들은 출혈을 일으킨다"
+      "ID": 12340,
+      "kor": "네. 알겠습니다",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillBDescription",
-      "KOR": "늑대의 힘을 빌려와 주변 아군과 함께 공격속도와 공격력을 상승시킨다"
+      "ID": 12341,
+      "kor": "커피로 괜찮을까요?",
+      "eng": null
     },
     {
-      "DataId": "LucySkillADescription",
-      "KOR": "적의 뒤에 그림자를 소환하여 적을 베어 강력한 데미지를 준다"
+      "ID": 12350,
+      "kor": "확실히 그렇죠.. 알겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "LucySkillBDescription",
-      "KOR": "일정 지역에 그림자를 전개하여 적들의 속도를 늦추고 공격한다"
+      "ID": 12351,
+      "kor": "네? 네..그럼요..!",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillADescription",
-      "KOR": "검을 휘둘러 단일 적에게 피해를 주고 영혼을 흡수하여 생명력을 회복한다"
+      "ID": 12360,
+      "kor": "그게 부장님께서 계속...",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillBDescription",
-      "KOR": "망자의 한기가 서린 대검을 휘둘러 광역 피해를 입히고 피해를 받은 적들을 얼린다"
+      "ID": 12361,
+      "kor": "네. 네.괜찮아요.",
+      "eng": null
     },
     {
-      "DataId": "KunSkillADescription",
-      "KOR": "여러 개의 폭탄을 던져 광역 피해를 준다"
+      "ID": 12370,
+      "kor": "그냥 같이 마시면 좋을 것 같아서요~",
+      "eng": null
     },
     {
-      "DataId": "KunSkillBDescription",
-      "KOR": "광역 피해를 주고 적들을 중독 상태에 빠뜨리는 커다란 폭탄을 던진다"
+      "ID": 12371,
+      "kor": "제가 너무 갑자기 말씀 드렸으니까요. 신경쓰지 마세요~",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillADescription_2",
-      "KOR": "강한 힘으로 적을 내려친다."
+      "ID": 12380,
+      "kor": "네. 알겠습니다~ ",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillBDescription_2",
-      "KOR": "적을 방패로 공격하고 기절시킨다."
+      "ID": 12381,
+      "kor": "복사 제가 다 해놨습니다!",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillADescription_2",
-      "KOR": "좁은 범위에 광역 피해를 입히는 불덩어리를 소환한다"
+      "ID": 12390,
+      "kor": "친구들이랑 정말 오랜만에 여수로 여행 가기로 했거든요~",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillBDescription_2",
-      "KOR": "단일 데미지를 주는 강력한 번개를 소환한다"
+      "ID": 12391,
+      "kor": "감사합니다!",
+      "eng": null
     },
     {
-      "DataId": "SamSkillADescription_2",
-      "KOR": "2회 연달아 공격하여 피해를 준다. 두번째 공격은 더 큰 피해를 준다"
+      "ID": 12400,
+      "kor": "네. 감사합니다 먼저 들어가보겠습니다...",
+      "eng": null
     },
     {
-      "DataId": "SamSkillBDescription_2",
-      "KOR": "파티에 포함된 영웅 체력 증가"
+      "ID": 12401,
+      "kor": "죄송합니다..갑작스러운 몸살이라...",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillADescription_2",
-      "KOR": "2회 연달아 화살을 날린다. 두번째 화살은 더 큰 피해를 준다"
+      "ID": 12410,
+      "kor": "네 죄송합니다.",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillBDescription_2",
-      "KOR": "파티에 포함된 모든 영웅 회피 증가"
+      "ID": 12411,
+      "kor": "기회가 끝나면 저는 어떻게 되나요...?",
+      "eng": null
     },
     {
-      "DataId": "DukSkillADescription_2",
-      "KOR": "전방의 적을 연속적으로 내려친다."
+      "ID": 12420,
+      "kor": "그동안 너무 지쳐서... 퇴사하려고 합니다.",
+      "eng": null
     },
     {
-      "DataId": "DukSkillBDescription_2",
-      "KOR": "파티에 포함된 모든 영웅 공격력 증가"
+      "ID": 12421,
+      "kor": "네. 가기 전에 먼저 간략하게 말씀드릴게요.저 퇴사하겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "TomSkillADescription_2",
-      "KOR": "적 2명에게 단도를 던진다."
+      "ID": 12430,
+      "kor": "네! 내일 뵙겠습니다.",
+      "eng": null
     },
     {
-      "DataId": "TomSkillBDescription_2",
-      "KOR": "파티에 포함된 모든 영웅 원거리 공격 증가"
+      "ID": 12431,
+      "kor": "아...네 알겠습니다 가방 좀 내려놓고 올게요",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillADescription_2",
-      "KOR": "강력한 에너지가 담긴 마력탄을 발사한다"
+      "ID": 12440,
+      "kor": "네. 조심해서 들어가세요!",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillBDescription_2",
-      "KOR": "아군 1명을 치유한다."
+      "ID": 12441,
+      "kor": "조금요~.. 고생하셨습니다!",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillADescription_2",
-      "KOR": "주변 적들에게 광역 피해를 주고 출혈을 일으킨다."
+      "ID": 12450,
+      "kor": "네! 앞으로도 잘부탁드립니다.",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillBDescription_2",
-      "KOR": "주변 적들에게 피해를 주고 피해량에 비례해 생명력을 흡수한다. 출형 상태인 적에게는 더 큰 피해를 준다"
+      "ID": 12451,
+      "kor": "네! 맛있게 드세요!",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillADescription_2",
-      "KOR": "기본 공격 대신 아군 1명을 치유한다."
+      "ID": 4100,
+      "kor": "어이 연봉 협상하게 의자 들고 와~ 요새 회사가 어려워~ 3% 인상이면 어떤가?",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillBDescription_2",
-      "KOR": "생명의 기운을 발산하여 주변 아군을 치유한다."
+      "ID": 4110,
+      "kor": "여부가 있겠습니까 사장님.",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillADescription_2",
-      "KOR": "적을 향하여 도약하며 검을 휘둘러 광역 피해를 입힌다."
+      "ID": 4120,
+      "kor": "사장님 벽돌로 맞아보셨어요? 제가 올해 프로젝트 몇 개를 성공 시켰는데요~ 더 올려주시죠^^",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillBDescription_2",
-      "KOR": "자신을 중심으로 검을 크게 휘둘러 주변 적들에게 광역 피해를 입힌다."
+      "ID": 4111,
+      "kor": "그래그래~ 요새 얼마나 불경기인데. 올려주는게 어디야~ 앞으로도 잘 해보자고~",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillADescription_2",
-      "KOR": "아군의 상처를 잊게 만드는 연주를 하여 연주를 듣는 모든 아군의 생명력을 회복시킨다."
+      "ID": 4121,
+      "kor": "아..아니~ 나도 사실 더 챙겨 주려고 했네. 말을 왜그렇게 섭섭하게 하는가ㅎㅎ올려줄테니 앞으로 더 열심히 하라고~",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillBDescription_2",
-      "KOR": "사기를 올려주는 연주를 하여 아군의 공격력을 상승 시킨다."
+      "ID": 4122,
+      "kor": "아니! 이 양반이 지금 나 협박하는겐가? 내가 얼마나 양보를 했는데!!!! 당장 나가! 연봉 안올려줄거야!",
+      "eng": null
     },
     {
-      "DataId": "StormSkillADescription_2",
-      "KOR": "단일 대상에게 연속적으로 4번찔러 몸 곳곳에 상처를 남겨 출혈시킨다."
+      "ID": 4500,
+      "kor": "벽돌로 때린다",
+      "eng": null
     },
     {
-      "DataId": "StormSkillBDescription_2",
-      "KOR": "전방으로 검기를 날려 검기가 지나간 자리에 있는 모든 적에게 데미지를 준다."
+      "ID": 4501,
+      "kor": "{enemyID}는 기절했다. 아무도 보지 못했다.",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillADescription_2",
-      "KOR": "단일 적을 항하여 독이 묻은 화살을 날린다"
+      "ID": 4502,
+      "kor": "{enemyID}는 기절했다. 사원들이 나를 봤다.",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillBDescription_2",
-      "KOR": "부채꼴 모양으로 5개의 화살을 발사한다."
+      "ID": 5000,
+      "kor": "인턴",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillADescription_2",
-      "KOR": "적 1명을 수차례 가격하여 피해를 준다"
+      "ID": 5010,
+      "kor": "신입",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillBDescription_2",
-      "KOR": "크게 포효하여 적들에게 광역 피해를 입히고 아군의 공격력을 상승시킨다"
+      "ID": 5020,
+      "kor": "대리",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillADescription_2",
-      "KOR": "방패를 앞세워 돌진한다. 경로상에 있는 적들을 공중으로 띄운다"
+      "ID": 5030,
+      "kor": "과장",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillBDescription_2",
-      "KOR": "비비가 전방으로 돌진하여 적들을 관통한다. 돌진을 마친 후 월트에게 돌아와 월트의 체력을 회복시킨다."
+      "ID": 5040,
+      "kor": "부장",
+      "eng": null
     },
     {
-      "DataId": "XionSkillADescription_2",
-      "KOR": "공격을 돕는 해골을 소환한다."
+      "ID": 5050,
+      "kor": "이사",
+      "eng": null
     },
     {
-      "DataId": "XionSkillBDescription_2",
-      "KOR": "소환된 해골 중 한마리를 적에게 돌진시켜 광역 피해를 입히고 중독 시킨다."
+      "ID": 5060,
+      "kor": "사장",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillADescription_2",
-      "KOR": "전방의 땅을 강하게 내려쳐 광역 피해를 주고 기절시킨다."
+      "ID": 5070,
+      "kor": "냥이",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillBDescription_2",
-      "KOR": "자신을 주위로 넓은 범위를 신성한 땅으로 만들어 아군을 지속적으로 치유한다"
+      "ID": 6001,
+      "kor": "최대 체력",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillADescription_2",
-      "KOR": "독이 든 병을 던져 지역을 오염시키고 지속적으로 데미지를 준다."
+      "ID": 6011,
+      "kor": "업무 능력",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillBDescription_2",
-      "KOR": "온 세상을 얼려버릴것 같은 한기가 가득찬 병을 던져 광역 범위에 있는 적을 얼리고 피해를 준다."
+      "ID": 6021,
+      "kor": "호감도",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillADescription_2",
-      "KOR": "화염으로 이루어진 검을 휘둘러 전방 90도에 데미지를 주고 화상 상태로 만든다"
+      "ID": 6031,
+      "kor": "스트레스",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillBDescription_2",
-      "KOR": "화염으로 이루어진 검을 소환하여 광역 피해를 준다"
+      "ID": 6041,
+      "kor": "운",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillADescription_2",
-      "KOR": "자신을 중심으로 적들을 끌어 당기며 광역 피해를 준다"
+      "ID": 6051,
+      "kor": "돈",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillBDescription_2",
-      "KOR": "아군의 공격속도와 이동속도를 증가시킨다"
+      "ID": 6061,
+      "kor": "벽돌",
+      "eng": null
     },
     {
-      "DataId": "BettySkillADescription_2",
-      "KOR": "인형이 커다란 손을 6번 휘둘러 전방의 적들에게 광역 피해를 입힌다. "
+      "ID": 6071,
+      "kor": "연봉",
+      "eng": null
     },
     {
-      "DataId": "BettySkillBDescription_2",
-      "KOR": "전방에 혹독한 한기를 뱉어 광역 피해를 주고 얼린다."
+      "ID": 6500,
+      "kor": "진급 성공!",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillADescription_2",
-      "KOR": "양손을 휘둘러 전방에 피해를 준다."
+      "ID": 6501,
+      "kor": "화면을 터치 하세요.",
+      "eng": "Touch to Screen"
     },
     {
-      "DataId": "ValakSkillBDescription_2",
-      "KOR": "\"일직선으로 브레스를 뱉어 피해를 주고"
+      "ID": 6502,
+      "kor": "벽돌 구매",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillADescription_2",
-      "KOR": "거부할 수 없는 강력한 매력으로 유혹한다. 유혹당한 적은 기절 상태에 빠진다."
+      "ID": 6503,
+      "kor": "월급 구매",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillBDescription_2",
-      "KOR": "Empty"
+      "ID": 6504,
+      "kor": "광고 제거",
+      "eng": null
     },
     {
-      "DataId": "AranSkillADescription_2",
-      "KOR": "강력한 힘으로 지면을 내려쳐 주변 적들을 공중으로 띄우고 기절시킨다."
+      "ID": 6505,
+      "kor": "벽돌 만들기",
+      "eng": null
     },
     {
-      "DataId": "AranSkillBDescription_2",
-      "KOR": "광폭화 상태가 되어 수초간 공격력이 상승한다."
+      "ID": 6506,
+      "kor": "월급 만들기",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillADescription_2",
-      "KOR": "정령을 소환하여 상처 입은 아군을 치유한다"
+      "ID": 6507,
+      "kor": "운 찾기",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillBDescription_2",
-      "KOR": "주변을 축복의 대지로 만들어 범위 안의 아군을 지속적으로 치유한다"
+      "ID": 7001,
+      "kor": "고양이 밥주기",
+      "eng": null
     },
     {
-      "DataId": "HardySkillADescription_2",
-      "KOR": "땅에 줄기를 박아 넣어 광역 범위에 피해를 주고 적들을 기절 시킨다"
+      "ID": 7011,
+      "kor": "기획 회의",
+      "eng": null
     },
     {
-      "DataId": "HardySkillBDescription_2",
-      "KOR": "주변 아군을 숲의 기운이 담긴 보호막을 부여하여 피해로부터 보호한다"
+      "ID": 7021,
+      "kor": "프레젠테이션",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillADescription_2",
-      "KOR": "관통하는 창을 연속으로 5개 던진다. 창에 맞은 적들은 출혈을 일으킨다"
+      "ID": 7031,
+      "kor": "박람회 참여",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillBDescription_2",
-      "KOR": "늑대의 힘을 빌려와 주변 아군과 함께 공격속도와 공격력을 상승시킨다"
+      "ID": 7041,
+      "kor": "월급 루팡!",
+      "eng": null
     },
     {
-      "DataId": "LucySkillADescription_2",
-      "KOR": "적의 뒤에 그림자를 소환하여 적을 베어 강력한 데미지를 준다"
+      "ID": 7051,
+      "kor": "R&D",
+      "eng": null
     },
     {
-      "DataId": "LucySkillBDescription_2",
-      "KOR": "일정 지역에 그림자를 전개하여 적들의 속도를 늦추고 공격한다"
+      "ID": 7061,
+      "kor": "하청 물색",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillADescription_2",
-      "KOR": "검을 휘둘러 단일 적에게 피해를 주고 영혼을 흡수하여 생명력을 회복한다"
+      "ID": 7071,
+      "kor": "신제품 개발",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillBDescription_2",
-      "KOR": "망자의 한기가 서린 대검을 휘둘러 광역 피해를 입히고 피해를 받은 적들을 얼린다"
+      "ID": 7081,
+      "kor": "광고 제작",
+      "eng": null
     },
     {
-      "DataId": "KunSkillADescription_2",
-      "KOR": "여러 개의 폭탄을 던져 광역 피해를 준다"
+      "ID": 7091,
+      "kor": "최첨단 개발",
+      "eng": null
     },
     {
-      "DataId": "KunSkillBDescription_2",
-      "KOR": "광역 피해를 주고 적들을 중독 상태에 빠뜨리는 커다란 폭탄을 던진다"
+      "ID": 7500,
+      "kor": "체력 가꾸기",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillADescription_3",
-      "KOR": "강한 힘으로 적을 내려친다."
+      "ID": 7501,
+      "kor": "헬창의 길",
+      "eng": null
     },
     {
-      "DataId": "RookieSkillBDescription_3",
-      "KOR": "적을 방패로 공격하고 기절시킨다."
+      "ID": 7502,
+      "kor": "디스 이즈 스파르타!",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillADescription_3",
-      "KOR": "좁은 범위에 광역 피해를 입히는 불덩어리를 소환한다"
+      "ID": 7503,
+      "kor": "워라벨 주세요",
+      "eng": null
     },
     {
-      "DataId": "ChloeSkillBDescription_3",
-      "KOR": "단일 데미지를 주는 강력한 번개를 소환한다"
+      "ID": 7504,
+      "kor": "집좀 보내주세요",
+      "eng": null
     },
     {
-      "DataId": "SamSkillADescription_3",
-      "KOR": "2회 연달아 공격하여 피해를 준다. 두번째 공격은 더 큰 피해를 준다"
+      "ID": 7505,
+      "kor": "회사가 집",
+      "eng": null
     },
     {
-      "DataId": "SamSkillBDescription_3",
-      "KOR": "파티에 포함된 영웅 체력 증가"
+      "ID": 7506,
+      "kor": "러브레터",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillADescription_3",
-      "KOR": "2회 연달아 화살을 날린다. 두번째 화살은 더 큰 피해를 준다"
+      "ID": 7507,
+      "kor": "인기인",
+      "eng": null
     },
     {
-      "DataId": "LukeSkillBDescription_3",
-      "KOR": "파티에 포함된 모든 영웅 회피 증가"
+      "ID": 7508,
+      "kor": "마성의 매력",
+      "eng": null
     },
     {
-      "DataId": "DukSkillADescription_3",
-      "KOR": "전방의 적을 연속적으로 내려친다."
+      "ID": 7509,
+      "kor": "김첨지",
+      "eng": null
     },
     {
-      "DataId": "DukSkillBDescription_3",
-      "KOR": "파티에 포함된 모든 영웅 공격력 증가"
+      "ID": 7510,
+      "kor": "운수 좋은날",
+      "eng": null
     },
     {
-      "DataId": "TomSkillADescription_3",
-      "KOR": "적 2명에게 단도를 던진다."
+      "ID": 7511,
+      "kor": "로또 당첨!",
+      "eng": null
     },
     {
-      "DataId": "TomSkillBDescription_3",
-      "KOR": "파티에 포함된 모든 영웅 원거리 공격 증가"
+      "ID": 7512,
+      "kor": "편식 없는 세상",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillADescription_3",
-      "KOR": "강력한 에너지가 담긴 마력탄을 발사한다"
+      "ID": 7513,
+      "kor": "한 우물만 파지마",
+      "eng": null
     },
     {
-      "DataId": "MarieSkillBDescription_3",
-      "KOR": "아군 1명을 치유한다."
+      "ID": 7514,
+      "kor": "킹 갓 제너럴 리스트",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillADescription_3",
-      "KOR": "주변 적들에게 광역 피해를 주고 출혈을 일으킨다."
+      "ID": 7515,
+      "kor": "스트레스성 위염",
+      "eng": null
     },
     {
-      "DataId": "AndreSkillBDescription_3",
-      "KOR": "주변 적들에게 피해를 주고 피해량에 비례해 생명력을 흡수한다. 출형 상태인 적에게는 더 큰 피해를 준다"
+      "ID": 7516,
+      "kor": "우울증",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillADescription_3",
-      "KOR": "기본 공격 대신 아군 1명을 치유한다."
+      "ID": 7517,
+      "kor": "공황장애",
+      "eng": null
     },
     {
-      "DataId": "LaraSkillBDescription_3",
-      "KOR": "생명의 기운을 발산하여 주변 아군을 치유한다."
+      "ID": 7518,
+      "kor": "사사사사",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillADescription_3",
-      "KOR": "적을 향하여 도약하며 검을 휘둘러 광역 피해를 입힌다."
+      "ID": 7519,
+      "kor": "럭키 세븐!",
+      "eng": null
     },
     {
-      "DataId": "MichelleSkillBDescription_3",
-      "KOR": "자신을 중심으로 검을 크게 휘둘러 주변 적들에게 광역 피해를 입힌다."
+      "ID": 7520,
+      "kor": "열여덟열여덟",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillADescription_3",
-      "KOR": "아군의 상처를 잊게 만드는 연주를 하여 연주를 듣는 모든 아군의 생명력을 회복시킨다."
+      "ID": 7521,
+      "kor": "회사 창립일",
+      "eng": null
     },
     {
-      "DataId": "YulieSkillBDescription_3",
-      "KOR": "사기를 올려주는 연주를 하여 아군의 공격력을 상승 시킨다."
+      "ID": 7522,
+      "kor": "콩콩콩콩",
+      "eng": null
     },
     {
-      "DataId": "StormSkillADescription_3",
-      "KOR": "단일 대상에게 연속적으로 4번찔러 몸 곳곳에 상처를 남겨 출혈시킨다."
+      "ID": 7523,
+      "kor": "쪼끔 부자",
+      "eng": null
     },
     {
-      "DataId": "StormSkillBDescription_3",
-      "KOR": "전방으로 검기를 날려 검기가 지나간 자리에 있는 모든 적에게 데미지를 준다."
+      "ID": 7524,
+      "kor": "쪼오끔 더 부자",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillADescription_3",
-      "KOR": "단일 적을 항하여 독이 묻은 화살을 날린다"
+      "ID": 7525,
+      "kor": "쪼오오끔 더 부자",
+      "eng": null
     },
     {
-      "DataId": "EllieSkillBDescription_3",
-      "KOR": "부채꼴 모양으로 5개의 화살을 발사한다."
+      "ID": 7526,
+      "kor": "입에 풀칠",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillADescription_3",
-      "KOR": "적 1명을 수차례 가격하여 피해를 준다"
+      "ID": 7527,
+      "kor": "니 입에도 풀칠",
+      "eng": null
     },
     {
-      "DataId": "LeonSkillBDescription_3",
-      "KOR": "크게 포효하여 적들에게 광역 피해를 입히고 아군의 공격력을 상승시킨다"
+      "ID": 7528,
+      "kor": "우리 가족 풀칠",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillADescription_3",
-      "KOR": "방패를 앞세워 돌진한다. 경로상에 있는 적들을 공중으로 띄운다"
+      "ID": 7529,
+      "kor": "홧병",
+      "eng": null
     },
     {
-      "DataId": "WaltSkillBDescription_3",
-      "KOR": "비비가 전방으로 돌진하여 적들을 관통한다. 돌진을 마친 후 월트에게 돌아와 월트의 체력을 회복시킨다."
+      "ID": 7530,
+      "kor": "분노 조절 잘해",
+      "eng": null
     },
     {
-      "DataId": "XionSkillADescription_3",
-      "KOR": "공격을 돕는 해골을 소환한다."
+      "ID": 7531,
+      "kor": "분노 조절 장인",
+      "eng": null
     },
     {
-      "DataId": "XionSkillBDescription_3",
-      "KOR": "소환된 해골 중 한마리를 적에게 돌진시켜 광역 피해를 입히고 중독 시킨다."
+      "ID": 7532,
+      "kor": "더는 참을 수 엄쒀!",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillADescription_3",
-      "KOR": "전방의 땅을 강하게 내려쳐 광역 피해를 주고 기절시킨다."
+      "ID": 7533,
+      "kor": "와! 취직했다!",
+      "eng": null
     },
     {
-      "DataId": "AlexSkillBDescription_3",
-      "KOR": "자신을 주위로 넓은 범위를 신성한 땅으로 만들어 아군을 지속적으로 치유한다"
+      "ID": 7534,
+      "kor": "와! 첫 진급!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillADescription_3",
-      "KOR": "독이 든 병을 던져 지역을 오염시키고 지속적으로 데미지를 준다."
+      "ID": 7535,
+      "kor": "와! 과장 진급!",
+      "eng": null
     },
     {
-      "DataId": "LaurenSkillBDescription_3",
-      "KOR": "온 세상을 얼려버릴것 같은 한기가 가득찬 병을 던져 광역 범위에 있는 적을 얼리고 피해를 준다."
+      "ID": 7536,
+      "kor": "부장을 달아부장!",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillADescription_3",
-      "KOR": "화염으로 이루어진 검을 휘둘러 전방 90도에 데미지를 주고 화상 상태로 만든다"
+      "ID": 7537,
+      "kor": "2사달지~두번달지~",
+      "eng": null
     },
     {
-      "DataId": "OwenSkillBDescription_3",
-      "KOR": "화염으로 이루어진 검을 소환하여 광역 피해를 준다"
+      "ID": 7538,
+      "kor": "내가 느그 사장이다!",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillADescription_3",
-      "KOR": "자신을 중심으로 적들을 끌어 당기며 광역 피해를 준다"
+      "ID": 7539,
+      "kor": "고양이에 눈뜨다.",
+      "eng": null
     },
     {
-      "DataId": "BellaSkillBDescription_3",
-      "KOR": "아군의 공격속도와 이동속도를 증가시킨다"
+      "ID": 7540,
+      "kor": "집사 입문",
+      "eng": null
     },
     {
-      "DataId": "BettySkillADescription_3",
-      "KOR": "인형이 커다란 손을 6번 휘둘러 전방의 적들에게 광역 피해를 입힌다. "
+      "ID": 7541,
+      "kor": "완벽한 생명체",
+      "eng": null
     },
     {
-      "DataId": "BettySkillBDescription_3",
-      "KOR": "전방에 혹독한 한기를 뱉어 광역 피해를 주고 얼린다."
+      "ID": 7542,
+      "kor": "열정 토론!",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillADescription_3",
-      "KOR": "양손을 휘둘러 전방에 피해를 준다."
+      "ID": 7543,
+      "kor": "시시비비",
+      "eng": null
     },
     {
-      "DataId": "ValakSkillBDescription_3",
-      "KOR": "\"일직선으로 브레스를 뱉어 피해를 주고"
+      "ID": 7544,
+      "kor": "데우스 엑스 마키나",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillADescription_3",
-      "KOR": "거부할 수 없는 강력한 매력으로 유혹한다. 유혹당한 적은 기절 상태에 빠진다."
+      "ID": 7545,
+      "kor": "무에서 유를 창조!",
+      "eng": null
     },
     {
-      "DataId": "VanessaSkillBDescription_3",
-      "KOR": "Empty"
+      "ID": 7546,
+      "kor": "달변가",
+      "eng": null
     },
     {
-      "DataId": "AranSkillADescription_3",
-      "KOR": "강력한 힘으로 지면을 내려쳐 주변 적들을 공중으로 띄우고 기절시킨다."
+      "ID": 7547,
+      "kor": "찬호님…사랑합니다",
+      "eng": null
     },
     {
-      "DataId": "AranSkillBDescription_3",
-      "KOR": "광폭화 상태가 되어 수초간 공격력이 상승한다."
+      "ID": 7548,
+      "kor": "첫 박람회!",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillADescription_3",
-      "KOR": "정령을 소환하여 상처 입은 아군을 치유한다"
+      "ID": 7549,
+      "kor": "환상의 X꼬쇼",
+      "eng": null
     },
     {
-      "DataId": "SylviaSkillBDescription_3",
-      "KOR": "주변을 축복의 대지로 만들어 범위 안의 아군을 지속적으로 치유한다"
+      "ID": 7550,
+      "kor": "손님 맞을래요?",
+      "eng": null
     },
     {
-      "DataId": "HardySkillADescription_3",
-      "KOR": "땅에 줄기를 박아 넣어 광역 범위에 피해를 주고 적들을 기절 시킨다"
+      "ID": 7551,
+      "kor": "월급이 복사!",
+      "eng": null
     },
     {
-      "DataId": "HardySkillBDescription_3",
-      "KOR": "주변 아군을 숲의 기운이 담긴 보호막을 부여하여 피해로부터 보호한다"
+      "ID": 7552,
+      "kor": "숨바꼭질 달인!",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillADescription_3",
-      "KOR": "관통하는 창을 연속으로 5개 던진다. 창에 맞은 적들은 출혈을 일으킨다"
+      "ID": 7553,
+      "kor": "다크 템플러!",
+      "eng": null
     },
     {
-      "DataId": "LouisSkillBDescription_3",
-      "KOR": "늑대의 힘을 빌려와 주변 아군과 함께 공격속도와 공격력을 상승시킨다"
+      "ID": 7554,
+      "kor": "초심자의 행운",
+      "eng": null
     },
     {
-      "DataId": "LucySkillADescription_3",
-      "KOR": "적의 뒤에 그림자를 소환하여 적을 베어 강력한 데미지를 준다"
+      "ID": 7555,
+      "kor": "석박사 과정",
+      "eng": null
     },
     {
-      "DataId": "LucySkillBDescription_3",
-      "KOR": "일정 지역에 그림자를 전개하여 적들의 속도를 늦추고 공격한다"
+      "ID": 7556,
+      "kor": "어쩌다 여기까지",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillADescription_3",
-      "KOR": "검을 휘둘러 단일 적에게 피해를 주고 영혼을 흡수하여 생명력을 회복한다"
+      "ID": 7557,
+      "kor": "사장님 안녕하세요!",
+      "eng": null
     },
     {
-      "DataId": "SierraSkillBDescription_3",
-      "KOR": "망자의 한기가 서린 대검을 휘둘러 광역 피해를 입히고 피해를 받은 적들을 얼린다"
+      "ID": 7558,
+      "kor": "사장님 계약 고?",
+      "eng": null
     },
     {
-      "DataId": "KunSkillADescription_3",
-      "KOR": "여러 개의 폭탄을 던져 광역 피해를 준다"
+      "ID": 7559,
+      "kor": "살려는 드릴게~",
+      "eng": null
     },
     {
-      "DataId": "KunSkillBDescription_3",
-      "KOR": "광역 피해를 주고 적들을 중독 상태에 빠뜨리는 커다란 폭탄을 던진다"
+      "ID": 7560,
+      "kor": "인센티브는요?",
+      "eng": null
     },
     {
-      "DataId": "EarnedGoldObjectiveDescription",
-      "KOR": "골드 획득"
+      "ID": 7561,
+      "kor": "매출 보고 준다고?",
+      "eng": null
     },
     {
-      "DataId": "SpendGoldObjectiveDescription",
-      "KOR": "골드 소모"
+      "ID": 7562,
+      "kor": "누굴 바보로 아나",
+      "eng": null
     },
     {
-      "DataId": "EarnedMeatObjectiveDescription",
-      "KOR": "고기 획득"
+      "ID": 7563,
+      "kor": "어떤 광고를 만들까?",
+      "eng": null
     },
     {
-      "DataId": "SpendMeatObjectiveDescription",
-      "KOR": "고기 소모"
+      "ID": 7564,
+      "kor": "잡일 마스터",
+      "eng": null
     },
     {
-      "DataId": "EarnedWoodObjectiveDescription",
-      "KOR": "나무 획득"
+      "ID": 7565,
+      "kor": "슬레이트 칠게요~",
+      "eng": null
     },
     {
-      "DataId": "SpendWoodObjectiveDescription",
-      "KOR": "나무 소모"
+      "ID": 7566,
+      "kor": "마커주커버그",
+      "eng": null
     },
     {
-      "DataId": "KilledMonsterDescription",
-      "KOR": "몬스터 사냥"
+      "ID": 7567,
+      "kor": "빌게이츠",
+      "eng": null
     },
     {
-      "DataId": "Atk",
-      "KOR": "공격력"
+      "ID": 7568,
+      "kor": "스티브잡스",
+      "eng": null
     },
     {
-      "DataId": "ReduceDamage",
-      "KOR": "고정피해감소"
+      "ID": 7569,
+      "kor": "한 단계씩 천천히",
+      "eng": null
     },
     {
-      "DataId": "ReduceDamageRate",
-      "KOR": "피해감소"
+      "ID": 7570,
+      "kor": "두 계단 특진",
+      "eng": null
     },
     {
-      "DataId": "AttackSpeedRate",
-      "KOR": "공격속도"
+      "ID": 7571,
+      "kor": "3개 부터는 힘들지?",
+      "eng": null
     },
     {
-      "DataId": "Critical",
-      "KOR": "치명타"
+      "ID": 7572,
+      "kor": "거의 다왔어!",
+      "eng": null
     },
     {
-      "DataId": "CriticalDamage",
-      "KOR": "치명타데미지"
+      "ID": 7573,
+      "kor": "이세계 사장",
+      "eng": null
     },
     {
-      "DataId": "MissChance",
-      "KOR": "회피"
+      "ID": 8001,
+      "kor": "만년신입",
+      "eng": null
     },
     {
-      "DataId": "MoveSpeed",
-      "KOR": "이동속도"
+      "ID": 8011,
+      "kor": "만년대리",
+      "eng": null
     },
     {
-      "DataId": "CooldownReduction",
-      "KOR": "재사용시간"
+      "ID": 8021,
+      "kor": "만년과장",
+      "eng": null
     },
     {
-      "DataId": "LifeSteal",
-      "KOR": "흡혈"
+      "ID": 8031,
+      "kor": "만년부장",
+      "eng": null
     },
     {
-      "DataId": "Portal",
-      "KOR": "포탈"
+      "ID": 8041,
+      "kor": "콩",
+      "eng": null
     },
     {
-      "DataId": "UnlockPortal",
-      "KOR": "포탈 사용가능"
+      "ID": 8051,
+      "kor": "느그 사장 남천동 살제!?",
+      "eng": null
     },
     {
-      "DataId": "Camp",
-      "KOR": "캠프"
+      "ID": 8061,
+      "kor": "자진퇴사",
+      "eng": null
     },
     {
-      "DataId": "UnlockCamp",
-      "KOR": "캠프 사용 가능"
+      "ID": 8071,
+      "kor": "벽돌엔딩",
+      "eng": null
     },
     {
-      "DataId": "MaxHp",
-      "KOR": "최대 체력"
+      "ID": 8501,
+      "kor": "집콕",
+      "eng": null
     },
     {
-      "DataId": "LifeStealRate",
-      "KOR": "흡혈"
+      "ID": 8511,
+      "kor": "집에서 게임하기",
+      "eng": null
     },
     {
-      "DataId": "ThornsDamageRate",
-      "KOR": "데미지 반사"
+      "ID": 8521,
+      "kor": "요리하기",
+      "eng": null
     },
     {
-      "DataId": "MaxMembers",
-      "KOR": "최대영웅 + 1"
+      "ID": 8531,
+      "kor": "반려견과 데이트",
+      "eng": null
     },
     {
-      "DataId": "Meat",
-      "KOR": "생고기"
+      "ID": 8541,
+      "kor": "운동 하기",
+      "eng": null
     },
     {
-      "DataId": "Wood",
-      "KOR": "장작"
+      "ID": 8551,
+      "kor": "미술관 방문하기",
+      "eng": null
     },
     {
-      "DataId": "Mineral",
-      "KOR": "미네랄"
+      "ID": 8561,
+      "kor": "친구들과 술 한잔~!",
+      "eng": null
     },
     {
-      "DataId": "Gold",
-      "KOR": "골드"
+      "ID": 8571,
+      "kor": "영화 보기!",
+      "eng": null
     },
     {
-      "DataId": "Ruby",
-      "KOR": "루비"
+      "ID": 8581,
+      "kor": "맛집 탐방!",
+      "eng": null
     },
     {
-      "DataId": "Fragments",
-      "KOR": "룬 잔해"
+      "ID": 8591,
+      "kor": "카페에서 공부하기",
+      "eng": null
     },
     {
-      "DataId": "ForestMarble",
-      "KOR": "초원의구슬"
+      "ID": 8601,
+      "kor": "근교 드라이브!",
+      "eng": null
     },
     {
-      "DataId": "MeatDesc",
-      "KOR": "몬스터 잡으면 나오는 고기"
+      "ID": 8611,
+      "kor": "고향 방문",
+      "eng": null
     },
     {
-      "DataId": "WoodDesc",
-      "KOR": "나무캐면 나옴"
+      "ID": 8502,
+      "kor": "월급이 선명하게 통장을 핥고 지나갔다",
+      "eng": null
     },
     {
-      "DataId": "MineralDesc",
-      "KOR": "광물캐면 나옴"
+      "ID": 8512,
+      "kor": "진짜 보스만 잡고 잔다…",
+      "eng": null
     },
     {
-      "DataId": "GoldDesc",
-      "KOR": "돈"
+      "ID": 8522,
+      "kor": "퇴근 후 요리는 즐거워!",
+      "eng": null
     },
     {
-      "DataId": "RubyDesc",
-      "KOR": "트레이닝에 사용되는 빨간 보석"
+      "ID": 8532,
+      "kor": "브라운~ 엄마랑 산책하자!",
+      "eng": null
     },
     {
-      "DataId": "FragmentsDesc",
-      "KOR": "무기 갈아서 나오는 잔해"
+      "ID": 8542,
+      "kor": "오늘은 무슨날? 더듬이 하는 날!",
+      "eng": null
     },
     {
-      "DataId": "ForestMarbleDesc",
-      "KOR": "숲의 구슬"
+      "ID": 8552,
+      "kor": "미술관은 오랜만인데. 뭔가 익숙한 데?",
+      "eng": null
     },
     {
-      "DataId": "QD_9_1",
-      "KOR": " 안녕하세요 루키스."
+      "ID": 8562,
+      "kor": "오늘도 마셔! 부어!",
+      "eng": null
     },
     {
-      "DataId": "QD_9_2",
-      "KOR": " 안녕하세요 Npc님."
+      "ID": 8572,
+      "kor": "이번 신작 oo배우 기대된다!",
+      "eng": null
     },
     {
-      "DataId": "QD_9_3",
-      "KOR": " 퀘스트 받으세요."
+      "ID": 8582,
+      "kor": "웨이팅이 길어도… 맛있어서 괜찮아!",
+      "eng": null
     },
     {
-      "DataId": "QD_9_4",
-      "KOR": " 조금 위험 합니다."
+      "ID": 8592,
+      "kor": "주말에는 공부 해야지!",
+      "eng": null
     },
     {
-      "DataId": "QD_9_5",
-      "KOR": " 네."
+      "ID": 8602,
+      "kor": "탴미투 뤈둰~패뤼스~ 뉴욝siri들~",
+      "eng": null
     },
     {
-      "DataId": "QD_9_6",
-      "KOR": " ㅂㅂ."
+      "ID": 8612,
+      "kor": "엄마 아빠 저 왔어요~",
+      "eng": null
     },
     {
-      "DataId": "QD_9_7",
-      "KOR": " 휴 고맙습니다"
+      "ID": 9000,
+      "kor": "현재 연봉",
+      "eng": null
     },
     {
-      "DataId": "QD_9_8",
-      "KOR": " 네."
+      "ID": 9001,
+      "kor": "최대 체력",
+      "eng": null
     },
     {
-      "DataId": "QD_9_9",
-      "KOR": " 따라다닐게요"
+      "ID": 9002,
+      "kor": "현재 공격력",
+      "eng": null
+    },
+    {
+      "ID": 9003,
+      "kor": "프로젝트 쿨타임 감소율",
+      "eng": null
+    },
+    {
+      "ID": 9004,
+      "kor": "연봉협상 추가 보너스",
+      "eng": null
+    },
+    {
+      "ID": 9005,
+      "kor": "재화 보너스",
+      "eng": null
+    },
+    {
+      "ID": 9006,
+      "kor": "벽돌 성공률",
+      "eng": null
+    },
+    {
+      "ID": 9506,
+      "kor": "신입 이라고 봐줬더니 기어오르네?",
+      "eng": null
+    },
+    {
+      "ID": 9507,
+      "kor": "회사가 만만해? 니 마음대로 할수 있는 곳이야?",
+      "eng": null
+    },
+    {
+      "ID": 9508,
+      "kor": "너 인사평가 내가 보는거 알지?",
+      "eng": null
+    },
+    {
+      "ID": 9509,
+      "kor": "대체 왜그러는거지?",
+      "eng": null
+    },
+    {
+      "ID": 9510,
+      "kor": "회사에 불만이 있으면 너가 나가야지?",
+      "eng": null
+    },
+    {
+      "ID": 9511,
+      "kor": "너 마음대로 할거면 회사를 나가! ",
+      "eng": null
+    },
+    {
+      "ID": 9512,
+      "kor": "니가 똥싼게 한두개인줄 알아?",
+      "eng": null
+    },
+    {
+      "ID": 9513,
+      "kor": "너 하나 없어도 회사 잘돌아가~",
+      "eng": null
+    },
+    {
+      "ID": 9514,
+      "kor": "사회가 만만해보여!?",
+      "eng": null
+    },
+    {
+      "ID": 9515,
+      "kor": "자네. 짤리고 싶나?",
+      "eng": null
+    },
+    {
+      "ID": 9516,
+      "kor": "자네 하나 지우는거 일도아니야.",
+      "eng": null
+    },
+    {
+      "ID": 9517,
+      "kor": "이 바닥 생각보다 좁다?",
+      "eng": null
+    },
+    {
+      "ID": 9518,
+      "kor": "가족같은 회사 몰라?",
+      "eng": null
+    },
+    {
+      "ID": 9519,
+      "kor": "너 나이 몇이야 이 XX야",
+      "eng": null
+    },
+    {
+      "ID": 9520,
+      "kor": "당장 나가!!!",
+      "eng": null
+    },
+    {
+      "ID": 19950,
+      "kor": "체력 스탯은 캐릭터의 Hp이며 전투시 사용된다.",
+      "eng": null
+    },
+    {
+      "ID": 19951,
+      "kor": "업무능력 스탯은 캐릭터의 공격력과 프로젝트 쿨타임 감소 효과를 얻을 수 있다.",
+      "eng": null
+    },
+    {
+      "ID": 19952,
+      "kor": "호감도 스탯 연봉을 제외하고 플레이 중 획득하는 모든 돈에 추가 보너스 효과를 제공한다.",
+      "eng": null
+    },
+    {
+      "ID": 19953,
+      "kor": "운 스탯은 대화 이벤트 시 벽돌로 때린다 선택지의 성공 확률이 상승한다. ",
+      "eng": null
+    },
+    {
+      "ID": 19997,
+      "kor": "처음부터",
+      "eng": null
+    },
+    {
+      "ID": 19998,
+      "kor": "이어하기",
+      "eng": null
+    },
+    {
+      "ID": 19999,
+      "kor": "컬렉션",
+      "eng": null
+    },
+    {
+      "ID": 20000,
+      "kor": "닉네임을 입력해 주세요.",
+      "eng": null
+    },
+    {
+      "ID": 20001,
+      "kor": "시닙이",
+      "eng": null
+    },
+    {
+      "ID": 20002,
+      "kor": "화면을 터치하세요",
+      "eng": null
+    },
+    {
+      "ID": 20003,
+      "kor": "업그레이드",
+      "eng": null
+    },
+    {
+      "ID": 20004,
+      "kor": "전투하기",
+      "eng": null
+    },
+    {
+      "ID": 20005,
+      "kor": "컬렉션",
+      "eng": null
+    },
+    {
+      "ID": 20006,
+      "kor": "일반",
+      "eng": null
+    },
+    {
+      "ID": 20007,
+      "kor": "갤러리",
+      "eng": null
+    },
+    {
+      "ID": 20008,
+      "kor": "정말 전투를 하시겠습니까?",
+      "eng": null
+    },
+    {
+      "ID": 20009,
+      "kor": "벽돌의 매운맛을 보여준다.",
+      "eng": null
+    },
+    {
+      "ID": 20010,
+      "kor": "진급 성공 !",
+      "eng": null
+    },
+    {
+      "ID": 20011,
+      "kor": "진급 실패",
+      "eng": null
+    },
+    {
+      "ID": 20012,
+      "kor": "연봉 인상",
+      "eng": null
+    },
+    {
+      "ID": 20013,
+      "kor": "협상 결과",
+      "eng": null
+    },
+    {
+      "ID": 20014,
+      "kor": "와! 즐거운 퇴근이다! 오늘은 어떤걸 해볼까??",
+      "eng": null
+    },
+    {
+      "ID": 20015,
+      "kor": "정말 프로젝트를 진행 하시겠습니까?",
+      "eng": null
+    },
+    {
+      "ID": 20016,
+      "kor": "대화 완료!",
+      "eng": null
+    },
+    {
+      "ID": 20017,
+      "kor": "퇴근 완료!",
+      "eng": null
+    },
+    {
+      "ID": 20018,
+      "kor": "프로젝트 완료!",
+      "eng": null
+    },
+    {
+      "ID": 20019,
+      "kor": "안녕! 내 나는 시닙이! <br>오늘 첫 출근을 한다!",
+      "eng": null
+    },
+    {
+      "ID": 20020,
+      "kor": "첫 회사. 첫 출근은 정말 <br>두근거리고 설레는거 같아!",
+      "eng": null
+    },
+    {
+      "ID": 20021,
+      "kor": "과연 어떤 좋은 사람들과 <br>일을 하게 될까!?",
+      "eng": null
+    },
+    {
+      "ID": 20022,
+      "kor": "새로운 게임을 시작 하시겠습니까?<br>(진행중인 게임 데이터가 삭제됩니다.)",
+      "eng": null
+    },
+    {
+      "ID": 20023,
+      "kor": "이어하기(AD)",
+      "eng": null
+    },
+    {
+      "ID": 20024,
+      "kor": "타이틀로",
+      "eng": null
+    },
+    {
+      "ID": 20025,
+      "kor": "광고시청",
+      "eng": null
+    },
+    {
+      "ID": 20026,
+      "kor": "완료!<br>컬렉션에서 확인해 보세요!",
+      "eng": null
     }
   ]
 }

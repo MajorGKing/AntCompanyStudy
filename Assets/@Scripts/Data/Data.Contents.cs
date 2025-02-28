@@ -717,4 +717,34 @@ namespace Data
         }
     }
     #endregion
+
+    #region Text
+    [Serializable]
+    public class TextData
+    {
+        public int ID;
+        public string kor;
+        public string eng;
+    }
+
+    public class TextDataLoader : ILoader<int, TextData>
+    {
+        public List<TextData> _textData = new List<TextData>();
+
+        public Dictionary<int, TextData> MakeDict()
+        {
+            Dictionary<int, TextData> dic = new Dictionary<int, TextData>();
+
+            foreach (TextData data in _textData)
+                dic.Add(data.ID, data);
+
+            return dic;
+        }
+
+        public bool Validate()
+        {
+            return true;
+        }
+    }
+    #endregion
 }

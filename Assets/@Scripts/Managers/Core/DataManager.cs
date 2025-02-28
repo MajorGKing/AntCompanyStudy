@@ -36,6 +36,7 @@ public class DataManager
     public Dictionary<int, StartData> StartData { get; private set; } = new Dictionary<int, StartData>();
     public StartData Start;
     public Dictionary<int, StatData> Stats { get; private set; } = new Dictionary<int, StatData>();
+    public Dictionary<int, TextData> Texts { get; private set; }
 
 
 
@@ -51,6 +52,7 @@ public class DataManager
         Shops = LoadJson<ShopDataLoader, int, ShopData>("ShopData").MakeDict();
         StartData = LoadJson<StartDataLoader, int, StartData>("StartData").MakeDict();
         Stats = LoadJson<StatDataLoader, int, StatData>("StatData").MakeDict();
+        Texts = LoadJson<TextDataLoader, int, TextData>("TextData").MakeDict();
 
 
         Dictionary<int, DialogueEventExcelData> DialogueEventExcels = LoadJson<DialogueEventExcelDataLoader, int, DialogueEventExcelData>("DialogueEventData").MakeDict();
@@ -132,15 +134,20 @@ public class DataManager
             }
         }
         //
-        foreach (var ans in BlockEvents)
-        {
-            Debug.Log(ans.Value.enemyID);
-        }
+        //foreach (var ans in BlockEvents)
+        //{
+        //    Debug.Log(ans.Value.enemyID);
+        //}
 
-        foreach(var dig in Dialogues)
-        {
-            Debug.Log(dig.Value.questionID);
-        }
+        //foreach(var dig in Dialogues)
+        //{
+        //    Debug.Log(dig.Value.questionID);
+        //}
+
+        //foreach(var text in Texts)
+        //{
+        //    Debug.Log(text.Value.kor);
+        //}
 
         Validate();
     }
