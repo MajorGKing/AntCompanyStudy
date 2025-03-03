@@ -680,6 +680,15 @@ namespace Data
     #endregion
 
     #region StatData
+    public enum StatType
+    {
+        MaxHp,
+        WorkAbility,
+        Likeability,
+        Luck,
+        Stress
+    }
+
     [Serializable]
     public class StatData
     {

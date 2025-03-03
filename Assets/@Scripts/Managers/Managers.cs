@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Data;
+using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
@@ -50,12 +51,15 @@ public class Managers : MonoBehaviour
         }
     }
 
-    public static string GetText(string textId)
+    public static string GetText(int textId)
     {
+        if (Managers.Data.Texts.TryGetValue(textId, out TextData value) == false)
+            return "";
+
         switch (_language)
         {
             case Define.ELanguage.Korean:
-                break;
+                return value.kor.Replace("{userName}", Managers.Game.Name);
             case Define.ELanguage.English:
                 break;
             case Define.ELanguage.French:
