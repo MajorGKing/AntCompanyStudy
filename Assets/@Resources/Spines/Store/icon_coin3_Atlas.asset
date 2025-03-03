@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: icon_coin3_Atlas
   m_EditorClassIdentifier: 
-  textureLoadingMode: 0
-  onDemandTextureLoader: {fileID: 0}
   atlasFile: {fileID: 4900000, guid: de5f339a6903d9d4aa70e728bf003efd, type: 3}
   materials:
   - {fileID: 2100000, guid: a2cbaeffa7487cb4e9d60ad6fc1ec195, type: 2}

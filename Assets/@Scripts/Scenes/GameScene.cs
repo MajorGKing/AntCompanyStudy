@@ -13,10 +13,6 @@ public class GameScene : BaseScene
 #if UNITY_EDITOR
         gameObject.AddComponent<CaptureScreenShot>();
 #endif
-
-        Debug.Log("@>> GameScene Init()");
-        SceneType = EScene.GameScene;
-
     }
 
     protected override void Start()
@@ -28,8 +24,14 @@ public class GameScene : BaseScene
 			if (count == totalCount)
 			{
 				OnAssetLoaded();
+
+                Managers.UI.ShowPopupUI<UI_TitlePopup>();
+		        Debug.Log("Init");
 			}
 		});
+
+        Debug.Log("@>> GameScene Init()");
+        SceneType = EScene.GameScene;
     }
 
     private void OnAssetLoaded()
