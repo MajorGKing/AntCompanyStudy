@@ -44,10 +44,21 @@ public class UI_NamePopup : UI_Popup
 
     void RefreshUI()
     {
-        
+        GetText((int)Texts.NameText).text = Managers.GetText(Define.Sinibe);
+		GetText((int)Texts.HintText).text = Managers.GetText(Define.PleaseWriteNickName);
     }
 
     void OnClickConfirmButton(PointerEventData evt)
 	{
+		Managers.Sound.Play(Define.ESound.Effect, ("Sound_Checkbutton"));
+		Debug.Log("OnClickConfirmButton");
+		Debug.Log($"Input ID {_inputField.text}");
+
+		Managers.Game.Name = _inputField.text;
+
+		// UI_NamePopup 닫기
+		Managers.UI.ClosePopupUI(this);
+
+		// 인트로 불러오기
     }
 }

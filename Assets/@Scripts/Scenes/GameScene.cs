@@ -19,25 +19,12 @@ public class GameScene : BaseScene
     {
         base.Start();
 
-		Managers.Resource.LoadAllAsync<Object>("Preload", (key, count, totalCount) =>
-		{
-			if (count == totalCount)
-			{
-				OnAssetLoaded();
-
-                Managers.UI.ShowPopupUI<UI_TitlePopup>();
-		        Debug.Log("Init");
-			}
-		});
+        Managers.UI.ShowPopupUI<UI_TitlePopup>();
+		Debug.Log("Init");
 
         Debug.Log("@>> GameScene Init()");
         SceneType = EScene.GameScene;
     }
-
-    private void OnAssetLoaded()
-	{
-		Managers.Data.Init();
-	}
 
     public override void Clear()
     {

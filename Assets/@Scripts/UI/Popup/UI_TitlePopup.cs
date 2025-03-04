@@ -44,16 +44,34 @@ public class UI_TitlePopup : UI_Popup
     private void OnClickStartButton(PointerEventData evt)
     {
         Debug.Log("OnClickStartButton");
+        Managers.Sound.Play(Define.ESound.Effect, "Sound_FolderItemClick");
+
+        Managers.Game.Init();
+        Managers.Game.SaveGame();
+
+        Managers.UI.ClosePopupUI(this); // UI_TitlePopup
+        Managers.UI.ShowPopupUI<UI_NamePopup>();
     }
 
     private void OnClickContinueButton(PointerEventData evt)
     {
         Debug.Log("OnClickContinueButton");
+        Managers.Sound.Play(Define.ESound.Effect, ("Sound_FolderItemClick"));
+		Managers.Game.Init();
+		Managers.Game.LoadGame();
+
+        Managers.UI.ClosePopupUI(this);
+		//Managers.UI.ShowPopupUI<UI_PlayPopup>();
     }
 
     private void OnClickCollectionButton(PointerEventData evt)
     {
+        Managers.Sound.Play(Define.ESound.Effect, ("Sound_FolderItemClick"));
+		Managers.Game.Init();
+		Managers.Game.LoadGame();
+
         Debug.Log("OnClickCollectionButton");
+        //Managers.UI.ShowPopupUI<UI_CollectionPopup>();
     }
 
 }

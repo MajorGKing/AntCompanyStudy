@@ -22,6 +22,11 @@ public class DataManager
     public Dictionary<int, CharacterStatusInfoData> CharacterStatusInfos { get; private set; } = new Dictionary<int, CharacterStatusInfoData>();
     public Dictionary<int, BlockEventData> BlockEvents { get; private set; } = new Dictionary<int, BlockEventData>();
     public Dictionary<int, CollectionData> Collections { get; private set; } = new Dictionary<int, CollectionData>();
+    public List<CollectionData> StatCollections { get; private set; }
+	public List<CollectionData> WealthCollections { get; private set; }
+	public List<CollectionData> LevelCollections { get; private set; }
+	public List<CollectionData> ProjectCollections { get; private set; }
+	public List<CollectionData> BattleCollections { get; private set; }
     public Dictionary<int, DialogueEventData> Dialogues { get; private set; } = new Dictionary<int, DialogueEventData>();
     public List<DialogueEventData> InferiorEvents { get; private set; }  = new List<DialogueEventData>();// 나보다 부하인 NPC가 진행하는 이벤트                                                                    
     public List<DialogueEventData> SuperiorEvents { get; private set; }  = new List<DialogueEventData>();// 나보다 상사인 NPC가 진행하는 이벤트

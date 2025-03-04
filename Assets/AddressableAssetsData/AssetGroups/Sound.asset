@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Sound
+  m_EditorClassIdentifier: 
+  m_GroupName: Sound
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0217aee0b014449a0a93b9173878f55d
+  m_SerializeEntries:
+  - m_GUID: ce166dcb2c0064496a17106c49549fbf
+    m_Address: Sound_AttackButton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 227f6609d0a28473facd85a6c28a095a
+    m_Address: Sound_Battle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f4604575875b41469a66dc8cceba8ab
+    m_Address: Sound_Bubble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbb9b65b265968c48b81149e581b5c2a
+    m_Address: Sound_Cancelbutton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9dfaa743351ab43a99847211fb79ac3d
+    m_Address: Sound_CharacterTouch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3fecb3a0f6ea4ad41961049b5e91d3fb
+    m_Address: Sound_Checkbutton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 354a4955e7cce4959bba66ca1c2df268
+    m_Address: Sound_Coin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03e9b79ca7d34411e89bdf67e6130dda
+    m_Address: Sound_DialogSpeak
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7161e9768d9d64788b474a9883b87497
+    m_Address: Sound_Ending
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a2a55b436eee4ed8bd415dac64b2c18
+    m_Address: Sound_Ending2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a2b56ff4083049faba25a7871df58ab
+    m_Address: Sound_EnemyAttacked
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53740790c541f4b739b75dcde4494882
+    m_Address: Sound_Exclamation
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe28f6edb901b4fa2801f321587b3c2f
+    m_Address: Sound_FolderItemClick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df7c85c8ec98c4df691e222aa21e4df5
+    m_Address: Sound_GoHome
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e23ab84d1c763d54187981bca383aa5f
+    m_Address: Sound_MainButton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29d5d723e5d0be1439824fe2de4ce9c6
+    m_Address: Sound_MainPlayBGM
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26e23c4f52c35434f80ed445b5ec5797
+    m_Address: Sound_MainTitle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb30611ad2f104b099a099be72e72001
+    m_Address: Sound_PlayerAttacked
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d41d3ed4172ee4673b6b1262aebfed25
+    m_Address: Sound_ProjectItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58ba0bb4ab903470484a7cdddbbcdbcc
+    m_Address: Sound_Question
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6ab1ce77a8524871831c37aa5e06b5c
+    m_Address: Sound_ResultStat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ac19a3c9e12df54aa325b8abcbd1535
+    m_Address: Sound_UpgradeDone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9094f0f0595c6e147aa68a6f81e2dcaf, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4a694d05e7acd4c1c910520ef3e16ce0, type: 2}
+    - {fileID: 11400000, guid: 46611f11df3f147cd81bf4067146cd43, type: 2}

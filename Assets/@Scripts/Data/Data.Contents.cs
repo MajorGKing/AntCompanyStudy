@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Serialization;
+using TMPro;
 using UnityEngine;
 using static Define;
 
@@ -83,7 +85,6 @@ namespace Data
     public class BlockEventAnsDataLoader : ILoader<int, BlockEventAnsData>
     {
         public List<BlockEventAnsData> blockEventAnsDataList = new List<BlockEventAnsData>();
-        private Dictionary<int, BlockEventAnsData> blockEventAnsDataDict;
 
         public Dictionary<int, BlockEventAnsData> MakeDict()
         {
@@ -116,12 +117,12 @@ namespace Data
     [Serializable]
     public class CharacterStatusInfoDataLoader : ILoader<int, CharacterStatusInfoData>
     {
-        public List<CharacterStatusInfoData> CharacterStatus = new List<CharacterStatusInfoData>();
+        public List<CharacterStatusInfoData> characterStatus = new List<CharacterStatusInfoData>();
 
         public Dictionary<int, CharacterStatusInfoData> MakeDict()
         {
             Dictionary<int, CharacterStatusInfoData> dict = new Dictionary<int, CharacterStatusInfoData>();
-            foreach (CharacterStatusInfoData characterData in CharacterStatus)
+            foreach (CharacterStatusInfoData characterData in characterStatus)
                 dict.Add(characterData.ID, characterData);
             return dict;
         }
@@ -171,18 +172,28 @@ namespace Data
     [Serializable]
     public class CollectionDataLoader : ILoader<int, CollectionData>
     {
-        public List<CollectionData> CollectionDatas = new List<CollectionData>();
+        public List<CollectionData> collectionDatas = new List<CollectionData>();
 
         public Dictionary<int, CollectionData> MakeDict()
         {
             Dictionary<int, CollectionData> dict = new Dictionary<int, CollectionData>();
-            foreach (CollectionData collectionData in CollectionDatas)
+            foreach (CollectionData collectionData in collectionDatas)
                 dict.Add(collectionData.ID, collectionData);
             return dict;
         }
 
         public bool Validate()
         {
+            var statCollections = Managers.Data.StatCollections;
+            statCollections = collectionDatas.Where(c => c.reqType == CollectionType.Stat).ToList();
+            var whealthCollections = Managers.Data.WealthCollections;
+            whealthCollections = collectionDatas.Where(c => c.reqType == CollectionType.Wealth).ToList();
+            var levelCollections = Managers.Data.LevelCollections;
+            whealthCollections = collectionDatas.Where(c => c.reqType == CollectionType.Level).ToList();
+            var projectCollections = Managers.Data.ProjectCollections;
+            projectCollections = collectionDatas.Where(c => c.reqType == CollectionType.Project).ToList();
+            var battleCollections = Managers.Data.BattleCollections;
+            battleCollections = collectionDatas.Where(c => c.reqType == CollectionType.Battle).ToList();
             return true;
         }
     }
@@ -227,7 +238,6 @@ namespace Data
     public class DialogueEventExcelDataLoader : ILoader<int, DialogueEventExcelData>
     {
         public List<DialogueEventExcelData> dialogueEventDataList = new List<DialogueEventExcelData>();
-        private Dictionary<int, DialogueEventExcelData> dialogueEventDataDict;
 
         public Dictionary<int, DialogueEventExcelData> MakeDict()
         {
@@ -308,14 +318,13 @@ namespace Data
 
     public class GoHomeDataLoader : ILoader<int, GoHomeData>
     {
-        [XmlElement("GoHomeData")]
-        public List<GoHomeData> _goHomeData = new List<GoHomeData>();
+        public List<GoHomeData> goHomeData = new List<GoHomeData>();
 
         public Dictionary<int, GoHomeData> MakeDict()
         {
             Dictionary<int, GoHomeData> dic = new Dictionary<int, GoHomeData>();
 
-            foreach (GoHomeData data in _goHomeData)
+            foreach (GoHomeData data in goHomeData)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -382,14 +391,13 @@ namespace Data
 
     public class PlayerExcelDataLoader : ILoader<int, PlayerExcelData>
     {
-        [XmlElement("PlayerData")]
-        public List<PlayerExcelData> _characterDatas = new List<PlayerExcelData>();
+        public List<PlayerExcelData> characterDatas = new List<PlayerExcelData>();
 
         public Dictionary<int, PlayerExcelData> MakeDict()
         {
             Dictionary<int, PlayerExcelData> dic = new Dictionary<int, PlayerExcelData>();
 
-            foreach (PlayerExcelData data in _characterDatas)
+            foreach (PlayerExcelData data in characterDatas)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -401,7 +409,7 @@ namespace Data
             var players = Managers.Data.Players;
             players.Clear();
 
-            foreach (PlayerExcelData data in _characterDatas)
+            foreach (PlayerExcelData data in characterDatas)
             {
                 Debug.Log(data.ID);
                 List<int> attackTexts = new List<int> { data.atkText1, data.atkText2, data.atkText3 };
@@ -456,13 +464,13 @@ namespace Data
 
     public class ProjectDataLoader : ILoader<int, ProjectData>
     {
-        public List<ProjectData> _projectData = new List<ProjectData>();
+        public List<ProjectData> projectData = new List<ProjectData>();
 
         public Dictionary<int, ProjectData> MakeDict()
         {
             Dictionary<int, ProjectData> dic = new Dictionary<int, ProjectData>();
 
-            foreach (ProjectData data in _projectData)
+            foreach (ProjectData data in projectData)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -486,13 +494,13 @@ namespace Data
 
     public class RewardDataLoader : ILoader<string, RewardData>
     {
-        public List<RewardData> _rewardData = new List<RewardData>();
+        public List<RewardData> rewardData = new List<RewardData>();
 
         public Dictionary<string, RewardData> MakeDict()
         {
             Dictionary<string, RewardData> dic = new Dictionary<string, RewardData>();
 
-            foreach (RewardData data in _rewardData)
+            foreach (RewardData data in rewardData)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -522,13 +530,13 @@ namespace Data
 
     public class SalaryNegotiationDataLoader : ILoader<int, SalaryNegotiationData>
     {
-        public List<SalaryNegotiationData> _salaryNegotiationData = new List<SalaryNegotiationData>();
+        public List<SalaryNegotiationData> salaryNegotiationData = new List<SalaryNegotiationData>();
 
         public Dictionary<int, SalaryNegotiationData> MakeDict()
         {
             Dictionary<int, SalaryNegotiationData> dic = new Dictionary<int, SalaryNegotiationData>();
 
-            foreach (SalaryNegotiationData data in _salaryNegotiationData)
+            foreach (SalaryNegotiationData data in salaryNegotiationData)
                 dic.Add(data.questionID, data);
 
             return dic;
@@ -538,15 +546,15 @@ namespace Data
         {
             Managers.Data.SalaryNegotiation = new SalaryNegotiationData
             {
-                questionID = _salaryNegotiationData[0].questionID,
-                yesAnswerID = _salaryNegotiationData[0].yesAnswerID,
-                noAnswerID = _salaryNegotiationData[0].noAnswerID,
-                yesResultID = _salaryNegotiationData[0].yesResultID,
-                noResultGoodID = _salaryNegotiationData[0].noResultGoodID,
-                noResultBadID = _salaryNegotiationData[0].noResultBadID,
-                yesIncreaseSalaryPercent = _salaryNegotiationData[0].yesIncreaseSalaryPercent,
-                noIncreaseSalaryPercentGood = _salaryNegotiationData[0].noIncreaseSalaryPercentGood,
-                noIncreaseSalaryPercentBad = _salaryNegotiationData[0].noIncreaseSalaryPercentBad
+                questionID = salaryNegotiationData[0].questionID,
+                yesAnswerID = salaryNegotiationData[0].yesAnswerID,
+                noAnswerID = salaryNegotiationData[0].noAnswerID,
+                yesResultID = salaryNegotiationData[0].yesResultID,
+                noResultGoodID = salaryNegotiationData[0].noResultGoodID,
+                noResultBadID = salaryNegotiationData[0].noResultBadID,
+                yesIncreaseSalaryPercent = salaryNegotiationData[0].yesIncreaseSalaryPercent,
+                noIncreaseSalaryPercentGood = salaryNegotiationData[0].noIncreaseSalaryPercentGood,
+                noIncreaseSalaryPercentBad = salaryNegotiationData[0].noIncreaseSalaryPercentBad
             };
 
             return true;
@@ -584,13 +592,13 @@ namespace Data
 
     public class ShopDataLoader : ILoader<int, ShopData>
     {
-        public List<ShopData> _shopDatas = new List<ShopData>();
+        public List<ShopData> shopDatas = new List<ShopData>();
 
         public Dictionary<int, ShopData> MakeDict()
         {
             Dictionary<int, ShopData> dic = new Dictionary<int, ShopData>();
 
-            foreach (ShopData data in _shopDatas)
+            foreach (ShopData data in shopDatas)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -634,13 +642,13 @@ namespace Data
 
     public class StartDataLoader : ILoader<int, StartData>
     {
-        public List<StartData> _startDatas = new List<StartData>();
+        public List<StartData> startDatas = new List<StartData>();
 
         public Dictionary<int, StartData> MakeDict()
         {
             Dictionary<int, StartData> dic = new Dictionary<int, StartData>();
 
-            foreach (StartData data in _startDatas)
+            foreach (StartData data in startDatas)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -650,29 +658,29 @@ namespace Data
         {
             Managers.Data.Start = new StartData()
             {
-                ID = _startDatas[0].ID,
-                maxHp = _startDatas[0].maxHp,
-                maxhpIconPath = _startDatas[0].maxhpIconPath,
-                atk = _startDatas[0].atk,
-                money = _startDatas[0].money,
-                moneyIconPath = _startDatas[0].moneyIconPath,
-                block = _startDatas[0].block,
-                blockIconPath = _startDatas[0].blockIconPath,
-                salary = _startDatas[0].salary,
-                salaryPercent = _startDatas[0].salaryPercent,
-                revenuePercent = _startDatas[0].revenuePercent,
-                cooltimePercent = _startDatas[0].cooltimePercent,
-                successPercent = _startDatas[0].successPercent,
-                workAbility = _startDatas[0].workAbility,
-                workAbilityIconPath = _startDatas[0].workAbilityIconPath,
-                likeAbility = _startDatas[0].likeAbility,
-                likeAbilityIconPath = _startDatas[0].likeAbilityIconPath,
-                stress = _startDatas[0].stress,
-                increaseStress = _startDatas[0].increaseStress,
-                maxStress = _startDatas[0].maxStress,
-                stressIconPath = _startDatas[0].stressIconPath,
-                luck = _startDatas[0].luck,
-                luckIconPath = _startDatas[0].luckIconPath
+                ID = startDatas[0].ID,
+                maxHp = startDatas[0].maxHp,
+                maxhpIconPath = startDatas[0].maxhpIconPath,
+                atk = startDatas[0].atk,
+                money = startDatas[0].money,
+                moneyIconPath = startDatas[0].moneyIconPath,
+                block = startDatas[0].block,
+                blockIconPath = startDatas[0].blockIconPath,
+                salary = startDatas[0].salary,
+                salaryPercent = startDatas[0].salaryPercent,
+                revenuePercent = startDatas[0].revenuePercent,
+                cooltimePercent = startDatas[0].cooltimePercent,
+                successPercent = startDatas[0].successPercent,
+                workAbility = startDatas[0].workAbility,
+                workAbilityIconPath = startDatas[0].workAbilityIconPath,
+                likeAbility = startDatas[0].likeAbility,
+                likeAbilityIconPath = startDatas[0].likeAbilityIconPath,
+                stress = startDatas[0].stress,
+                increaseStress = startDatas[0].increaseStress,
+                maxStress = startDatas[0].maxStress,
+                stressIconPath = startDatas[0].stressIconPath,
+                luck = startDatas[0].luck,
+                luckIconPath = startDatas[0].luckIconPath
             };
             return true;
         }
@@ -708,13 +716,13 @@ namespace Data
 
     public class StatDataLoader : ILoader<int, StatData>
     {
-        public List<StatData> _statData = new List<StatData>();
+        public List<StatData> statData = new List<StatData>();
 
         public Dictionary<int, StatData> MakeDict()
         {
             Dictionary<int, StatData> dic = new Dictionary<int, StatData>();
 
-            foreach (StatData data in _statData)
+            foreach (StatData data in statData)
                 dic.Add(data.ID, data);
 
             return dic;
@@ -738,13 +746,13 @@ namespace Data
 
     public class TextDataLoader : ILoader<int, TextData>
     {
-        public List<TextData> _textData = new List<TextData>();
+        public List<TextData> textData = new List<TextData>();
 
         public Dictionary<int, TextData> MakeDict()
         {
             Dictionary<int, TextData> dic = new Dictionary<int, TextData>();
 
-            foreach (TextData data in _textData)
+            foreach (TextData data in textData)
                 dic.Add(data.ID, data);
 
             return dic;

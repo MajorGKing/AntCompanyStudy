@@ -62,6 +62,27 @@ public class Define
 		Projectile = 20,
 	}
 
+    public enum EJobTitleType
+	{
+		Intern = 0, // 인게임에 배치만 하고 아무것도 안함
+		Sinib, // 주인공 시작
+		Daeri,
+		Gwajang,
+		Bujang,
+		Esa,
+		Sajang,
+		Cat,
+	}
+
+    public enum EStatType
+	{
+		MaxHp,
+		WorkAbility,
+		Likeability,
+		Luck,
+		Stress
+	}
+
 
 
     public const int BlockHit = 4500;

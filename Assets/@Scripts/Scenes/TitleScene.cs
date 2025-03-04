@@ -1,11 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using Google.Protobuf.Protocol;
 using UnityEngine;
-using UnityEngine.Diagnostics;
 using UnityEngine.Rendering;
+using Object = UnityEngine.Object;
 
 public class TitleScene : BaseScene
 {
@@ -25,10 +21,26 @@ public class TitleScene : BaseScene
     {
         base.Start();
 
+		
+		Managers.Resource.LoadAllAsync<Object>("Preload", (key, count, totalCount) =>
+		{
+			if (count == totalCount)
+			{
+				OnAssetLoaded();
+
+				Managers.Scene.LoadScene(Define.EScene.GameScene);
+			}
+		});
+
 		//IPAddress ipAddr = IPAddress.Parse("127.0.0.1");
 		//IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777);
 		//Managers.Network.GameServer.Connect(endPoint);
 		//CoSendTestPackets();
+	}
+
+	private void OnAssetLoaded()
+	{
+		Managers.Data.Init();
 	}
 
 	public override void Clear()
