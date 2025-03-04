@@ -61,7 +61,7 @@ public class UI_TitlePopup : UI_Popup
 		Managers.Game.LoadGame();
 
         Managers.UI.ClosePopupUI(this);
-		//Managers.UI.ShowPopupUI<UI_PlayPopup>();
+		Managers.UI.ShowPopupUI<UI_PlayPopup>();
     }
 
     private void OnClickCollectionButton(PointerEventData evt)
