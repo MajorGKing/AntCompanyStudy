@@ -60,5 +60,9 @@ public class UI_NamePopup : UI_Popup
 		Managers.UI.ClosePopupUI(this);
 
 		// 인트로 불러오기
+		Managers.UI.ShowPopupUI<UI_IntroPopup>().SetInfo((int)UI_IntroPopup.GameObjects.Intro1, (int)UI_IntroPopup.GameObjects.Intro3, () =>
+		{
+			Managers.UI.ShowPopupUI<UI_PlayPopup>();
+		});
     }
 }
