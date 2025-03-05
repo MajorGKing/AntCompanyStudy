@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -67,7 +68,28 @@ public class UI_CollectionPopup : UI_Popup
 
     private void RefreshUI()
     {
+        GetImage((int)Images.CommonIconNotice).gameObject.SetActive(false);
+		GetImage((int)Images.GalleryIconNotice).gameObject.SetActive(false);
 
+        {
+            bool uncheck = Managers.Game.Collections.Where(c => { return c == CollectionState.Uncheck; }).ToList().Count > 0;
+            GetImage((int)Images.CommonIconNotice).gameObject.SetActive(uncheck);
+        }
+        {
+            bool uncheck = Managers.Game.Endings.Where(e => { return e == CollectionState.Uncheck; }).ToList().Count > 0;
+			GetImage((int)Images.GalleryIconNotice).gameObject.SetActive(uncheck);
+        }
+
+        GetText((int)Texts.TitleText).text = Managers.GetText(Define.CollectionPageTitle);
+		GetText((int)Texts.CommonButtonText).text = Managers.GetText(Define.CollectionPageTab1);
+		GetText((int)Texts.GalleryButtonText).text = Managers.GetText(Define.CollectionPageTab2);
+
+        // Grid
+		_items.Clear();
+
+        Transform parent = GetObject((int)GameObjects.Content).gameObject.transform;
+		foreach (Transform t in parent)
+			Managers.Resource.Destroy(t.gameObject);
     }
 
     void RefreshButton()

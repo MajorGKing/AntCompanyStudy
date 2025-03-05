@@ -34,6 +34,8 @@ public class GameData
     public float LastProjectCoolTime;
 
     public CollectionState[] Collections = new CollectionState[MAX_COLLECTION_COUNT];
+    // 클리어 한 엔딩
+	public CollectionState[] Endings = new CollectionState[MAX_ENDING_COUNT];
 }
 
 public class GameManager
@@ -140,6 +142,7 @@ public class GameManager
     
     #region Collection & Projects
     public CollectionState[] Collections { get { return GameData.Collections; } }
+    public CollectionState[] Endings { get { return GameData.Endings; } }
     
     public void RefreshStatCollections()
     {
