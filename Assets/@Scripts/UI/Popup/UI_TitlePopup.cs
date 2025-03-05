@@ -31,7 +31,7 @@ public class UI_TitlePopup : UI_Popup
 
         GetButton((int)Buttons.StartButton).gameObject.BindEvent(OnClickStartButton);
         GetButton((int)Buttons.ContinueButton).gameObject.BindEvent(OnClickContinueButton);
-        GetButton((int)Buttons.ContinueButton).gameObject.BindEvent(OnClickCollectionButton);
+        GetButton((int)Buttons.CollectionButton).gameObject.BindEvent(OnClickCollectionButton);
 
         GetText((int)Texts.StartButtonText).text = Managers.GetText(Define.StartButtonText);
         GetText((int)Texts.ContinueButtonText).text = Managers.GetText(Define.ContinueButtonText);
@@ -66,12 +66,11 @@ public class UI_TitlePopup : UI_Popup
 
     private void OnClickCollectionButton(PointerEventData evt)
     {
+        Debug.Log("OnClickCollectionButton");
         Managers.Sound.Play(Define.ESound.Effect, ("Sound_FolderItemClick"));
 		Managers.Game.Init();
 		Managers.Game.LoadGame();
 
-        Debug.Log("OnClickCollectionButton");
-        //Managers.UI.ShowPopupUI<UI_CollectionPopup>();
+        Managers.UI.ShowPopupUI<UI_CollectionPopup>();
     }
-
 }

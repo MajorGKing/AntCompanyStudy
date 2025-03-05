@@ -74,6 +74,11 @@ public class Define
 		Cat,
 	}
 
+    public const int JOB_TITLE_TYPE_COUNT = (int)EJobTitleType.Sajang + 1; // 고양이 제외
+	public const int MAX_COLLECTION_COUNT = 100;
+	public const int MAX_PROJECT_COUNT = 10;
+	public const int MAX_ENDING_COUNT = 10;
+
     public enum EStatType
 	{
 		MaxHp,

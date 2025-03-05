@@ -8,6 +8,13 @@ using static Define;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
+public enum CollectionState
+{
+	None,
+	Uncheck,
+	Done
+}
+
 [Serializable]
 public class GameData
 {
@@ -25,6 +32,8 @@ public class GameData
 	public int Salary;
 
     public float LastProjectCoolTime;
+
+    public CollectionState[] Collections = new CollectionState[MAX_COLLECTION_COUNT];
 }
 
 public class GameManager
@@ -130,6 +139,8 @@ public class GameManager
     }
     
     #region Collection & Projects
+    public CollectionState[] Collections { get { return GameData.Collections; } }
+    
     public void RefreshStatCollections()
     {
 
