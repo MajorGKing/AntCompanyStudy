@@ -44,6 +44,16 @@ public class Define
         Japanese,
 	}
 
+    public enum EAnimState
+	{
+		None,
+		Idle,
+		Sweat,
+		Walking,
+		Working,
+		Attack,
+	}
+
 	public enum ELayer
 	{
 		Default = 0,
