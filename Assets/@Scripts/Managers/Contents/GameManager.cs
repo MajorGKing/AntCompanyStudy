@@ -96,8 +96,8 @@ public class GameManager
 		Salary = data.salary;
 
         PlayTime = 0.0f;
-		MaxGameDays = 120 * 15;
-		SecondPerGameDay = (float)1.0;
+		MaxGameDays = 120 * 15; // TODO ILHAK 값 수정 가능하게?
+		SecondPerGameDay = (float)1.0; // TODO ILHAK 값 수정 가능하게?
 		LastStressIncreaseDay = 0;
 		LastHpDecreaseDay = 0;
 		LastPayDay = 0;

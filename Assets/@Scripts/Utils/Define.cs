@@ -98,7 +98,18 @@ public class Define
 		Stress
 	}
 
-
+	public enum ERewardType
+	{
+		Hp,
+		WorkAbility,
+		Likeability,
+		Luck,
+		Stress,
+		Money,
+		Block,
+		SalaryIncrease,
+		Promotion
+	}
 
     public const int BlockHit = 4500;
     public const int BlockEventId = 5020;
