@@ -38,7 +38,57 @@ public class BaseController : UI_Base
 		_anim.startingLoop = loop;
 	}
 
+    public void ChangeSkin(string name)
+    {
+        _anim.initialSkinName = name;
+		_anim.Initialize(true);
+    }
 
+	public void Refresh()
+	{
+		_anim.Initialize(true);
+	}
+
+    public void PlayAnimationOnce(string name)
+	{
+		StartCoroutine(CoPlayAnimationOnce(name));
+	}
+
+	IEnumerator CoPlayAnimationOnce(string name)
+	{
+		bool defaultLoop = _anim.startingLoop;
+		string defaultName = _anim.startingAnimation;
+
+		_anim.startingLoop = false;
+		_anim.startingAnimation = name;
+
+		float length = _anim.skeletonDataAsset.GetSkeletonData(true).FindAnimation(name).Duration;
+		yield return new WaitForSeconds(length);
+
+		PlayAnimation(defaultName, defaultLoop);
+	}
+
+    	public void PlayAnimationOnce(string skin, string name)
+	{
+		StartCoroutine(CoPlayAnimationOnce(skin, name));
+	}
+
+	IEnumerator CoPlayAnimationOnce(string skin, string name)
+	{
+		bool defaultLoop = _anim.startingLoop;
+		string defaultSkin = _anim.initialSkinName;
+		string defaultName = _anim.startingAnimation;
+
+		_anim.startingLoop = false;
+		_anim.startingAnimation = name;
+		ChangeSkin(skin);
+
+		float length = _anim.skeletonDataAsset.GetSkeletonData(true).FindAnimation(name).Duration;
+		yield return new WaitForSeconds(length);
+
+		PlayAnimation(defaultName, defaultLoop);
+		ChangeSkin(defaultSkin);
+	}
     #endregion
 }
 

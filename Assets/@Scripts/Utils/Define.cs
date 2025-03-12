@@ -157,4 +157,15 @@ public class Define
     public const int GoToTitle = 20024;
     public const int WatchAD = 20025;
     public const int CollectionSuccessPopup = 20026;
+
+    public enum EResultType
+    {
+        Victory,
+        Defeat,
+        Project,
+        GoHome,
+        Dialogue,
+        SalaryNegotiationSuccess,
+        SalaryNegotiationFail
+    }
 }

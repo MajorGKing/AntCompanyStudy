@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Data;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -58,14 +59,25 @@ public class UI_ProjectItem : UI_SubItem
 		return ratio;
 	}
 
-	public void SetInfo()
+	public void SetInfo(ProjectData data, float delay)
 	{
-
+		_data = data;
+		_delay = delay;
+		RefreshUI();
 	}
 
 	private void RefreshUI()
 	{
+		if (string.IsNullOrEmpty(_data.iconPath) == false)
+		{
+			Sprite sprite = Managers.Resource.Load<Sprite>(_data.iconPath);
+			GetImage((int)Images.Icon).sprite = sprite;
+		}
 
+		GetText((int)Texts.TitleText).text = Managers.GetText(_data.projectName);
+
+		PopulateSubItems();
+		RefreshCanExecuteProject();
 	}
 
 	private void OnClickProjectItem(PointerEventData evt)
@@ -88,7 +100,78 @@ public class UI_ProjectItem : UI_SubItem
 
 			
 		}, Managers.GetText(Define.ProjectConfirmText));
+	}
 
+	void PopulateSubItems()
+	{
+		GameObject parent = GetObject((int)GameObjects.AbilityLayoutGroup);
+		foreach (Transform t in parent.transform)
+			Managers.Resource.Destroy(t.gameObject);
+
+		_items.Clear();
+
+		if (_data.difWorkAbility != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.WorkAbility, _data.difWorkAbility);
+			_items.Add(item);
+		}
+
+		if (_data.difLikeability != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.Likeability, _data.difLikeability);
+			_items.Add(item);
+		}
+
+		if (_data.difLuck != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.Luck, _data.difLuck);
+			_items.Add(item);
+		}
+
+		if (_data.difStress != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.Stress, _data.difStress);
+			_items.Add(item);
+		}
+
+		if (_data.difBlock != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.Block, _data.difBlock);
+			_items.Add(item);
+		}
+
+		if (_data.difMoney != 0)
+		{
+			UI_ProjectItemSubItem item = Managers.UI.MakeSubItem<UI_ProjectItemSubItem>(parent.transform);
+			item.SetInfo(Define.ERewardType.Money, _data.difMoney);
+			_items.Add(item);
+		}
+	}
+
+	public void RefreshCanExecuteProject()
+	{
+		if (CanExecuteProject())
+			gameObject.SetActive(true);
+		else
+			gameObject.SetActive(false);
+	}
+
+	// TO DO ILHAK 조건을 다양하게 해서 프로젝트를 늘리면 어떨까?
+	bool CanExecuteProject()
+	{
+		if (_data.reqLikability > Managers.Game.Likeability)
+			return false;
+		if (_data.reqAbility > Managers.Game.WorkAbility)
+			return false;
+		if (_data.reqLuck > Managers.Game.Luck)
+			return false;
+
+		return true;
 	}
 
 }

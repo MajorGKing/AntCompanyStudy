@@ -44,7 +44,6 @@ public class DataManager
     public Dictionary<int, TextData> Texts { get; private set; }
 
 
-
     public void Init()
     {
         BlockAnsEvents = LoadJson<BlockEventAnsDataLoader, int, BlockEventAnsData>("BlockEventData").MakeDict();
@@ -54,10 +53,12 @@ public class DataManager
         GoHomes = LoadJson<GoHomeDataLoader, int, GoHomeData>("GoHomeData").MakeDict();
         PlayerExcelDatas = LoadJson<PlayerExcelDataLoader, int, PlayerExcelData>("PlayerData").MakeDict();
         Projects = LoadJson<ProjectDataLoader, int, ProjectData>("ProjectData").MakeDict();
+        SalaryNegotiationData = LoadJson<SalaryNegotiationDataLoader, int, SalaryNegotiationData>("SalaryNegotiationData").MakeDict();
         Shops = LoadJson<ShopDataLoader, int, ShopData>("ShopData").MakeDict();
         StartData = LoadJson<StartDataLoader, int, StartData>("StartData").MakeDict();
         Stats = LoadJson<StatDataLoader, int, StatData>("StatData").MakeDict();
         Texts = LoadJson<TextDataLoader, int, TextData>("TextData").MakeDict();
+
 
 
         Dictionary<int, DialogueEventExcelData> DialogueEventExcels = LoadJson<DialogueEventExcelDataLoader, int, DialogueEventExcelData>("DialogueEventData").MakeDict();

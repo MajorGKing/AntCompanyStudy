@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public static class Extension
@@ -47,4 +48,20 @@ public static class Extension
             (list[k], list[n]) = (list[n], list[k]);//swap
         }
     }
+
+    public static T GetRandom<T>(this IList<T> list)
+	{
+		int index = Random.Range(0, list.Count + 1);
+		return list[index];
+	}
+
+    public static void ResetVertical(this ScrollRect scrollRect)
+	{
+		scrollRect.verticalNormalizedPosition = 1;
+	}
+
+    public static void ResetHorizontal(this ScrollRect scrollRect)
+	{
+		scrollRect.horizontalNormalizedPosition = 1;
+	}
 }

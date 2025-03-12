@@ -1,18 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PatrolController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+	GameObject _left;
+    [SerializeField]
+    GameObject _right;
+
+    bool _movingLeft = true;
+
+    public float MovingSpeed = 100.0f;
+	public bool StopMove { get; set; } = false;
+	public bool SwapLookDirection { get; set; } = true;
+
+    const float EPSILLON = 50.0f;
+
+    private void Start() 
     {
-        
+        _movingLeft = true;
+		if (SwapLookDirection)
+			gameObject.GetOrAddComponent<BaseController>().LookLeft(true);
+
+		transform.position = _right.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update() 
     {
-        
+        if (StopMove)
+			return;
+
+        if (_movingLeft)
+        {
+            Vector3 dir = _left.transform.position - transform.position;
+
+            if (dir.magnitude < EPSILLON || dir.x > 0)
+            {
+                _movingLeft = false;
+                if (SwapLookDirection)
+					gameObject.GetOrAddComponent<BaseController>().LookLeft(false);
+
+                return;
+            }
+
+            dir = dir.normalized;
+			transform.position += MovingSpeed * dir * Time.deltaTime;
+			return;
+        }
+        else
+        {
+            Vector3 dir = _right.transform.position - transform.position;
+
+            if (dir.magnitude < EPSILLON || dir.x < 0)
+            {
+                _movingLeft = true;
+                if (SwapLookDirection)
+					gameObject.GetOrAddComponent<BaseController>().LookLeft(true);
+
+                return;
+            }
+
+            dir = dir.normalized;
+			transform.position += MovingSpeed * dir * Time.deltaTime;
+        }
     }
 }

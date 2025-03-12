@@ -40,13 +40,22 @@ public class SoundManager
         _audioClips.Clear();
     }
 
+    public void SetPitch(Define.ESound type, float pitch = 1.0f)
+	{
+		AudioSource audioSource = _audioSources[(int)type];
+        if (audioSource == null)
+            return;
+
+        audioSource.pitch = pitch;
+	}
+
     public void Play(Define.ESound type)
     {
         AudioSource audioSource = _audioSources[(int)type];
         audioSource.Play();
     }
 
-    public void Play(Define.ESound type, string key, float pitch = 1.0f)
+    public void Play(Define.ESound type, string key, float pitch = 1.0f, float volume = 1.0f)
     {
         AudioSource audioSource = _audioSources[(int)type];
 
@@ -59,6 +68,7 @@ public class SoundManager
 
                 audioSource.clip = audioClip;
                 //if (Managers.Game.BGMOn)
+                    audioSource.volume = volume;
                     audioSource.Play();
             });
         }
@@ -71,6 +81,7 @@ public class SoundManager
 
                 audioSource.clip = audioClip;
                 //if (Managers.Game.EffectSoundOn)
+                    audioSource.volume = volume;
                     audioSource.Play();
             });
         }
@@ -80,10 +91,17 @@ public class SoundManager
             {
                 audioSource.pitch = pitch;
                 //if (Managers.Game.EffectSoundOn)
+                    audioSource.volume = volume;
                     audioSource.PlayOneShot(audioClip);
             });
         }
     }
+
+
+    // public void Play(Define.ESound type, string key, float pitch = 1.0f)
+    // {
+    //     Play(type, key, pitch, 1.0f);
+    // }
 
     public void Play(Define.ESound type, AudioClip audioClip, float pitch = 1.0f)
     {
