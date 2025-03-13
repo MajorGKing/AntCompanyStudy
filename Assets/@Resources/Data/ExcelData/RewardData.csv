@@ -1,10 +1,10 @@
 ﻿ID,nameID,iconPath
 0,6500,
-1,6001,Sprites/Main/Ability/icon_strength
-2,6011,Sprites/Main/Ability/icon_ability
-3,6021,Sprites/Main/Ability/icon_heart
-4,6031,Sprites/Main/Ability/icon_stress
-5,6041,Sprites/Main/Ability/icon_luck
-6,6051,Sprites/Main/Project/icon_coin1
-7,6061,Sprites/Main/Project/icon_coin2
+1,6001,icon_strength
+2,6011,icon_ability
+3,6021,icon_heart
+4,6031,icon_stress
+5,6041,icon_luck
+6,6051,icon_coin1
+7,6061,icon_coin2
 8,6501,

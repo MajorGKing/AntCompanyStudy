@@ -10,279 +10,255 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Sprite
+  m_Name: Spine
   m_EditorClassIdentifier: 
-  m_GroupName: Sprite
+  m_GroupName: Spine
   m_Data:
     m_SerializedData: []
-  m_GUID: e838eaf0fdd6b2c45ab065dfc4950a7d
+  m_GUID: 4603572904132fd4e980b0771d2b284d
   m_SerializeEntries:
-  - m_GUID: e72b069c623c833408c634486e36aed3
-    m_Address: attack_1
+  - m_GUID: fc2bb0d6fbdda1a4ca381aa34d7ecd84
+    m_Address: ending1_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: be41b9afe74ece249a664859bdb8d15d
-    m_Address: levelup_1
+  - m_GUID: fd084ece3d2c4cc41aaf7d7f4a62beb4
+    m_Address: ending2_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5208b96da12df9c47b45d8be1478f27e
-    m_Address: money_1
+  - m_GUID: 2788fbe4a08c9c842810bdae0230fba9
+    m_Address: ending3_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8c0bb92d2c536244ca43e4687b0e1b73
-    m_Address: project_1
+  - m_GUID: 4641e7b980d54b94e8255772371baaf0
+    m_Address: ending4_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b32b68fa50cc2824fa687c38a08ec50e
-    m_Address: stat_1
+  - m_GUID: 18a765def374e684eb09596871bf763e
+    m_Address: ending5_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8ee1e74f61564b04db74e70bf21d9b38
-    m_Address: ending_1
+  - m_GUID: 569860bd7ceba8442b4f47b62216a54f
+    m_Address: ending6_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 20bef50be83958945a415e6a4e8323e3
-    m_Address: ending_2
+  - m_GUID: 6cff8a8e5dfb6654eaa5e2639c04dc15
+    m_Address: ending7_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d8c032141e595454e9069bd3974c24e9
-    m_Address: ending_3
+  - m_GUID: e0e916a4b116e704baf070f3df8a08ce
+    m_Address: home_1_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b39a91b9fec9af24fb1f9f9aa849ea72
-    m_Address: ending_4
+  - m_GUID: 0824904f47071aa409ffe234a23527d4
+    m_Address: home_10_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e7498e245cac058468e427e0dc0b8b3d
-    m_Address: ending_5
+  - m_GUID: ac72218f01435d94ca607215cd3d01e8
+    m_Address: home_11_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f873aac80d82b294bb22b2e50d94ffac
-    m_Address: ending_6
+  - m_GUID: 764b8644c5b9a914db2e1b3e33c05789
+    m_Address: home_12_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da9157d5eb8438741b737b6c836e7de5
-    m_Address: ending_7
+  - m_GUID: 311289dac7d3f4f48a1cc79b0f1c6be6
+    m_Address: home_2_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dd58277819c70f1459c52880b1c35167
-    m_Address: battle_cha_1
+  - m_GUID: 1825bd99588cc7d4a848d1b977cb1528
+    m_Address: home_3_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1aa250f81bc07804199af3f8c4696875
-    m_Address: battle_cha_2
+  - m_GUID: 8e87b3be3576b66478512f04b51a3a7e
+    m_Address: home_4_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3176a2281f9b8824db1064ed758dcbc0
-    m_Address: battle_cha_3
+  - m_GUID: 51cfc11e98f65ab49b8d25b9fcd28005
+    m_Address: home_5_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c768c4cc2c135c043823f1fb49da108d
-    m_Address: battle_cha_4
+  - m_GUID: 694b081287c50184b84ec142c696c22e
+    m_Address: home_6_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c69bd88c444a89a4694b2589743cf10b
-    m_Address: battle_cha_5
+  - m_GUID: 0a96415bab261d646ab5199fdf198239
+    m_Address: home_7_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 960d2c020384ec4429f9a867f0d5a1be
-    m_Address: character_1
+  - m_GUID: 8c2f59c0eeca9044bacbf129ad50ea34
+    m_Address: home_8_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f7e877e19e57cab469e7f4611843cff1
-    m_Address: character_2
+  - m_GUID: 197fdbf7fc9d0c24798b55461d5a2d1f
+    m_Address: home_9_save_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2a0013cc1e7cf364c90c74876edcea7f
-    m_Address: character_3
+  - m_GUID: 55a766842cf4228498186125ef8e6956
+    m_Address: Intern_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d2cd6f7a2b6601842b563e3af8c04a0f
-    m_Address: character_4
+  - m_GUID: 4e6a9d7a5209a73418ba2d67cb7d21e0
+    m_Address: Sinib_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a04f7e4332907ea46bc39c08b109d735
-    m_Address: character_5
+  - m_GUID: 5bd9f88890af1a94ca8b21f8cac0f1a9
+    m_Address: Deari_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 61bcdae7d23df1a40947505aaf354896
-    m_Address: character_6
+  - m_GUID: 533cebb7416a90748a5c448ad68c88cf
+    m_Address: Gwajanb_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fc8c93fa5853a144fa4caa663ed9fae7
-    m_Address: Promotion1
+  - m_GUID: 32db582315f5a144f87c4a64bb254b08
+    m_Address: Bujang_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1a565886fcbca2248ad785d57b3eebd9
-    m_Address: Promotion2
+  - m_GUID: 51d31f53f7850614eaad4b5babad4e2d
+    m_Address: Esa_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dfc83a1af97123641b0f7f45bcf13104
-    m_Address: Promotion3
+  - m_GUID: b7a7e22b27d2f3544ad2455ed03b559b
+    m_Address: cat_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1b6944d9366597b4bbc5cc3d197b3e19
-    m_Address: Promotion4
+  - m_GUID: 69e4d6803f078724ba1335fbb5d4d3be
+    m_Address: Sajang_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 62fe1f21919ef3e4ead1b6122fb51fa4
-    m_Address: Promotion5
+  - m_GUID: b851458259c3dd94d984c779052e3ce6
+    m_Address: project_01_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0cf9c2db7f9b9894e9ac00231beb9f9a
-    m_Address: project_btn_ad
+  - m_GUID: deb5b4468c7b8824ba5e5e51b07e63e6
+    m_Address: project_02_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b0f4ee72bbca69f4f973b35d3bced39d
-    m_Address: project_btn_cat
+  - m_GUID: efc47fdf1b720b8498dbc5f21aea878c
+    m_Address: project_03_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0a812291dd8832f42a1c5f6efb0c2240
-    m_Address: project_btn_cuttingedge
+  - m_GUID: ac686ce2e0faa454fbc5f39e5c71a317
+    m_Address: project_04_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2ea35cdd2dad8d74b90ca06d8efab05f
-    m_Address: project_btn_develop
+  - m_GUID: 50cc17f2e6855754eb91cfc96bda8d38
+    m_Address: project_05_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6cca90577e502cd49a165a802ffcd8cc
-    m_Address: project_btn_expo
+  - m_GUID: f26014e8c18f206449f0612fe15c30a7
+    m_Address: project_06_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c0ab88018ad36c34db6f01719fee45f7
-    m_Address: project_btn_meeting
+  - m_GUID: e90bd0f9bb7f307408f3e283886e2143
+    m_Address: project_07_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d5140ffda7e90d04587ae40b2c0fc9af
-    m_Address: project_btn_play
+  - m_GUID: c391aa93cb210f84eaf18bd40e12dffe
+    m_Address: project_08_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ab3d0c311b9a3b748b06d6af0e024e85
-    m_Address: project_btn_presentation
+  - m_GUID: 6baeb2ab68f06424ba3d6700b6df2c7d
+    m_Address: project_09_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 34697dda3a6a32b43bde3b4988a7b3c0
-    m_Address: project_btn_rnd
+  - m_GUID: 0a3d90420fcd7aa44a107ee16f052bcb
+    m_Address: project_D_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 73f50e493ce394c47b35250587704d3b
-    m_Address: project_btn_subcontract
+  - m_GUID: 3f35fc6695c9e21428ab3e740e3e9ae9
+    m_Address: icon_coin4_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3f372efd5a8126e4ba832f4ec30e2dfd
-    m_Address: icon_ability
+  - m_GUID: 6675d4cb83db94d40b3450b1ba8b01e4
+    m_Address: icon_coin5_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 50304a11a886a02429236dffca260676
-    m_Address: icon_heart
+  - m_GUID: a038764ad4cab854fa18edb45c00a834
+    m_Address: icon3_2_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 93ae8a9b235c02346a9f3b4e79944102
-    m_Address: icon_luck
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8270fa6946414b64782b91f84c116976
-    m_Address: icon_strength
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4e3abc5998afe1046b742a10d4eb54b1
-    m_Address: icon_stress
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8d8b8c836dc511540a4d74bb242ad323
-    m_Address: icon_coin1
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 53321ef6024a6234ca1bb5dfc8dc33b9
-    m_Address: icon_coin2
+  - m_GUID: 0f11dd7c4052b164b83355886f99baee
+    m_Address: icon6_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
@@ -291,5 +267,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 9094f0f0595c6e147aa68a6f81e2dcaf, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: eda5fab5d74ce124bac8efcc157cb470, type: 2}
-    - {fileID: 11400000, guid: 12718986c22cfcc45835ae39184cd806, type: 2}
+    - {fileID: 11400000, guid: a299822cf4ad298489ab4d8bc5e2d7db, type: 2}
+    - {fileID: 11400000, guid: 8f86fc3cb491e334693ddfe41bd8e65a, type: 2}

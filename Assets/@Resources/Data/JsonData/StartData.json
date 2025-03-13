@@ -3,27 +3,27 @@
     {
       "ID": 0,
       "maxHp": 20,
-      "maxhpIconPath": "Sprites/Main/Ability/icon_strength",
+      "maxhpIconPath": "icon_strength",
       "atk": 10,
       "money": 200000,
-      "moneyIconPath": "Sprites/Main/Project/icon_coin1",
+      "moneyIconPath": "icon_coin1",
       "block": 1,
-      "blockIconPath": "Sprites/Main/Project/icon_coin2",
+      "blockIconPath": "icon_coin2",
       "salary": 2000000,
       "salaryPercent": 3.0,
       "revenuePercent": 0.0,
       "cooltimePercent": 0.0,
       "successPercent": 50.0,
       "workAbility": 0,
-      "workAbilityIconPath": "Sprites/Main/Ability/icon_ability",
+      "workAbilityIconPath": "icon_ability",
       "likeAbility": 0,
-      "likeAbilityIconPath": "Sprites/Main/Ability/icon_heart",
+      "likeAbilityIconPath": "icon_heart",
       "stress": 0,
       "increaseStress": 140,
       "maxStress": 3,
-      "stressIconPath": "Sprites/Main/Ability/icon_stress",
+      "stressIconPath": "icon_stress",
       "luck": 0,
-      "luckIconPath": "Sprites/Main/Ability/icon_luck"
+      "luckIconPath": "icon_luck"
     }
   ]
 }

@@ -8,37 +8,37 @@
     {
       "ID": "1",
       "nameID": "6001",
-      "iconPath": "Sprites/Main/Ability/icon_strength"
+      "iconPath": "icon_strength"
     },
     {
       "ID": "2",
       "nameID": "6011",
-      "iconPath": "Sprites/Main/Ability/icon_ability"
+      "iconPath": "icon_ability"
     },
     {
       "ID": "3",
       "nameID": "6021",
-      "iconPath": "Sprites/Main/Ability/icon_heart"
+      "iconPath": "icon_heart"
     },
     {
       "ID": "4",
       "nameID": "6031",
-      "iconPath": "Sprites/Main/Ability/icon_stress"
+      "iconPath": "icon_stress"
     },
     {
       "ID": "5",
       "nameID": "6041",
-      "iconPath": "Sprites/Main/Ability/icon_luck"
+      "iconPath": "icon_luck"
     },
     {
       "ID": "6",
       "nameID": "6051",
-      "iconPath": "Sprites/Main/Project/icon_coin1"
+      "iconPath": "icon_coin1"
     },
     {
       "ID": "7",
       "nameID": "6061",
-      "iconPath": "Sprites/Main/Project/icon_coin2"
+      "iconPath": "icon_coin2"
     },
     {
       "ID": "8",

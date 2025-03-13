@@ -5,7 +5,7 @@
       "nameID": 5000,
       "illustPath": null,
       "battleIconPath": null,
-      "spine": "Spine/0. Intern/Intern_SkeletonData",
+      "spine": "Intern_SkeletonData",
       "aniIdle": "idle",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -26,9 +26,9 @@
     {
       "ID": 1,
       "nameID": 5010,
-      "illustPath": "Sprites/Main/Battle/character_6",
+      "illustPath": "character_6",
       "battleIconPath": null,
-      "spine": "Spine/1. Sinib/Sinib_SkeletonData",
+      "spine": "Sinib_SkeletonData",
       "aniIdle": "idle",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -49,9 +49,9 @@
     {
       "ID": 2,
       "nameID": 5020,
-      "illustPath": "Sprites/Main/Battle/battle_cha_1",
-      "battleIconPath": "Sprites/Main/Battle/character_1",
-      "spine": "Spine/2. Daeri/Deari_SkeletonData",
+      "illustPath": "battle_cha_1",
+      "battleIconPath": "character_1",
+      "spine": "Deari_SkeletonData",
       "aniIdle": "idle",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -67,14 +67,14 @@
       "atkText1": 9506,
       "atkText2": 9507,
       "atkText3": 9508,
-      "promotion": "Sprites/Comic4/Promotion1"
+      "promotion": "Promotion1"
     },
     {
       "ID": 3,
       "nameID": 5030,
-      "illustPath": "Sprites/Main/Battle/battle_cha_2",
-      "battleIconPath": "Sprites/Main/Battle/character_2",
-      "spine": "Spine/3. Gwajang/Gwajanb_SkeletonData",
+      "illustPath": "battle_cha_2",
+      "battleIconPath": "character_2",
+      "spine": "Gwajanb_SkeletonData",
       "aniIdle": "main",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -90,14 +90,14 @@
       "atkText1": 9509,
       "atkText2": 9510,
       "atkText3": 9511,
-      "promotion": "Sprites/Comic4/Promotion2"
+      "promotion": "Promotion2"
     },
     {
       "ID": 4,
       "nameID": 5040,
-      "illustPath": "Sprites/Main/Battle/battle_cha_3",
-      "battleIconPath": "Sprites/Main/Battle/character_3",
-      "spine": "Spine/4. Bujang/Bujang_SkeletonData",
+      "illustPath": "battle_cha_3",
+      "battleIconPath": "character_3",
+      "spine": "Bujang_SkeletonData",
       "aniIdle": "main",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -113,14 +113,14 @@
       "atkText1": 9512,
       "atkText2": 9513,
       "atkText3": 9514,
-      "promotion": "Sprites/Comic4/Promotion3"
+      "promotion": "Promotion3"
     },
     {
       "ID": 5,
       "nameID": 5050,
-      "illustPath": "Sprites/Main/Battle/battle_cha_4",
-      "battleIconPath": "Sprites/Main/Battle/character_4",
-      "spine": "Spine/5. Esa/Esa_SkeletonData",
+      "illustPath": "battle_cha_4",
+      "battleIconPath": "character_4",
+      "spine": "Esa_SkeletonData",
       "aniIdle": "idle",
       "aniIdleSkin": "main",
       "aniWorking": "work_1",
@@ -136,14 +136,14 @@
       "atkText1": 9515,
       "atkText2": 9516,
       "atkText3": 9517,
-      "promotion": "Sprites/Comic4/Promotion4"
+      "promotion": "Promotion4"
     },
     {
       "ID": 6,
       "nameID": 5060,
-      "illustPath": "Sprites/Main/Battle/battle_cha_5",
-      "battleIconPath": "Sprites/Main/Battle/character_5",
-      "spine": "Spine/6. Sajang/Sajang_SkeletonData",
+      "illustPath": "battle_cha_5",
+      "battleIconPath": "character_5",
+      "spine": "Sajang_SkeletonData",
       "aniIdle": "idle",
       "aniIdleSkin": "main",
       "aniWorking": "work",
@@ -159,14 +159,14 @@
       "atkText1": 9518,
       "atkText2": 9519,
       "atkText3": 9520,
-      "promotion": "Sprites/Comic4/Promotion5"
+      "promotion": "Promotion5"
     },
     {
       "ID": 7,
       "nameID": 5070,
       "illustPath": null,
       "battleIconPath": null,
-      "spine": "Spine/6. Sajang/cat_SkeletonData",
+      "spine": "cat_SkeletonData",
       "aniIdle": "animation",
       "aniIdleSkin": "default",
       "aniWorking": "animation",

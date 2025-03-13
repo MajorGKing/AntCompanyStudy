@@ -1,2 +1,2 @@
 ﻿ID,maxHp,maxhpIconPath,atk,money,moneyIconPath,block,blockIconPath,salary,salaryPercent,revenuePercent,cooltimePercent,successPercent,workAbility,workAbilityIconPath,likAbility,likAbilityIconPath,stress,maxStress,increaseStress,stressIconPath,luck,luckIconPath
-0,20,Sprites/Main/Ability/icon_strength,10,200000,Sprites/Main/Project/icon_coin1,1,Sprites/Main/Project/icon_coin2,2000000,3,0,0,50,0,Sprites/Main/Ability/icon_ability,0,Sprites/Main/Ability/icon_heart,0,140,3,Sprites/Main/Ability/icon_stress,0,Sprites/Main/Ability/icon_luck
+0,20,icon_strength,10,200000,icon_coin1,1,icon_coin2,2000000,3,0,0,50,0,icon_ability,0,icon_heart,0,140,3,icon_stress,0,icon_luck

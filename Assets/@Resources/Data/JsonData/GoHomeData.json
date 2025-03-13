@@ -3,7 +3,7 @@
     {
       "ID": 1,
       "nameID": 8501,
-      "aniPath": "Spine/GoHome/home_12_save_SkeletonData",
+      "aniPath": "home_12_save_SkeletonData",
       "difWorkAbility": 0,
       "difLikeability": 0,
       "difLuck": 0,
@@ -14,7 +14,7 @@
     {
       "ID": 2,
       "nameID": 8511,
-      "aniPath": "Spine/GoHome/home_3_save_SkeletonData",
+      "aniPath": "home_3_save_SkeletonData",
       "difWorkAbility": 0,
       "difLikeability": 0,
       "difLuck": 2,
@@ -25,7 +25,7 @@
     {
       "ID": 3,
       "nameID": 8521,
-      "aniPath": "Spine/GoHome/home_1_save_SkeletonData",
+      "aniPath": "home_1_save_SkeletonData",
       "difWorkAbility": 0,
       "difLikeability": 27,
       "difLuck": 0,
@@ -36,7 +36,7 @@
     {
       "ID": 4,
       "nameID": 8531,
-      "aniPath": "Spine/GoHome/home_10_save_SkeletonData",
+      "aniPath": "home_10_save_SkeletonData",
       "difWorkAbility": -90,
       "difLikeability": 0,
       "difLuck": 4,
@@ -47,7 +47,7 @@
     {
       "ID": 5,
       "nameID": 8541,
-      "aniPath": "Spine/GoHome/home_9_save_SkeletonData",
+      "aniPath": "home_9_save_SkeletonData",
       "difWorkAbility": 72,
       "difLikeability": -36,
       "difLuck": 0,
@@ -58,7 +58,7 @@
     {
       "ID": 6,
       "nameID": 8551,
-      "aniPath": "Spine/GoHome/home_4_save_SkeletonData",
+      "aniPath": "home_4_save_SkeletonData",
       "difWorkAbility": 45,
       "difLikeability": 0,
       "difLuck": 0,
@@ -69,7 +69,7 @@
     {
       "ID": 7,
       "nameID": 8561,
-      "aniPath": "Spine/GoHome/home_2_save_SkeletonData",
+      "aniPath": "home_2_save_SkeletonData",
       "difWorkAbility": -60,
       "difLikeability": 90,
       "difLuck": 2,
@@ -80,7 +80,7 @@
     {
       "ID": 8,
       "nameID": 8571,
-      "aniPath": "Spine/GoHome/home_8_save_SkeletonData",
+      "aniPath": "home_8_save_SkeletonData",
       "difWorkAbility": 33,
       "difLikeability": 33,
       "difLuck": 0,
@@ -91,7 +91,7 @@
     {
       "ID": 9,
       "nameID": 8581,
-      "aniPath": "Spine/GoHome/home_7_save_SkeletonData",
+      "aniPath": "home_7_save_SkeletonData",
       "difWorkAbility": 0,
       "difLikeability": 54,
       "difLuck": 2,
@@ -102,7 +102,7 @@
     {
       "ID": 10,
       "nameID": 8591,
-      "aniPath": "Spine/GoHome/home_5_save_SkeletonData",
+      "aniPath": "home_5_save_SkeletonData",
       "difWorkAbility": 48,
       "difLikeability": 18,
       "difLuck": 2,
@@ -113,7 +113,7 @@
     {
       "ID": 11,
       "nameID": 8601,
-      "aniPath": "Spine/GoHome/home_6_save_SkeletonData",
+      "aniPath": "home_6_save_SkeletonData",
       "difWorkAbility": 45,
       "difLikeability": 45,
       "difLuck": 2,
@@ -124,7 +124,7 @@
     {
       "ID": 12,
       "nameID": 8611,
-      "aniPath": "Spine/GoHome/home_11_save_SkeletonData",
+      "aniPath": "home_11_save_SkeletonData",
       "difWorkAbility": 63,
       "difLikeability": 63,
       "difLuck": 2,

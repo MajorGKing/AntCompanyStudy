@@ -5,56 +5,56 @@
       "nameID": 8001,
       "type": 0,
       "value": 1,
-      "aniPath": "Spine/Ending/ending1_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_1"
+      "aniPath": "ending1_save_SkeletonData",
+      "illustPath": "ending_1"
     },
     {
       "ID": 2,
       "nameID": 8011,
       "type": 0,
       "value": 2,
-      "aniPath": "Spine/Ending/ending2_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_2"
+      "aniPath": "ending2_save_SkeletonData",
+      "illustPath": "ending_2"
     },
     {
       "ID": 3,
       "nameID": 8021,
       "type": 0,
       "value": 3,
-      "aniPath": "Spine/Ending/ending3_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_3"
+      "aniPath": "ending3_save_SkeletonData",
+      "illustPath": "ending_3"
     },
     {
       "ID": 4,
       "nameID": 8031,
       "type": 0,
       "value": 4,
-      "aniPath": "Spine/Ending/ending4_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_4"
+      "aniPath": "ending4_save_SkeletonData",
+      "illustPath": "ending_4"
     },
     {
       "ID": 5,
       "nameID": 8041,
       "type": 0,
       "value": 5,
-      "aniPath": "Spine/Ending/ending5_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_5"
+      "aniPath": "ending5_save_SkeletonData",
+      "illustPath": "ending_5"
     },
     {
       "ID": 6,
       "nameID": 8051,
       "type": 0,
       "value": 6,
-      "aniPath": "Spine/Ending/ending6_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_6"
+      "aniPath": "ending6_save_SkeletonData",
+      "illustPath": "ending_6"
     },
     {
       "ID": 7,
       "nameID": 8061,
       "type": 1,
       "value": 140,
-      "aniPath": "Spine/Ending/ending7_save_SkeletonData",
-      "illustPath": "Sprites/Popup6/ending_7"
+      "aniPath": "ending7_save_SkeletonData",
+      "illustPath": "ending_7"
     }
   ]
 }
