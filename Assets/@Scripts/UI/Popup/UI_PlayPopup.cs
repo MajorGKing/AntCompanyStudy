@@ -378,14 +378,14 @@ public class UI_PlayPopup : UI_Popup
 		GetObject((int)GameObjects.ProjectTab).gameObject.SetActive(false);
 		GetObject((int)GameObjects.BattleTab).gameObject.SetActive(false);
 		GetObject((int)GameObjects.ShopTab).gameObject.SetActive(false);
-		GetButton((int)Buttons.AbilityButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_05");
-		GetButton((int)Buttons.ProjectButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_06");
-		GetButton((int)Buttons.BattleButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_07");
-		GetButton((int)Buttons.ShopButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_08");
-		GetImage((int)Images.AbilityBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_04");
-		GetImage((int)Images.ProjectBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_04");
-		GetImage((int)Images.BattleBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_04");
-		GetImage((int)Images.ShopBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_04");
+		GetButton((int)Buttons.AbilityButton).image.sprite = Managers.Resource.Load<Sprite>("btn_05");
+		GetButton((int)Buttons.ProjectButton).image.sprite = Managers.Resource.Load<Sprite>("btn_06");
+		GetButton((int)Buttons.BattleButton).image.sprite = Managers.Resource.Load<Sprite>("btn_07");
+		GetButton((int)Buttons.ShopButton).image.sprite = Managers.Resource.Load<Sprite>("btn_08");
+		GetImage((int)Images.AbilityBox).sprite = Managers.Resource.Load<Sprite>("btn_04");
+		GetImage((int)Images.ProjectBox).sprite = Managers.Resource.Load<Sprite>("btn_04");
+		GetImage((int)Images.BattleBox).sprite = Managers.Resource.Load<Sprite>("btn_04");
+		GetImage((int)Images.ShopBox).sprite = Managers.Resource.Load<Sprite>("btn_04");
 
 		switch (_tab)
 		{
@@ -393,22 +393,22 @@ public class UI_PlayPopup : UI_Popup
 				Managers.Sound.Play(Define.ESound.Effect, "Sound_MainButton");
 				GetObject((int)GameObjects.AbilityTab).gameObject.SetActive(true);
 				GetObject((int)GameObjects.AbilityTab).GetComponent<ScrollRect>().ResetVertical();
-				GetButton((int)Buttons.AbilityButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_18");
-				GetImage((int)Images.AbilityBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_12");
+				GetButton((int)Buttons.AbilityButton).image.sprite = Managers.Resource.Load<Sprite>("btn_18");
+				GetImage((int)Images.AbilityBox).sprite = Managers.Resource.Load<Sprite>("btn_12");
 				break;
 			case EPlayTab.Project:
 				Managers.Sound.Play(Define.ESound.Effect, "Sound_MainButton");
 				GetObject((int)GameObjects.ProjectTab).gameObject.SetActive(true);
 				GetObject((int)GameObjects.ProjectTab).GetComponent<ScrollRect>().ResetHorizontal();
-				GetButton((int)Buttons.ProjectButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_19");
-				GetImage((int)Images.ProjectBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_12");
+				GetButton((int)Buttons.ProjectButton).image.sprite = Managers.Resource.Load<Sprite>("btn_19");
+				GetImage((int)Images.ProjectBox).sprite = Managers.Resource.Load<Sprite>("btn_12");
 				break;
 			case EPlayTab.Battle:
 				Managers.Sound.Play(Define.ESound.Effect, "Sound_MainButton");
 				GetObject((int)GameObjects.BattleTab).gameObject.SetActive(true);
 				GetObject((int)GameObjects.BattleTab).GetComponent<ScrollRect>().ResetHorizontal();
-				GetButton((int)Buttons.BattleButton).image.sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_20");
-				GetImage((int)Images.BattleBox).sprite = Managers.Resource.Load<Sprite>("Sprites/Main/Common/btn_12");
+				GetButton((int)Buttons.BattleButton).image.sprite = Managers.Resource.Load<Sprite>("btn_20");
+				GetImage((int)Images.BattleBox).sprite = Managers.Resource.Load<Sprite>("btn_12");
 				break;
 			case EPlayTab.Shop:
 				Managers.Sound.Play(Define.ESound.Effect, "Sound_MainButton");

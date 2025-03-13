@@ -1,3 +1,4 @@
+using Data;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -90,11 +91,48 @@ public class UI_CollectionPopup : UI_Popup
         Transform parent = GetObject((int)GameObjects.Content).gameObject.transform;
 		foreach (Transform t in parent)
 			Managers.Resource.Destroy(t.gameObject);
+
+        foreach (CollectionData data in Managers.Data.Collections.Values)
+        {
+            var item = Managers.UI.MakeSubItem<UI_CollectionItem>(parent.transform);
+            item.SetInfo(data.ID);
+
+            _items.Add(item);
+        }
+
+        List<EndingData> endingList = Managers.Data.Endings.Values.ToList();
+        for (int i = 0; i < endingList.Count; i++)
+            _items[i].SetGalleryInfo(endingList[i].ID);
+
+        RefreshButton();
     }
 
     void RefreshButton()
     {
+        if (_type == CollectionButtonType.Common)
+        {
+            Managers.Sound.Play(Define.ESound.Effect, ("Sound_UpgradeDone"));
+            GetButton((int)Buttons.CommonButton).gameObject.SetActive(false);
+            GetButton((int)Buttons.CommonButtonSelected).gameObject.SetActive(true);
+            GetButton((int)Buttons.GalleryButton).gameObject.SetActive(true);
+            GetButton((int)Buttons.GalleryButtonSelected).gameObject.SetActive(false);
+        }
+        else
+        {
+            Managers.Sound.Play(Define.ESound.Effect, ("Sound_UpgradeDone"));
+            GetButton((int)Buttons.CommonButton).gameObject.SetActive(true);
+            GetButton((int)Buttons.CommonButtonSelected).gameObject.SetActive(false);
+            GetButton((int)Buttons.GalleryButton).gameObject.SetActive(false);
+            GetButton((int)Buttons.GalleryButtonSelected).gameObject.SetActive(true);
+        }
 
+        foreach (UI_CollectionItem item in _items)
+        {
+            if (_type == CollectionButtonType.Common)
+                item.SetType(UI_CollectionItem.CollectionItemType.Collection);
+            else
+                item.SetType(UI_CollectionItem.CollectionItemType.Gallery);
+        }
     }
 
     void OnClickButton(PointerEventData evt, CollectionButtonType type)

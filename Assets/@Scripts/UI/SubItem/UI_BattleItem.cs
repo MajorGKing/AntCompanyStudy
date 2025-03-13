@@ -36,7 +36,6 @@ public class UI_BattleItem : UI_Base
 		GetButton((int)Buttons.BattleStartButton).gameObject.BindEvent(OnClickBattleButton);		
 
 		RefreshUI();
-
     }
 
     public void SetInfo(PlayerData data)
