@@ -184,16 +184,16 @@ namespace Data
 
         public bool Validate()
         {
-            var statCollections = Managers.Data.StatCollections;
-            statCollections = collectionDatas.Where(c => c.reqType == CollectionType.Stat).ToList();
-            var whealthCollections = Managers.Data.WealthCollections;
-            whealthCollections = collectionDatas.Where(c => c.reqType == CollectionType.Wealth).ToList();
-            var levelCollections = Managers.Data.LevelCollections;
-            whealthCollections = collectionDatas.Where(c => c.reqType == CollectionType.Level).ToList();
-            var projectCollections = Managers.Data.ProjectCollections;
-            projectCollections = collectionDatas.Where(c => c.reqType == CollectionType.Project).ToList();
-            var battleCollections = Managers.Data.BattleCollections;
-            battleCollections = collectionDatas.Where(c => c.reqType == CollectionType.Battle).ToList();
+            // var statCollections = Managers.Data.StatCollections;
+            // statCollections = collectionDatas.Where(c => c.reqType == CollectionType.Stat).ToList();
+            // var whlthCollections = Managers.Data.WealthCollections;
+            // whlthCollections = collectionDatas.Where(c => c.reqType == CollectionType.Wealth).ToList();
+            // var levelCollections = Managers.Data.LevelCollections;
+            // levelCollections = collectionDatas.Where(c => c.reqType == CollectionType.Level).ToList();
+            // var projectCollections = Managers.Data.ProjectCollections;
+            // projectCollections = collectionDatas.Where(c => c.reqType == CollectionType.Project).ToList();
+            // var battleCollections = Managers.Data.BattleCollections;
+            // battleCollections = collectionDatas.Where(c => c.reqType == CollectionType.Battle).ToList();
             return true;
         }
     }

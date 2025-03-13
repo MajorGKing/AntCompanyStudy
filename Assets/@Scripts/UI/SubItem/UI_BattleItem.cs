@@ -23,7 +23,7 @@ public class UI_BattleItem : UI_Base
 		BattleStartButton,
 	}
 
-	PlayerData _data;
+	PlayerData _data = new PlayerData();
 
     protected override void Awake()
     {

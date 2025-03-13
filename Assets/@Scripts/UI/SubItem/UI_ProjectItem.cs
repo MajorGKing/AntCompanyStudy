@@ -23,7 +23,7 @@ public class UI_ProjectItem : UI_SubItem
 		AbilityLayoutGroup
 	}
 
-    private Data.ProjectData _data;
+    private Data.ProjectData _data = new Data.ProjectData();
     private float _delay;
     private List<UI_ProjectItemSubItem> _items = new List<UI_ProjectItemSubItem>();
 
