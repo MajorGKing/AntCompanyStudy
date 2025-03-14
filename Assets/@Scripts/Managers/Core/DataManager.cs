@@ -166,6 +166,8 @@ public class DataManager
         }
 
         Validate();
+
+        Debug.Log("Data Init!!");
     }
 
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

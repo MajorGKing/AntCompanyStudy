@@ -19,8 +19,8 @@
       "likeAbility": 0,
       "likeAbilityIconPath": "icon_heart",
       "stress": 0,
-      "increaseStress": 140,
-      "maxStress": 3,
+      "maxStress": 140,
+      "increaseStress": 3,
       "stressIconPath": "icon_stress",
       "luck": 0,
       "luckIconPath": "icon_luck"

@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using UnityEngine.EventSystems;
 
 public class UI_ConfirmPopup : UI_Popup
@@ -35,13 +36,15 @@ public class UI_ConfirmPopup : UI_Popup
 
     private void RefreshUI()
     {
-
+        GetText((int)Texts.MessageText).text = _text;
     }
 
     public void SetInfo(Action onClickYesButton, string text)
     {
         _onClickYesButton = onClickYesButton;
         _text = text;
+
+		UnityEngine.Debug.Log("Text: " + text);
 
         RefreshUI();
     }

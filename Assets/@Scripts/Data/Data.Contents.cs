@@ -633,8 +633,8 @@ namespace Data
         public int likeAbility;
         public string likeAbilityIconPath;
         public int stress;
-        public int increaseStress;
         public int maxStress;
+        public int increaseStress;
         public string stressIconPath;
         public int luck;
         public string luckIconPath;
