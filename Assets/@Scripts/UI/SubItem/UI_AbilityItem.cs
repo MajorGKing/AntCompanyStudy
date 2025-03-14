@@ -23,7 +23,7 @@ public class UI_AbilityItem : UI_SubItem
 	}
 
     private Define.EStatType _statType;
-    private StatData _statData;
+    private StatData _statData = new StatData();
 
     [SerializeField]
     DOTweenAnimation _moveAnim;
@@ -34,6 +34,8 @@ public class UI_AbilityItem : UI_SubItem
     protected override void Awake()
     {
         base.Awake();
+
+		Debug.Log(gameObject.name);
 
         BindTexts(typeof(Texts));
 		BindButtons(typeof(Buttons));
@@ -66,7 +68,12 @@ public class UI_AbilityItem : UI_SubItem
 
     public void RefreshUI()
     {
+		if(_init == false)
+			return;
+
         int value = Utils.GetStatValue(_statType);
+
+		Debug.Log($"(int)Texts.TitleText); {(int)Texts.TitleText}");
 
         GetText((int)Texts.TitleText).text = Managers.GetText(_statData.nameID);
         GetText((int)Texts.ChangeText).text = $"{value} → {GetIncreasedValue()}";

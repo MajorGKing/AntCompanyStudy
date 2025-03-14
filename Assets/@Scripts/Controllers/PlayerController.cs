@@ -18,7 +18,7 @@ public class PlayerController : BaseController
     PlayerData _data;
     GameObject _exclamation;
 	GameObject _question;
-	PlayerState _playerState;
+	PlayerState _playerState = new PlayerState();
     EEmoticonType _emoticon = EEmoticonType.None;
 
     public Define.EJobTitleType JobTitle { get; set; }
@@ -128,6 +128,9 @@ public class PlayerController : BaseController
 
     protected override void UpdateAnimation()
     {
+		if(_init == false)
+			return;
+
         base.UpdateAnimation();
 
         if (JobTitle == Define.EJobTitleType.Cat)
@@ -159,6 +162,29 @@ public class PlayerController : BaseController
 
     void OnClickPlayer(PointerEventData evt)
     {
-        
+        Debug.Log("OnClicked");
+		
+		if (GoHomeEvent)
+		{
+			Managers.UI.ShowPopupUI<UI_GoHomePopup>().SetInfo();
+			GoHomeEvent = false;
+			State = Define.EAnimState.Working;
+		}
+
+		if (DialogueEvent)
+		{
+			if (JobTitle == Define.EJobTitleType.Cat)
+			{
+				Managers.UI.ShowPopupUI<UI_DialoguePopup>().SetInfo(Define.EJobTitleType.Sajang, salaryNegotation: true);
+				DialogueEvent = false;
+				State = Define.EAnimState.Working;
+			}
+			else
+			{
+				Managers.UI.ShowPopupUI<UI_DialoguePopup>().SetInfo(JobTitle);
+				DialogueEvent = false;
+				State = Define.EAnimState.Working;
+			}
+		}
     }
 }

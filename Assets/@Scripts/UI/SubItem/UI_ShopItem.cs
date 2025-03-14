@@ -24,7 +24,7 @@ public class UI_ShopItem : UI_Base
 		Icon
 	}
 
-	ShopData _shopData;
+	ShopData _shopData = new ShopData();
 
     protected override void Awake()
     {
@@ -48,7 +48,14 @@ public class UI_ShopItem : UI_Base
 
     private void RefreshUI()
     {
-        GetObject((int)GameObjects.Icon).GetOrAddComponent<BaseController>().SetSkeletonAsset(_shopData.icon);
+        if(_init == false)
+            return;
+
+        if(string.IsNullOrEmpty(_shopData.icon) == false)
+        {
+            GetObject((int)GameObjects.Icon).GetOrAddComponent<BaseController>().SetSkeletonAsset(_shopData.icon);
+        }
+        
 		GetText((int)Texts.ItemText).text = Managers.GetText(_shopData.name);
 
         if (_shopData.condition == ShopConditionType.Cash)

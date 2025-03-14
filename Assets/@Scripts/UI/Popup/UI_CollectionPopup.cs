@@ -69,6 +69,9 @@ public class UI_CollectionPopup : UI_Popup
 
     private void RefreshUI()
     {
+        if (_init == false)
+			return;
+
         GetImage((int)Images.CommonIconNotice).gameObject.SetActive(false);
 		GetImage((int)Images.GalleryIconNotice).gameObject.SetActive(false);
 
@@ -95,7 +98,7 @@ public class UI_CollectionPopup : UI_Popup
         foreach (CollectionData data in Managers.Data.Collections.Values)
         {
             var item = Managers.UI.MakeSubItem<UI_CollectionItem>(parent.transform);
-            item.SetInfo(data.ID);
+            item.SetCollectionInfo(data.ID);
 
             _items.Add(item);
         }
@@ -150,6 +153,12 @@ public class UI_CollectionPopup : UI_Popup
 		{
 			if (Managers.Game.Collections[i] == CollectionState.Uncheck)
 				Managers.Game.Collections[i] = CollectionState.Done;
+		}
+
+        for (int i = 0; i < Managers.Game.Endings.Length; i++)
+		{
+			if (Managers.Game.Endings[i] == CollectionState.Uncheck)
+				Managers.Game.Endings[i] = CollectionState.Done;
 		}
 
         Managers.Game.SaveGame();

@@ -7,11 +7,15 @@ public class BaseController : UI_Base
 {
     protected SkeletonGraphic _anim = null;
 
+	protected bool _init = false;
+
     protected override void Awake()
     {
         base.Awake();
 
         _anim = GetComponent<SkeletonGraphic>();
+
+		_init = true;
     }
 
     protected virtual void UpdateAnimation() {}
@@ -28,6 +32,9 @@ public class BaseController : UI_Base
     #region Spine Animation
     public void SetSkeletonAsset(string path)
 	{
+		if(string.IsNullOrEmpty(path))
+			return;
+			
 		_anim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(path);
 		_anim.Initialize(true);
 	}

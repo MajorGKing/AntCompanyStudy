@@ -1,5 +1,6 @@
 using Data;
 using UnityEngine.EventSystems;
+using UnityEngine;
 
 public class UI_EndingPopup : UI_Popup
 {
@@ -21,7 +22,7 @@ public class UI_EndingPopup : UI_Popup
 		CollectionImage
 	}
 
-	EndingData _endingData;
+	EndingData _endingData = new EndingData();
 
     protected override void Awake()
     {
@@ -37,23 +38,27 @@ public class UI_EndingPopup : UI_Popup
         Managers.Sound.Clear();
 		Managers.Sound.Play(Define.ESound.Effect, "Sound_Ending2");
 
-        RefreshUI();
-
-        int endingIndex = _endingData.ID - 1;
-		if (Managers.Game.Endings[endingIndex] == CollectionState.None)
-			Managers.Game.Endings[endingIndex] = CollectionState.Uncheck;
-		Managers.Game.SaveGame();
+        RefreshUI();		
     }
 
     public void SetInfo(EndingData endingData)
     {
 		_endingData = endingData;
 		RefreshUI();
+
+		int endingIndex = _endingData.ID - 1;
+
+		if (Managers.Game.Endings[endingIndex] == CollectionState.None)
+		 	Managers.Game.Endings[endingIndex] = CollectionState.Uncheck;
+		Managers.Game.SaveGame();
     }
 
     private void RefreshUI()
     {
-        if (_endingData == null)
+        if (_init == false)
+			return;
+
+		if (_endingData == null)
 			return;
 
         GetObject((int)GameObjects.CollectionImage).GetOrAddComponent<BaseController>().SetSkeletonAsset(_endingData.aniPath);
@@ -70,6 +75,8 @@ public class UI_EndingPopup : UI_Popup
     void OnContinueButton(PointerEventData evt)
     {
         // ILHAK TODO 광고 추가
+
+		Debug.Log("OnContinueButton");
 
         Managers.Game.Stress = 0;
 		Managers.UI.ClosePopupUI();

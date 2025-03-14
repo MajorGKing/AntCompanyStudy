@@ -46,11 +46,26 @@ public class UI_TitlePopup : UI_Popup
         Debug.Log("OnClickStartButton");
         Managers.Sound.Play(Define.ESound.Effect, "Sound_FolderItemClick");
 
-        Managers.Game.Init();
-        Managers.Game.SaveGame();
+        // 세이브 파일이 있다면
+        if (Managers.Game.LoadGame())
+		{
+			Managers.UI.ShowPopupUI<UI_ConfirmPopup>().SetInfo(() =>
+			{
+				Managers.Game.Init();
+				Managers.Game.SaveGame();
 
-        Managers.UI.ClosePopupUI(this); // UI_TitlePopup
-        Managers.UI.ShowPopupUI<UI_NamePopup>();
+				Managers.UI.ClosePopupUI(this); // UI_TitlePopup
+				Managers.UI.ShowPopupUI<UI_NamePopup>();
+			}, Managers.GetText(Define.DataResetConfirm));
+		}
+		else
+		{
+			Managers.Game.Init();
+			Managers.Game.SaveGame();
+
+			Managers.UI.ClosePopupUI(this); // UI_TitlePopup
+			Managers.UI.ShowPopupUI<UI_NamePopup>();
+		}
     }
 
     private void OnClickContinueButton(PointerEventData evt)

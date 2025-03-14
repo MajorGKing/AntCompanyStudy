@@ -1347,3 +1347,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentScrollRect: {fileID: 0}
+  _moveAnim: {fileID: 3694246486642147228}
+  _rotateAnim: {fileID: 8892049073038057382}

@@ -161,13 +161,13 @@ public class GameManager
     public int Stress
 	{
 		get { return GameData.Stress; }
-		set { GameData.Stress = Mathf.Clamp(value, 0, MaxStress); RefreshStatCollections();}// OnStressChanged?.Invoke(); }
+		set { GameData.Stress = Mathf.Clamp(value, 0, MaxStress); RefreshStatCollections(); OnStressChanged?.Invoke(); Debug.Log($"Stress {GameData.Stress}");}
 	}
 
     public int MaxStress
     {
         get { return GameData.MaxStress;}
-        set { GameData.MaxStress = value;}
+        set { Debug.Log("Set stress : " + value); GameData.MaxStress = value;}
     }
 
     public float HpPercent { get { return Hp * 100 / (float)MaxHp; } }

@@ -49,7 +49,7 @@ public class UI_CollectionItem : UI_SubItem
 		RefreshUI();
     }
 
-	public void SetInfo(int collectionId)
+	public void SetCollectionInfo(int collectionId)
 	{
         if (collectionId > 0)
             _collectionId = collectionId;
@@ -69,6 +69,9 @@ public class UI_CollectionItem : UI_SubItem
 
     private void RefreshUI()
 	{
+        if (_init == false)
+			return;
+
         if (_type == CollectionItemType.Collection)
             RefreshCollectionUI();
         else
@@ -77,6 +80,9 @@ public class UI_CollectionItem : UI_SubItem
 
     void SetNoti(bool flag)
     {
+        if (_init == false)
+			return;
+
         GetImage((int)Images.IconNotice).gameObject.SetActive(flag);
     }
 

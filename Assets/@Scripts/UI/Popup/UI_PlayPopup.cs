@@ -188,11 +188,20 @@ public class UI_PlayPopup : UI_Popup
 
 	private void RefreshUI()
 	{
+		if (_init == false)
+			return;
 
+		ShowTab(_tab);
+		RefreshStat();
+		RefreshMoney();
+		RefreshTime();
 	}
 
 	private void Update() 
 	{
+		if(_init == false)
+			return;
+
 		if (Managers.UI.PeekPopupUI<UI_PlayPopup>() != this)
 			return;
 		
@@ -211,7 +220,7 @@ public class UI_PlayPopup : UI_Popup
 			{
 				_pitch = NORMAL_PITCH;
 				Managers.Sound.SetPitch(Define.ESound.Bgm, NORMAL_PITCH);
-				//Managers.Game.OnStressChanged = () => GetImage((int)Images.StressBarFill).GetComponent<DOTweenAnimation>().DOComplete();
+				Managers.Game.OnStressChanged = () => GetImage((int)Images.StressBarFill).GetComponent<DOTweenAnimation>().DOComplete();
 			}
 		}
 
@@ -230,6 +239,7 @@ public class UI_PlayPopup : UI_Popup
 		// 스트레스 초과로 인한 엔딩 확인
 		else if (Managers.Game.Stress >= Managers.Game.MaxStress)
 		{
+			Debug.Log($"Managers.Game.MaxStress : {Managers.Game.MaxStress}");
 			EndingData endingData = Managers.Data.Endings.Values.Where(e => { return e.type == EndingType.Stress; }).FirstOrDefault();
 			if (endingData != null)
 				Managers.UI.ShowPopupUI<UI_EndingPopup>().SetInfo(endingData);
@@ -306,10 +316,12 @@ public class UI_PlayPopup : UI_Popup
 
 	public void RefreshStat()
 	{
-		ShowTab(_tab);
-		RefreshStat();
-		RefreshMoney();
-		RefreshTime();
+		GetText((int)Texts.JobText).text = Utils.GetJobTitleString(Managers.Game.JobTitle);
+
+		RefreshStatUpgradeButtons();
+		RefreshHpBar();
+		RefreshStressBar();
+		RefreshProjectUI();
 	}
 
 	void RefreshStatUpgradeButtons()

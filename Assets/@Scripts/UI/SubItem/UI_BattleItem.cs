@@ -46,11 +46,17 @@ public class UI_BattleItem : UI_Base
 
     private void RefreshUI()
     {
+		if(_init == false)
+			return;
+
         GetText((int)Texts.PortraitNameText).text = Managers.GetText(_data.nameID);
 
-        Sprite sprite = Managers.Resource.Load<Sprite>(_data.illustPath);
-        GetImage((int)Images.PortraitIcon).sprite = sprite;
-
+		if(string.IsNullOrEmpty(_data.illustPath) == false)
+		{
+			Sprite sprite = Managers.Resource.Load<Sprite>(_data.illustPath);
+        	GetImage((int)Images.PortraitIcon).sprite = sprite;
+		}
+        
         GetButton((int)Buttons.BattleStartButton).gameObject.SetActive(true);
 		GetText((int)Texts.BattleStartButtonText).text = Managers.GetText(Define.LetsBattle);
 
