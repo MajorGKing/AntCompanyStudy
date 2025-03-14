@@ -34,8 +34,8 @@ public class UI_ResultPopup : UI_Popup
 		CartoonImage,
 	}
 
-    Define.EResultType _type;
-	List<RewardValuePair> _rewards;
+    Define.EResultType _type = Define.EResultType.Defeat;
+	List<RewardValuePair> _rewards = new List<RewardValuePair>();
 	string _path;
 	string _text;
 
@@ -51,23 +51,23 @@ public class UI_ResultPopup : UI_Popup
 		BindObjects((typeof(GameObjects)));
 		BindImages((typeof(Images)));
 
-        		switch (_type)
-		{
-			case Define.EResultType.Victory:
-				gameObject.BindEvent(OnCloseCartoon);
-				break;
-			case Define.EResultType.Project:
-				gameObject.BindEvent(OnCloseProject);
-				break;
-			case Define.EResultType.GoHome:
-				gameObject.BindEvent(OnCloseProject);
-				break;
-			default:
-				gameObject.BindEvent(OnClosePopup);
-				break;
-		}
+        switch (_type)
+        {
+            case Define.EResultType.Victory:
+                gameObject.BindEvent(OnCloseCartoon);
+                break;
+            case Define.EResultType.Project:
+                gameObject.BindEvent(OnCloseProject);
+                break;
+            case Define.EResultType.GoHome:
+                gameObject.BindEvent(OnCloseProject);
+                break;
+            default:
+                gameObject.BindEvent(OnClosePopup);
+                break;
+        }
 
-		RefreshUI();
+        RefreshUI();
     }
 
     public void SetInfo(Define.EResultType type, List<RewardValuePair> rewards, string path, string text)
@@ -82,6 +82,8 @@ public class UI_ResultPopup : UI_Popup
 
     private void RefreshUI()
     {
+		Debug.Log("UIResult Refresh");
+
 		if (_init == false)
 			return;
 
@@ -123,6 +125,7 @@ public class UI_ResultPopup : UI_Popup
             GetText((int)Texts.TitleText).gameObject.SetActive(false);
             GetImage((int)Images.CartoonImage).gameObject.SetActive(true);
             GetImage((int)Images.CartoonImage).gameObject.GetOrAddComponent<DOTweenAnimation>().DORestartAllById("Victory");
+            GetImage((int)Images.CartoonImage).sprite = Managers.Resource.Load<Sprite>(_path);
         }
         else
         {
@@ -132,6 +135,8 @@ public class UI_ResultPopup : UI_Popup
 
             if (_animEnded == false && string.IsNullOrEmpty(_path) == false)
             {
+				Debug.Log($"Anipath : {_path}");
+
                 // 애니메이션 대기
 				GetObject((int)GameObjects.AnimatedImage).GetOrAddComponent<BaseController>().SetSkeletonAsset(_path);
 				_coWaitAnim = StartCoroutine(CoWaitAnimation(1.5f));

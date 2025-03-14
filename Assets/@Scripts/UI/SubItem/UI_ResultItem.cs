@@ -33,6 +33,9 @@ public class UI_ResultItem : UI_Base
 
     private void RefreshUI()
     {
+		if(_init == false)
+			return;
+
         Sprite sprite = GetRewardSprite(_reward.type);
 		GetImage((int)Images.RewardIcon).sprite = sprite;
 
@@ -56,28 +59,28 @@ public class UI_ResultItem : UI_Base
 		switch (rewardType)
 		{
 			case Define.ERewardType.Hp:
-				path = "Sprites/Main/Ability/icon_strength";
+				path = "icon_strength";
 				break;
 			case Define.ERewardType.WorkAbility:
-				path = "Sprites/Main/Ability/icon_ability";
+				path = "icon_ability";
 				break;
 			case Define.ERewardType.Likeability:
-				path = "Sprites/Main/Ability/icon_heart";
+				path = "icon_heart";
 				break;
 			case Define.ERewardType.Luck:
-				path = "Sprites/Main/Ability/icon_luck";
+				path = "icon_luck";
 				break;
 			case Define.ERewardType.Stress:
-				path = "Sprites/Main/Ability/icon_stress";
+				path = "icon_stress";
 				break;
 			case Define.ERewardType.Money:
-				path = "Sprites/Main/Project/icon_coin1";
+				path = "icon_coin1";
 				break;
 			case Define.ERewardType.Block:
-				path = "Sprites/Main/Project/icon_coin2";
+				path = "icon_coin2";
 				break;
 			case Define.ERewardType.SalaryIncrease:
-				path = "Sprites/Main/Project/icon_coin1";
+				path = "icon_coin1";
 				break;
 		}
 

@@ -13,6 +13,8 @@ public class BaseController : UI_Base
         base.Awake();
 
         _anim = GetComponent<SkeletonGraphic>();
+
+		Debug.Log($"Anim!! Awake");
     }
 
     protected virtual void UpdateAnimation() {}
@@ -29,6 +31,9 @@ public class BaseController : UI_Base
     #region Spine Animation
     public void SetSkeletonAsset(string path)
 	{
+		if (_init == false)
+			return;
+
 		if(string.IsNullOrEmpty(path))
 			return;
 			
