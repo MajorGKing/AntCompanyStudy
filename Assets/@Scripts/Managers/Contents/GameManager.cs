@@ -124,19 +124,19 @@ public class GameManager
     {
         get {return GameData.JobTitle;}
         set { GameData.JobTitle = value; RefreshLevelCollections();}
-    } 
+    }
 
     public int Hp
-	{
-		get { return GameData.Hp; }
-		set { GameData.Hp = Mathf.Clamp(value, 0, GameData.Hp); }
-	}
+    {
+        get { return GameData.Hp; }
+        set { GameData.Hp = Mathf.Clamp(value, 0, GameData.MaxHp); }
+    }
 
     public int MaxHp
-	{
-		get { return GameData.MaxHp; }
-		set { GameData.MaxHp = value; RefreshStatCollections(); }
-	}
+    {
+        get { return GameData.MaxHp; }
+        set { GameData.MaxHp = value; RefreshStatCollections(); }
+    }
 
     public int WorkAbility
     {
