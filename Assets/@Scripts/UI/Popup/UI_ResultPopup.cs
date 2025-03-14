@@ -82,6 +82,9 @@ public class UI_ResultPopup : UI_Popup
 
     private void RefreshUI()
     {
+		if (_init == false)
+			return;
+
         switch (_type)
         {
             case Define.EResultType.Victory:

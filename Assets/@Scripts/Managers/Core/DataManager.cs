@@ -159,7 +159,7 @@ public class DataManager
         // // Collection
         {
             StatCollections = Collections.Where(c => c.Value.reqType == CollectionType.Stat).Select(c => c.Value).ToList();
-            WealthCollections = Collections.Where(c => c.Value.reqType == CollectionType.Stat).Select(c => c.Value).ToList();
+            WealthCollections = Collections.Where(c => c.Value.reqType == CollectionType.Wealth).Select(c => c.Value).ToList();
             LevelCollections = Collections.Where(c => c.Value.reqType == CollectionType.Level).Select(c => c.Value).ToList();
             ProjectCollections = Collections.Where(c => c.Value.reqType == CollectionType.Project).Select(c => c.Value).ToList();
             BattleCollections = Collections.Where(c => c.Value.reqType == CollectionType.Battle).Select(c => c.Value).ToList();

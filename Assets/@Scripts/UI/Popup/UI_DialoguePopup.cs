@@ -143,6 +143,9 @@ public class UI_DialoguePopup : UI_Popup
 
     private void RefreshUI()
     {
+        if (_init == false)
+            return;
+
         if (_salaryNegotation)
 			RefreshSalaryNegotiationUI();
 		else

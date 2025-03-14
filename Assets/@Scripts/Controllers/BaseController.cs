@@ -7,15 +7,12 @@ public class BaseController : UI_Base
 {
     protected SkeletonGraphic _anim = null;
 
-	protected bool _init = false;
 
     protected override void Awake()
     {
         base.Awake();
 
         _anim = GetComponent<SkeletonGraphic>();
-
-		_init = true;
     }
 
     protected virtual void UpdateAnimation() {}

@@ -349,8 +349,8 @@ MonoBehaviour:
 
     Hi there Hi there Hi thereHi there Hi there Hi there..?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -483,8 +483,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sure do
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -956,8 +956,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: No you can't
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1768,8 +1768,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Home!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2364,8 +2364,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes sir!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2612,6 +2612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f0d94d02f8e4b03bf22ad00817571f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UICanvas: {fileID: 0}
 --- !u!114 &-3132476403325794819
 MonoBehaviour:
   m_ObjectHideFlags: 0
