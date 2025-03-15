@@ -13,8 +13,6 @@ public class BaseController : UI_Base
         base.Awake();
 
         _anim = GetComponent<SkeletonGraphic>();
-
-		Debug.Log($"Anim!! Awake");
     }
 
     protected virtual void UpdateAnimation() {}
@@ -36,7 +34,7 @@ public class BaseController : UI_Base
 
 		if(string.IsNullOrEmpty(path))
 			return;
-			
+
 		_anim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(path);
 		_anim.Initialize(true);
 	}

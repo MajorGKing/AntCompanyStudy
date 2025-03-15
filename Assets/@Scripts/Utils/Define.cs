@@ -28,7 +28,6 @@ public class Define
         PointerUp,
         PointerDown,
         Click,
-        Pressed,
         BeginDrag,
         Drag,
         EndDrag,

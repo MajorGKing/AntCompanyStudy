@@ -35,14 +35,12 @@ public class UI_AbilityItem : UI_SubItem
     {
         base.Awake();
 
-		Debug.Log(gameObject.name);
-
         BindTexts(typeof(Texts));
 		BindButtons(typeof(Buttons));
 
         GetText((int)Texts.UpgradeText).text = Managers.GetText(Define.Upgrade);
 
-        GetButton((int)Buttons.UpgradeButton).gameObject.BindEvent(OnPressUpgradeButton, Define.ETouchEvent.Pressed);
+        GetButton((int)Buttons.UpgradeButton).gameObject.BindEvent(OnpPointDownUpgradeButton, Define.ETouchEvent.PointerDown);
         GetButton((int)Buttons.UpgradeButton).gameObject.BindEvent(OnPointerUp, Define.ETouchEvent.PointerUp);
 
         RefreshUI();
@@ -73,8 +71,6 @@ public class UI_AbilityItem : UI_SubItem
 
         int value = Utils.GetStatValue(_statType);
 
-		Debug.Log($"(int)Texts.TitleText); {(int)Texts.TitleText}");
-
         GetText((int)Texts.TitleText).text = Managers.GetText(_statData.nameID);
         GetText((int)Texts.ChangeText).text = $"{value} → {GetIncreasedValue()}";
         GetText((int)Texts.MoneyText).text = Utils.GetMoneyString(_statData.price);
@@ -93,59 +89,63 @@ public class UI_AbilityItem : UI_SubItem
         GetText((int)Texts.DiffText).gameObject.SetActive(false);
     }
 
-    Coroutine _coolTime;
+    private Coroutine _coolTime;
+	private bool _doUpgrade;
 
-    private void OnPressUpgradeButton(PointerEventData evt)
+    private void OnpPointDownUpgradeButton(PointerEventData evt)
     {
         if (_coolTime == null)
 		{
-			Debug.Log("OnPressUpgradeButton");
-
-            if(CanUpgrade())
-            {
-                Managers.Game.Money -= _statData.price;
-                int value = _statData.increaseStat;
-
-                switch(_statType)
-                {
-                    case Define.EStatType.MaxHp:
-						Managers.Game.MaxHp += value; 
-						Managers.Game.Hp = Math.Min(Managers.Game.Hp + value, Managers.Game.MaxHp);
-						Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
-						break;
-					case Define.EStatType.WorkAbility:
-						Managers.Game.WorkAbility += value;
-						Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
-						break;
-					case Define.EStatType.Likeability:
-						Managers.Game.Likeability += value;
-						Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
-						break;
-					case Define.EStatType.Luck:
-						Managers.Game.Luck += value;
-						break;
-					case Define.EStatType.Stress:
-						Managers.Game.Stress += value;
-						Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
-						break;
-                }
-
-                RefreshUI();
-
-                Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshHpBar();
-				Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshStat();
-				Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshMoney();
-            }
-
+			_doUpgrade = true;
             _coolTime = StartCoroutine(CoStartUpgradeCoolTime(0.1f));
         }
 
     }
 
-    private void OnPointerUp(PointerEventData evt)
+	private void DoUpgrade()
+	{
+		if (CanUpgrade())
+		{
+			Managers.Game.Money -= _statData.price;
+			int value = _statData.increaseStat;
+
+			switch (_statType)
+			{
+				case Define.EStatType.MaxHp:
+					Managers.Game.MaxHp += value;
+					Managers.Game.Hp = Math.Min(Managers.Game.Hp + value, Managers.Game.MaxHp);
+					Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
+					break;
+				case Define.EStatType.WorkAbility:
+					Managers.Game.WorkAbility += value;
+					Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
+					break;
+				case Define.EStatType.Likeability:
+					Managers.Game.Likeability += value;
+					Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
+					break;
+				case Define.EStatType.Luck:
+					Managers.Game.Luck += value;
+					break;
+				case Define.EStatType.Stress:
+					Managers.Game.Stress += value;
+					Managers.Sound.Play(Define.ESound.Effect, "Sound_UpgradeDone");
+					break;
+			}
+
+			RefreshUI();
+
+			Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshHpBar();
+			Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshStat();
+			Managers.UI.FindPopup<UI_PlayPopup>()?.RefreshMoney();
+		}
+	}
+
+	private void OnPointerUp(PointerEventData evt)
     {
 		if (_coolTime != null)
 		{
+			_doUpgrade = false;
 			StopCoroutine(_coolTime);
 			_coolTime = null;
 		}
@@ -195,7 +195,13 @@ public class UI_AbilityItem : UI_SubItem
 
     IEnumerator CoStartUpgradeCoolTime(float seconds)
 	{
-		yield return new WaitForSeconds(seconds);
+		while(_doUpgrade == true)
+		{
+			DoUpgrade();
+		
+			yield return new WaitForSeconds(seconds);
+		}
+
 		_coolTime = null;
 	}
 }
