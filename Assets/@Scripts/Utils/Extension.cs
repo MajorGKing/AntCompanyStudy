@@ -17,6 +17,11 @@ public static class Extension
         UI_Base.BindEvent(go, action, type);
     }
 
+    public static void ClearEvent(this GameObject go, Action<PointerEventData> action = null, Define.ETouchEvent type = Define.ETouchEvent.Click)
+    {
+        UI_Base.ClearEvent(go, action, type);
+    }
+
     public static bool IsValid(this GameObject go)
     {
         return go != null && go.activeSelf;

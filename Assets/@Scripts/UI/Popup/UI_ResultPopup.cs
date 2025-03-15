@@ -51,6 +51,45 @@ public class UI_ResultPopup : UI_Popup
 		BindObjects((typeof(GameObjects)));
 		BindImages((typeof(Images)));
 
+		SetType(_type);
+
+        RefreshUI();
+    }
+
+    public void SetInfo(Define.EResultType type, List<RewardValuePair> rewards, string path, string text)
+    {
+		Debug.Log("ILHAK SetInfo about Result Popup");
+
+        SetType(type);
+        _rewards = rewards;
+		_path = path;
+		_text = text;
+		_animEnded = false;
+		_coWaitAnim = null;
+
+        RefreshUI();
+    }
+
+	private void SetType(Define.EResultType type)
+	{
+        switch (_type)
+        {
+            case Define.EResultType.Victory:
+                gameObject.ClearEvent(OnCloseCartoon);
+                break;
+            case Define.EResultType.Project:
+                gameObject.ClearEvent(OnCloseProject);
+                break;
+            case Define.EResultType.GoHome:
+                gameObject.ClearEvent(OnCloseProject);
+                break;
+            default:
+                gameObject.ClearEvent(OnClosePopup);
+                break;
+        }
+
+        _type = type;
+
         switch (_type)
         {
             case Define.EResultType.Victory:
@@ -66,18 +105,6 @@ public class UI_ResultPopup : UI_Popup
                 gameObject.BindEvent(OnClosePopup);
                 break;
         }
-
-        RefreshUI();
-    }
-
-    public void SetInfo(Define.EResultType type, List<RewardValuePair> rewards, string path, string text)
-    {
-        _type = type;
-        _rewards = rewards;
-		_path = path;
-		_text = text;
-		_animEnded = false;
-		RefreshUI();
     }
 
     private void RefreshUI()
@@ -88,9 +115,9 @@ public class UI_ResultPopup : UI_Popup
 		if(_type == Define.EResultType.Defeat)
 			return;
 
-		Debug.Log("UIResult Refresh");
-
 		Debug.Log($"_type : {_type}");
+
+		Debug.Log($"_coWaitAnim : {_coWaitAnim}");
 
         switch (_type)
         {
@@ -196,6 +223,8 @@ public class UI_ResultPopup : UI_Popup
 
     private void OnCloseProject(PointerEventData evt)
     {
+        Debug.Log("OnCloseProject");
+
         GetObject((int)GameObjects.Result).gameObject.SetActive(true);
 		GetObject((int)GameObjects.AnimatedImage).gameObject.SetActive(false);
 

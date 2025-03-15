@@ -99,4 +99,31 @@ public abstract class UI_Base : MonoBehaviour
                 break;
         }
     }
+
+    public static void ClearEvent(GameObject go, Action<PointerEventData> action = null, Define.ETouchEvent type = Define.ETouchEvent.Click)
+    {
+        UI_EventHandler evt = Utils.GetOrAddComponent<UI_EventHandler>(go);
+
+        switch (type)
+        {
+            case Define.ETouchEvent.Click:
+                evt.OnClickHandler -= action;
+                break;
+            case Define.ETouchEvent.PointerDown:
+                evt.OnPointerDownHandler -= action;
+                break;
+            case Define.ETouchEvent.PointerUp:
+                evt.OnPointerUpHandler -= action;
+                break;
+            case Define.ETouchEvent.Drag:
+                evt.OnDragHandler -= action;
+                break;
+            case Define.ETouchEvent.BeginDrag:
+                evt.OnBeginDragHandler -= action;
+                break;
+            case Define.ETouchEvent.EndDrag:
+                evt.OnEndDragHandler -= action;
+                break;
+        }
+    }
 }
