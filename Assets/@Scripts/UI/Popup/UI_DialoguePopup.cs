@@ -146,6 +146,9 @@ public class UI_DialoguePopup : UI_Popup
         if (_init == false)
             return;
 
+        if(_npcJob == Define.EJobTitleType.Intern)
+            return;
+
         if (_salaryNegotation)
 			RefreshSalaryNegotiationUI();
 		else
@@ -153,6 +156,7 @@ public class UI_DialoguePopup : UI_Popup
 
         if (Managers.Data.Players.TryGetValue((int)_npcJob, out PlayerData enemyData))
         {
+            Debug.Log($"_npcJob : {_npcJob}");
             Debug.Log($"ILHAK : enemyData.battleIconPath : {enemyData.battleIconPath}");
 
             Sprite sprite = Managers.Resource.Load<Sprite>(enemyData.battleIconPath);
