@@ -82,10 +82,15 @@ public class UI_ResultPopup : UI_Popup
 
     private void RefreshUI()
     {
-		Debug.Log("UIResult Refresh");
-
 		if (_init == false)
 			return;
+
+		if(_type == Define.EResultType.Defeat)
+			return;
+
+		Debug.Log("UIResult Refresh");
+
+		Debug.Log($"_type : {_type}");
 
         switch (_type)
         {
