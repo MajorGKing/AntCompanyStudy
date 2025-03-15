@@ -104,7 +104,7 @@ public class UI_DialoguePopup : UI_Popup
     void ShowText(string text, Action onTextEndCallback = null)
     {
         // TODO Ilhak
-        Managers.Sound.Play(Define.ESound.SubBgm, "Sound_DialogSpeak");
+        Managers.Sound.Play(Define.ESound.Effect, "Sound_DialogSpeak");
 
         _text = text;
 		_index = 0;

@@ -2940,8 +2940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UICanvas: {fileID: 0}
-  _normalButtonImage: {fileID: 0}
-  _blockButtonImage: {fileID: 0}
+  _normalButtonImage: {fileID: 21300000, guid: 86ccbfe6e8c7ece4ab92be1b60a70d7e, type: 3}
+  _blockButtonImage: {fileID: 21300000, guid: a0021149e9eac2d49aca34d411f706bc, type: 3}
 --- !u!114 &8560271552067002440
 MonoBehaviour:
   m_ObjectHideFlags: 0

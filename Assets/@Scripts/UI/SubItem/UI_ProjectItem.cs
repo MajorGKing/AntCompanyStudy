@@ -98,8 +98,9 @@ public class UI_ProjectItem : UI_SubItem
 
 			Managers.Game.RefreshProjectCollections();
 
-			
-		}, Managers.GetText(Define.ProjectConfirmText));
+            List<RewardValuePair> rewards = MakeRewards(_data);
+            Managers.UI.ShowPopupUI<UI_ResultPopup>().SetInfo(Define.EResultType.Project, rewards, _data.aniPath, "");
+        }, Managers.GetText(Define.ProjectConfirmText));
 	}
 
 	void PopulateSubItems()
@@ -173,5 +174,30 @@ public class UI_ProjectItem : UI_SubItem
 
 		return true;
 	}
+
+    List<RewardValuePair> MakeRewards(ProjectData data)
+    {
+        List<RewardValuePair> rewards = new List<RewardValuePair>();
+
+        if (data.difWorkAbility != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.WorkAbility, value = data.difWorkAbility });
+
+        if (data.difLikeability != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.Likeability, value = data.difLikeability });
+
+        if (data.difLuck != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.Luck, value = data.difLuck });
+
+        if (data.difStress != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.Stress, value = data.difStress });
+
+        if (data.difBlock != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.Block, value = data.difBlock });
+
+        if (data.difMoney != 0)
+            rewards.Add(new RewardValuePair() { type = Define.ERewardType.Money, value = data.difMoney });
+
+        return rewards;
+    }
 
 }
