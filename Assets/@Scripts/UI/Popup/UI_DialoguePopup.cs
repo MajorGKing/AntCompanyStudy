@@ -153,6 +153,8 @@ public class UI_DialoguePopup : UI_Popup
 
         if (Managers.Data.Players.TryGetValue((int)_npcJob, out PlayerData enemyData))
         {
+            Debug.Log($"ILHAK : enemyData.battleIconPath : {enemyData.battleIconPath}");
+
             Sprite sprite = Managers.Resource.Load<Sprite>(enemyData.battleIconPath);
             GetImage((int)Images.CharacterImage).sprite = sprite;
 			GetImage((int)Images.CharacterImage).SetNativeSize();

@@ -386,7 +386,9 @@ public class UI_PlayPopup : UI_Popup
 		if (_tab == tab)
 			return;
 
-		GetObject((int)GameObjects.AbilityTab).gameObject.SetActive(false);
+        _tab = tab;
+
+        GetObject((int)GameObjects.AbilityTab).gameObject.SetActive(false);
 		GetObject((int)GameObjects.ProjectTab).gameObject.SetActive(false);
 		GetObject((int)GameObjects.BattleTab).gameObject.SetActive(false);
 		GetObject((int)GameObjects.ShopTab).gameObject.SetActive(false);
