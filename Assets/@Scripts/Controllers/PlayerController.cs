@@ -82,6 +82,13 @@ public class PlayerController : BaseController
 		UpdateAnimation();
 	}
 
+	public void SetInfoData(Define.EJobTitleType jobTitle)
+	{
+        JobTitle = jobTitle;
+        Managers.Data.Players.TryGetValue((int)JobTitle, out _data);
+    }
+
+
     public override void LookLeft(bool flag)
     {
         base.LookLeft(flag);

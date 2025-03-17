@@ -349,8 +349,8 @@ MonoBehaviour:
 
     Hi there Hi there Hi thereHi there Hi there Hi there..?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
-  m_sharedMaterial: {fileID: -463290089681385589, guid: ea7d7276987da424489dd9a83a10928c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 42fe11f3bbc40114abf3f6e1e898e4dd, type: 2}
+  m_sharedMaterial: {fileID: -86410239165208080, guid: 42fe11f3bbc40114abf3f6e1e898e4dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

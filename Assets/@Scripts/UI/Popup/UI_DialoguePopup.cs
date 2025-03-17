@@ -91,8 +91,15 @@ public class UI_DialoguePopup : UI_Popup
 
 		if (salaryNegotation)
 		{
-			// TODO
-		}
+            for (int i = 0; i < BUTTON_COUNT; i++)
+            {
+                int index = i;
+
+                _buttons[i].gameObject.BindEvent((PointerEventData evt) => OnClickNegotiationButton(evt, index));
+            }
+
+            // TODO
+        }
         else if ((int)Managers.Game.JobTitle >= (int)npcJob)
 			_data = Managers.Data.InferiorEvents.GetRandom();
 		else

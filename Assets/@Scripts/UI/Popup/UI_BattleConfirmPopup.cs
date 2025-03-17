@@ -35,8 +35,6 @@ public class UI_BattleConfirmPopup : UI_Popup
 
         GetButton((int)Buttons.ConfirmButton).gameObject.BindEvent(OnConfirmButton);
 		GetButton((int)Buttons.CloseButton).gameObject.BindEvent(OnClosePopup);
-
-		RefreshUI();
     }
 
     public void SetInfo(PlayerData data)

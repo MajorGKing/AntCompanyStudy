@@ -92,77 +92,94 @@ public class UI_BattlePopup : UI_Popup
 		BindButtons(typeof(Buttons));
 		BindImages(typeof(Images));
 
-        _player = GetObject((int)GameObjects.Player);
-		_enemy = GetObject((int)GameObjects.Enemy);
+        
 
-		_block = GetObject((int)GameObjects.Block);
-		_block.SetActive(false);
-
-		// TODO ILHAK speed 외부로 빼기
-		switch ((Define.EJobTitleType)_enemyData.ID)
-		{
-			case Define.EJobTitleType.Daeri:
-				_gaugeBlockSpeed = 1700.0f;
-				break;
-			case Define.EJobTitleType.Gwajang:
-				_gaugeBlockSpeed = 1900.0f;
-				break;
-			case Define.EJobTitleType.Bujang:
-				_gaugeBlockSpeed = 2100.0f;
-				break;
-			case Define.EJobTitleType.Esa:
-				_gaugeBlockSpeed = 2300.0f;
-				break;
-			case Define.EJobTitleType.Sajang:
-				_gaugeBlockSpeed = 2500.0f;
-				break;
-		}
-
-		_gaugeBlock = GetObject((int)GameObjects.GaugeBlock);
-		PatrolController pc = _gaugeBlock.GetOrAddComponent<PatrolController>();
-		pc.MovingSpeed = _gaugeBlockSpeed;
-		pc.SwapLookDirection = false;
-
-		if (Managers.Data.Players.TryGetValue((int)Define.EJobTitleType.Sinib, out _playerData) == false)
-			Debug.Log("Player Data not found");
-
-		_player.GetOrAddComponent<PlayerController>().JobTitle = Define.EJobTitleType.Sinib;
-		_player.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_playerData.spine);
-		_player.GetOrAddComponent<PlayerController>().State = Define.EAnimState.Idle;
-
-		_enemy.GetOrAddComponent<PlayerController>().JobTitle = (Define.EJobTitleType)_enemyData.ID;
-		_enemy.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_enemyData.spine);
-		_enemy.GetOrAddComponent<PlayerController>().State = Define.EAnimState.Idle;
-
-		_enemyHp = _enemyData.maxhp;
-
-		_block.SetActive(false);
-		_gaugeBlock.SetActive(false);
-		_gaugeBlock.GetComponent<PatrolController>().StopMove = true;
-
-		GetButton((int)Buttons.BlockButton).gameObject.BindEvent(OnFireBlock);
-		GetText((int)Texts.PlayerHpText).text = "";
-		GetText((int)Texts.EnemyHpText).text = "";
-		GetImage((int)Images.Bubble).gameObject.SetActive(false);
-
-		GetObject((int)GameObjects.BlockEffect).SetActive(false);
-
-		// 체력 리셋
-		Managers.Game.Hp = Managers.Game.MaxHp;
-		_status = EBattleStatus.GaugeMoveStart;
-
-		_ending = false;
-
-        RefreshUI();
+        //RefreshUI();
     }
 
 	public void SetInfo(PlayerData enemyData, float goodRatio, float perfectRatio)
 	{
-		_goodRatio = goodRatio;
+		Debug.Log("Set Info Battle");
+
+        Managers.Sound.Clear();
+        Managers.Sound.Play(Define.ESound.Bgm, "Sound_Battle");
+
+        _goodRatio = goodRatio;
 		_perfectRatio = perfectRatio;
 		_enemyData = enemyData;
-		
-		RefreshUI();
+
+        _player = GetObject((int)GameObjects.Player);
+        _enemy = GetObject((int)GameObjects.Enemy);
+
+        _block = GetObject((int)GameObjects.Block);
+        _block.SetActive(false);
+
+        // TODO ILHAK speed 외부로 빼기
+        switch ((Define.EJobTitleType)_enemyData.ID)
+        {
+            case Define.EJobTitleType.Daeri:
+                _gaugeBlockSpeed = 1700.0f;
+                break;
+            case Define.EJobTitleType.Gwajang:
+                _gaugeBlockSpeed = 1900.0f;
+                break;
+            case Define.EJobTitleType.Bujang:
+                _gaugeBlockSpeed = 2100.0f;
+                break;
+            case Define.EJobTitleType.Esa:
+                _gaugeBlockSpeed = 2300.0f;
+                break;
+            case Define.EJobTitleType.Sajang:
+                _gaugeBlockSpeed = 2500.0f;
+                break;
+        }
+
+        _gaugeBlock = GetObject((int)GameObjects.GaugeBlock);
+        PatrolController pc = _gaugeBlock.GetOrAddComponent<PatrolController>();
+        pc.MovingSpeed = _gaugeBlockSpeed;
+        pc.SwapLookDirection = false;
+
+        if (Managers.Data.Players.TryGetValue((int)Define.EJobTitleType.Sinib, out _playerData) == false)
+            Debug.Log("Player Data not found");
+
+        //_player.GetOrAddComponent<PlayerController>().JobTitle = Define.EJobTitleType.Sinib;
+        _player.GetOrAddComponent<PlayerController>().SetInfoData(Define.EJobTitleType.Sinib);
+        _player.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_playerData.spine, _playerData.aniIdleSkin);
+        //_player.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_playerData.spine);
+        _player.GetOrAddComponent<PlayerController>().State = Define.EAnimState.Idle;
+
+		_enemy.GetOrAddComponent<PlayerController>().SetInfoData((Define.EJobTitleType)_enemyData.ID);
+		//if((Define.EJobTitleType)_enemyData.ID == Define.EJobTitleType.Esa)
+		//{
+  //          _enemy.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_enemyData.spine, "main");
+  //      }
+		//else
+		//{
+  //          _enemy.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_enemyData.spine);
+  //      }
+        _enemy.GetOrAddComponent<PlayerController>().SetSkeletonAsset(_enemyData.spine, _enemyData.aniIdleSkin);
+        _enemy.GetOrAddComponent<PlayerController>().State = Define.EAnimState.Idle;
+
+        _enemyHp = _enemyData.maxhp;
+
+        _block.SetActive(false);
+        _gaugeBlock.SetActive(false);
+        _gaugeBlock.GetComponent<PatrolController>().StopMove = true;
+
+        GetButton((int)Buttons.BlockButton).gameObject.BindEvent(OnFireBlock);
+        GetText((int)Texts.PlayerHpText).text = "";
+        GetText((int)Texts.EnemyHpText).text = "";
+        GetImage((int)Images.Bubble).gameObject.SetActive(false);
+
+        GetObject((int)GameObjects.BlockEffect).SetActive(false);
+
+        // 체력 리셋
+        Managers.Game.Hp = Managers.Game.MaxHp;
+        _status = EBattleStatus.GaugeMoveStart;
+
+        _ending = false;
+
+        RefreshUI();
 	}
 
     private void RefreshUI()

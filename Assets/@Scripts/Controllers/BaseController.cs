@@ -35,9 +35,25 @@ public class BaseController : UI_Base
 		if(string.IsNullOrEmpty(path))
 			return;
 
+        Debug.Log("path : " + path);
+
 		_anim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(path);
-		_anim.Initialize(true);
-	}
+
+		//if (path == "Sinib_SkeletonData")
+		//	Debug.Log("Sinib test");
+
+        _anim.Initialize(true);
+        //_anim.AnimationState.SetAnimation(0, "idle", true);
+    }
+
+	public void SetSkeletonAsset(string path, string initSkinName)
+	{
+        Debug.Log("path : " + path);
+
+        _anim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(path);
+        _anim.initialSkinName = initSkinName;
+        SetSkeletonAsset(path);
+    }
 
     public void PlayAnimation(string name, bool loop = true)
 	{
@@ -75,7 +91,7 @@ public class BaseController : UI_Base
 		PlayAnimation(defaultName, defaultLoop);
 	}
 
-    	public void PlayAnimationOnce(string skin, string name)
+    public void PlayAnimationOnce(string skin, string name)
 	{
 		StartCoroutine(CoPlayAnimationOnce(skin, name));
 	}
@@ -85,6 +101,8 @@ public class BaseController : UI_Base
 		bool defaultLoop = _anim.startingLoop;
 		string defaultSkin = _anim.initialSkinName;
 		string defaultName = _anim.startingAnimation;
+
+		Debug.Log($"Play ani skin {skin}, name {name}");
 
 		_anim.startingLoop = false;
 		_anim.startingAnimation = name;
