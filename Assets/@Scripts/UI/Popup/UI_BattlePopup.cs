@@ -83,6 +83,9 @@ public class UI_BattlePopup : UI_Popup
 
 	const float EPSILON = 50.0f;
 
+	private Vector3 _playerPos = Vector3.zero;
+	private Vector3 _enemyPos = Vector3.zero;
+
     protected override void Awake()
     {
         base.Awake();
@@ -92,7 +95,14 @@ public class UI_BattlePopup : UI_Popup
 		BindButtons(typeof(Buttons));
 		BindImages(typeof(Images));
 
+        _player = GetObject((int)GameObjects.Player);
         
+        _enemy = GetObject((int)GameObjects.Enemy);
+
+        _block = GetObject((int)GameObjects.Block);
+        _block.SetActive(false);
+
+        _gaugeBlock = GetObject((int)GameObjects.GaugeBlock);
 
         //RefreshUI();
     }
@@ -107,12 +117,6 @@ public class UI_BattlePopup : UI_Popup
         _goodRatio = goodRatio;
 		_perfectRatio = perfectRatio;
 		_enemyData = enemyData;
-
-        _player = GetObject((int)GameObjects.Player);
-        _enemy = GetObject((int)GameObjects.Enemy);
-
-        _block = GetObject((int)GameObjects.Block);
-        _block.SetActive(false);
 
         // TODO ILHAK speed 외부로 빼기
         switch ((Define.EJobTitleType)_enemyData.ID)
@@ -134,13 +138,15 @@ public class UI_BattlePopup : UI_Popup
                 break;
         }
 
-        _gaugeBlock = GetObject((int)GameObjects.GaugeBlock);
+
         PatrolController pc = _gaugeBlock.GetOrAddComponent<PatrolController>();
         pc.MovingSpeed = _gaugeBlockSpeed;
         pc.SwapLookDirection = false;
 
         if (Managers.Data.Players.TryGetValue((int)Define.EJobTitleType.Sinib, out _playerData) == false)
             Debug.Log("Player Data not found");
+
+
 
         //_player.GetOrAddComponent<PlayerController>().JobTitle = Define.EJobTitleType.Sinib;
         _player.GetOrAddComponent<PlayerController>().SetInfoData(Define.EJobTitleType.Sinib);
@@ -178,6 +184,8 @@ public class UI_BattlePopup : UI_Popup
         _status = EBattleStatus.GaugeMoveStart;
 
         _ending = false;
+
+        _playerPos = _player.transform.position;
 
         RefreshUI();
 	}
@@ -295,7 +303,9 @@ public class UI_BattlePopup : UI_Popup
 			// 몬스터가 죽었을 때
 			if (_enemyHp <= 0)
 			{
-				GetObject((int)GameObjects.Enemy).GetOrAddComponent<DOTweenAnimation>().DORestartAllById("EnemyDied");
+                _enemyPos = _enemy.transform.position;
+
+                GetObject((int)GameObjects.Enemy).GetOrAddComponent<DOTweenAnimation>().DORestartAllById("EnemyDied");
 				_status = EBattleStatus.Victory;
 				_waitCoroutine = StartCoroutine(CoWait(2.0f));
 				return;
@@ -342,15 +352,21 @@ public class UI_BattlePopup : UI_Popup
 		// 죽었으면 끝
 		if (Managers.Game.Hp <= 0)
 		{
-			_status = EBattleStatus.Defeat;
+            _playerPos = _player.transform.position;
+            Debug.Log($"player pos {_playerPos}");
+
+            _status = EBattleStatus.Defeat;
 			GetObject((int)GameObjects.Enemy).GetOrAddComponent<DOTweenAnimation>().DORestartAllById("PlayerDied");
 		}
 	}
 
 	void UpdateVictory()
 	{
-		// 승리
-		Debug.Log("Battle Won!");
+        // 승리
+
+        _enemy.transform.position = _enemyPos;
+
+        Debug.Log("Battle Won!");
 		Managers.UI.ClosePopupUI(this);
 		UI_ResultPopup popup = Managers.UI.ShowPopupUI<UI_ResultPopup>();
 		var rewards = new List<RewardValuePair>() { new RewardValuePair() { type = Define.ERewardType.Promotion, value = _enemyData.ID } };
@@ -370,10 +386,12 @@ public class UI_BattlePopup : UI_Popup
 
 		_ending = true;
 
-		// 패배
-		// TODO ILHAK 광고
+        // 패배
+        // TODO ILHAK 광고
 
-		Debug.Log("Battle Lost");
+        _player.transform.position = _playerPos;
+
+        Debug.Log("Battle Lost");
 		Managers.UI.ClosePopupUI();
 		UI_ResultPopup popup = Managers.UI.ShowPopupUI<UI_ResultPopup>();
 		popup.SetInfo(Define.EResultType.Defeat, new List<RewardValuePair>(), path: "", text: "");
